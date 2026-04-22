@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>solo (reprise) - sozinho (reprise) - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa solo (reprise) - sozinho (reprise)"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">1:19</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/soloReprise.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">solo (reprise) - sozinho (reprise)</span> 
+</div>
+
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Aye, aye, so now I'm</p>
+      <p>So-lo that I can see under the skirt of an ant</p>
+      <p>So-lo that I don't get high no more when I "Geronimo!" I just go hit</p>
+      <p>So-lo my cup is a rojo, my cholo, my friend</p>
+      <p>So-lo that I can admit</p>
+    </div>
+
+    <div class="stanza">
+      <p>When I hear that another kid is shot by the popo it ain't an event</p>
+      <p>No more</p>
+      <p>So-lo that no more high horses, so hard to wear Polo</p>
+      <p>When I do I cut the pony off</p>
+      <p>Now there's a hole that once was a logo</p>
+      <p>How fitting</p>
+    </div>
+
+    <div class="stanza">
+      <p>So-lo that I can give a fuck about what is trending</p>
+      <p>Tryna cut down on my spending</p>
+      <p>Regardless of winning, instead of pretending</p>
+      <p>And bending over backwards</p>
+    </div>
+
+    <div class="stanza">
+      <p>Over half of these hoes had work done</p>
+      <p>Sayin' they want something real from a man</p>
+      <p>Just saying it, we being real persons</p>
+      <p>I hate that it's like this, I feel for you Ann</p>
+      <p>I don't know what it's like with a skirt on</p>
+      <p>So pardon me if I am being insensitive</p>
+      <p>But darling this only worsens</p>
+    </div>
+
+    <div class="stanza">
+      <p>So-lo my halo, stay way low, it feels like it's bent</p>
+      <p>So-lo that when they throw pussy on pesos I pay no attention to it</p>
+      <p>So-lo that I am no rookie but feel like a kid</p>
+      <p>Lookin' at the other kids</p>
+      <p>With astonishment while I'm on punishment</p>
+      <p>Watchin' the summer come close to an end</p>
+    </div>
+
+    <div class="stanza">
+      <p>After 20 years in</p>
+      <p>I'm so naive I was under the impression</p>
+      <p>That everyone wrote they own verses</p>
+      <p>It's comin' back different and yea that shit hurts me</p>
+      <p>I'm hummin' and whistlin' to those not deserving</p>
+      <p>I'm stumbled and lift every word</p>
+      <p>Was I working just way too hard?</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Sim, sim, então agora eu estou</p>
+      <p>Tão pra baixo que eu posso ver sob a saia de uma formiga</p>
+      <p>Tão pra baixo que eu não entro mais na lombra quando fumo, só fico abatido</p>
+      <p>Tão pra baixo que o meu copo é um rojo, meu cholo, meu amigo</p>
+      <p>Tão pra baixo que eu posso admitir</p>
+    </div>
+
+    <div class="stanza">
+      <p>Quando ouço que outra criança foi baleada pela polícia, não é um evento</p>
+      <p>Não mais</p>
+      <p>Tão pra baixo que não tenho mais arrogância, tão difícil de usar Polo</p>
+      <p>Quando eu uso, corto o cavalo</p>
+      <p>Agora há um buraco que antes era um logotipo</p>
+      <p>Que condizente</p>
+    </div>
+
+    <div class="stanza">
+      <p>Tão pra baixo que consigo me importar com as tendências</p>
+      <p>Tentando reduzir meus gastos</p>
+      <p>Independentemente de ganhar, em vez de fingir</p>
+      <p>E cair pra trás</p>
+    </div>
+
+    <div class="stanza">
+      <p>Mais da metade desses putas tinha trabalho feito</p>
+      <p>Dizendo que eles querem algo genuíno de um homem</p>
+      <p>Só estou dizendo como são as pessoas reais</p>
+      <p>Eu odeio que é assim, eu sinto por você Ann</p>
+      <p>Eu não sei como é quando se usa uma saia</p>
+      <p>Portanto, perdoem-me se estou sendo insensível</p>
+      <p>Mas, querida, isso só piora</p>
+    </div>
+
+    <div class="stanza">
+      <p>Tão pra baixo que minha auréola fica tão rasteira que parece que entortou</p>
+      <p>Tão pra baixo que quando elas jogam buceta em pesos não dou atenção</p>
+      <p>Tão pra baixo que mesmo tendo experiência, me sinto uma criança</p>
+      <p>Olhando para as outras crianças</p>
+      <p>Com admiração enquanto eu estou sendo punido</p>
+      <p>Assistindo o verão chegar perto de um fim</p>
+    </div>
+
+    <div class="stanza">
+      <p>Depois de 20 anos aqui</p>
+      <p>Sou tão ingênuo que tive a impressão</p>
+      <p>Que todos escreviam os próprios versos</p>
+      <p>Está me atingindo e essa porra dói</p>
+      <p>Estou cantando e assoviando para aqueles que não merecem</p>
+      <p>Estou parado e sou eu que escrevo todas as palavras</p>
+      <p>Será que eu estava me esforçando demais?</p>
+    </div>
+
+  </div> </div>
+
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+
+Em “Solo (Reprise) (feat. André 3000)”, Frank Ocean e André 3000 abordam a solidão de forma intensa e direta. Logo no início, André 3000 usa a imagem de estar tão só a ponto de enxergar “under the skirt of an ant” (debaixo da saia de uma formiga) para mostrar o extremo isolamento do narrador. Essa solidão é tão profunda que ele se sente insensível até para tragédias cotidianas, como quando diz: “another kid is shot by the popo it ain't an event / No more” (mais uma criança é baleada pela polícia, isso já nem é mais um acontecimento).
+<br><br>
+A letra também serve como crítica à superficialidade e à falta de autenticidade na indústria musical. André 3000 revela sua decepção ao descobrir que muitos artistas não escrevem suas próprias letras, como mostra em “I was under the impression / That everyone wrote they own verses / It's comin' back different and yea that shit hurts me” (eu achava que todo mundo escrevia seus próprios versos / Está voltando diferente e, sim, isso me machuca). Ele ironiza o valor dado a marcas e símbolos de status, dizendo: “so hard to wear Polo / When I do I cut the pony off / Now there's a hole that once was a logo / How fitting” (é difícil usar Polo / Quando uso, corto o cavalinho / Agora tem um buraco onde antes era o logo / Que apropriado), mostrando que até os símbolos de prestígio perdem o sentido diante da solidão e da desilusão.
+<br><br>
+No final, a música é um desabafo sobre sentir-se isolado, frustrado e ingênuo, mesmo após anos de experiência. A solidão aqui é física, moral e artística, marcada pela frustração com a falta de verdade e pelo cansaço de tentar agradar um meio que valoriza mais a aparência do que a essência. A colaboração entre Frank Ocean e André 3000, já vista em “Pink Matter”, ganha um tom ainda mais pessoal, com André expondo suas vulnerabilidades e críticas de forma direta.
+
+
+</p></section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

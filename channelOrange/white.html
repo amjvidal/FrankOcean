@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa White"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">1:16</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/white.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">White</span> 
+  <span class="title-pt">Branco</span>
+</div>
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Could this be Earth? Could this be light?</p>
+      <p>Does this mean everything is going to be alright?</p>
+      <p>When I look out my window there's trees talking like people</p>
+    </div>
+
+    <div class="stanza">
+      <p>I've dreamt of storms, I've dreamt of sound</p>
+      <p>I've dreamt of gravity, keeping us around</p>
+      <p>I've slept in the darkness, it was lonely, and it was silent</p>
+    </div>
+
+    <div class="stanza">
+      <p>What is this love? I don't feel the same</p>
+      <p>Don't believe what this is, could be given a name</p>
+      <p>I woke, you were there, tracing planets on my forehead</p>
+    </div>
+
+    <div class="stanza">
+      <p>But I forget 23 like I forget 17</p>
+      <p>And I forget my first love, like you forget a daydream</p>
+      <p>And what of all my wild friends, and the times I've had with them</p>
+      <p>We'll all fade to grey soon, on the TV station</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Poderia ser a Terra? Poderia ser a luz?</p>
+      <p>Isso significa que tudo vai ficar bem?</p>
+      <p>Quando olho pela minha janela, há árvores conversando como pessoas</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu sonhei com tempestades, eu sonhei com o som</p>
+      <p>Eu sonhei com a gravidade, nos mantendo por aqui</p>
+      <p>Eu dormi na escuridão, era solitário, e era silencioso</p>
+    </div>
+
+    <div class="stanza">
+      <p>O que é esse amor? Eu não me sinto o mesmo</p>
+      <p>Não acredito que a isso possa ser dado um nome</p>
+      <p>Eu acordei, você estava lá, traçando planetas na minha testa</p>
+    </div>
+
+    <div class="stanza">
+      <p>Mas eu esqueço os 23 como eu esqueço os 17</p>
+      <p>E eu esqueço meu primeiro amor, como você esquece um devaneio</p>
+      <p>E quanto a todos os meus amigos loucos, e os momentos que tive com eles</p>
+      <p>Todos nós desapareceremos no cinza em breve, na estação de TV</p>
+    </div>
+
+  </div> </div> 
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+
+Em “White (feat. John Mayer)”, Frank Ocean cria uma atmosfera contemplativa e delicada, reforçada pela participação de John Mayer, que contribui com uma sonoridade etérea à faixa. A música se destaca no álbum “Channel Orange” por seu instrumental suave e letras introspectivas, abordando temas como a busca existencial e a passagem do tempo. Logo no início, Ocean questiona: “Could this be Earth? Could this be light?” (Isso poderia ser a Terra? Isso poderia ser luz?), expressando um sentimento de estranhamento diante da própria realidade, como se estivesse tentando se situar no mundo ou em um estado de consciência alterado. A imagem das “árvores falando como pessoas” intensifica essa sensação de maravilhamento e confusão, misturando elementos de sonho e vigília.
+<br><br>
+O verso “I've slept in the darkness, it was lonely, and it was silent” (Eu dormi na escuridão, era solitário e silencioso) revela uma experiência de isolamento, enquanto a dúvida sobre o amor – “What is this love? I don't feel the same” (O que é esse amor? Eu não sinto o mesmo) – sugere uma transformação interna ou desconexão emocional. A passagem “I woke, you were there, tracing planets on my forehead” (Acordei, você estava lá, desenhando planetas na minha testa) traz uma imagem de intimidade, mas logo é seguida por reflexões sobre o esquecimento do passado: “But I forget 23 like I forget 17 / And I forget my first love, like you forget a daydream” (Mas eu esqueço os 23 como esqueço os 17 / E esqueço meu primeiro amor, como você esquece um devaneio). Isso destaca a efemeridade das experiências e relações, reforçada pela imagem final de tudo “fade to grey soon, on the TV station” (desaparece para o cinza logo, no canal de TV), sugerindo que memórias e momentos acabam se tornando distantes, como cenas que somem da tela. Assim, a música explora a transitoriedade da vida, a busca por significado e a inevitável passagem do tempo, tudo envolto em uma atmosfera de contemplação proporcionada pela colaboração entre Frank Ocean e John Mayer.
+        
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

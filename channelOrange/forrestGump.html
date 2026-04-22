@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forrest Gump - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Forrest Gump"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">3:15</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/forrestGump.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Forrest Gump</span> 
+  <span class="title-pt">Forrest Gump</span>
+</div>
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>I wanna see your pom poms from the stands</p>
+      <p>Come on, come on!</p>
+      <p>My fingertips, and my lips, they burn</p>
+      <p>From the cigarettes</p>
+      <p>Forrest Gump, you run my mind, boy</p>
+      <p>Running on my mind, boy</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>I know you Forrest</p>
+      <p>I know you wouldn't hurt a beetle</p>
+      <p>But you're so buff, and so strong</p>
+      <p>I'm nervous Forrest</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>Now my fingertips, and my lips, they burn</p>
+      <p>From the cigarettes</p>
+      <p>Forrest Gump, you run my mind, boy</p>
+      <p>Running on my mind, boy</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>I saw ya game, Forrest</p>
+      <p>I was screamin' run 44</p>
+      <p>But you kept runnin' past the end zone</p>
+      <p>Oh where'd you go Forrest</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>And my fingertips, and my lips, they burn</p>
+      <p>From the cigarettes</p>
+      <p>Forrest Gump ,you run my mind, boy</p>
+      <p>Running on my mind, boy</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>Forrest green</p>
+      <p>Forrest blues</p>
+      <p>I re-mem-ber you</p>
+      <p>If this is love, I know it's true</p>
+      <p>I won't for-get you</p>
+    </div>
+
+    <div class="stanza">
+      <p>(Oh, you, you) it's for you Forrest</p>
+      <p>(Oh, you, you) it's for you Forrest</p>
+    </div>
+
+    <div class="stanza">
+      <p>If this is love</p>
+      <p>I know it's true</p>
+      <p>I won't</p>
+      <p>For-get-you</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Eu quero ver seus pom poms das arquibancadas</p>
+      <p>Vamos lá, vamos lá!</p>
+      <p>Meu dedos, e meus lábios, eles queimam</p>
+      <p>Dos cigarros</p>
+      <p>Forrest Gump, você corre pela minha cabeça, garoto</p>
+      <p>Percorrendo minha cabeça, garoto</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu te conheço, Forrest</p>
+      <p>Eu sei que você não machucaria nem um besouro</p>
+      <p>Mas você é tão musculoso e tão forte</p>
+      <p>Estou nervoso, Forrest</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>Meus dedos e meus lábios, eles queimam</p>
+      <p>Dos cigarros</p>
+      <p>Forrest Gump, você corre pela minha cabeça, garoto</p>
+      <p>Percorrendo minha cabeça, garoto</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu vi seu jogo, Forrest</p>
+      <p>Eu estava gritando: Corre 44!</p>
+      <p>Mas você você continuou correndo mesmo depois da linha de chegada</p>
+      <p>Oh, onde você foi, Forrest?</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>Meus dedos, e meus lábios, eles queimam</p>
+      <p>Dos cigarros</p>
+      <p>Forrest Gump, você corre pela minha cabeça, garoto</p>
+      <p>Percorrendo minha cabeça, garoto</p>
+      <p>Forrest Gump</p>
+    </div>
+
+    <div class="stanza">
+      <p>Forrest calouro</p>
+      <p>Blues do Forrest</p>
+      <p>Eu me lembro de você</p>
+      <p>Se isso é amor, eu sei que é verdadeiro</p>
+      <p>Eu não irei esquecer você</p>
+    </div>
+
+    <div class="stanza">
+      <p>(Oh, você, você) Isto é para você, Forrest</p>
+      <p>(Oh, você, você) Isto é para você, Forrest</p>
+    </div>
+
+    <div class="stanza">
+      <p>Se isso é amor</p>
+      <p>Eu sei que é verdadeiro</p>
+      <p>Eu não irei</p>
+      <p>Esquecer você</p>
+    </div>
+
+  </div> </div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em "Forrest Gump", Frank Ocean utiliza o personagem do filme como símbolo de pureza e inocência, projetando essas características na pessoa por quem sente afeto. Ao cantar “Forrest Gump, you run my mind, boy / Running on my mind, boy” (“Forrest Gump, você corre na minha mente, garoto / Correndo na minha mente, garoto”), Ocean transforma o ato de correr, tão marcante no filme, em metáfora para pensamentos constantes e um amor não correspondido. Isso cria uma atmosfera nostálgica e melancólica, reforçada ao longo da música.
+<br><br>
+O contexto da carta aberta em que Frank Ocean revelou seu primeiro amor por um homem aprofunda o significado da canção, tornando a letra uma confissão íntima. Versos como “I know you wouldn't hurt a beetle / But you're so buff, and so strong / I'm nervous Forrest” (“Eu sei que você não machucaria um besouro / Mas você é tão forte, tão musculoso / Eu fico nervoso, Forrest”) misturam admiração, desejo e insegurança. Imagens como “my fingertips, and my lips, they burn / From the cigarettes” (“meus dedos e meus lábios queimam / por causa dos cigarros”) sugerem ansiedade e saudade, enquanto a repetição de “I won't forget you” (“eu não vou te esquecer”) reforça o sentimento de perda e a tentativa de manter viva a lembrança desse amor. A menção ao número 44 e ao futebol americano conecta a música ao universo do filme, mas também simboliza a distância e a impossibilidade de alcançar o outro, já que Forrest segue correndo “past the end zone” (“além da linha de gol”). Assim, a faixa retrata de forma sensível um amor idealizado, marcado pela inocência, pela dor da ausência e pela aceitação da impossibilidade.
+
+        
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

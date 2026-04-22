@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nights - noites - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa nights - noites"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">5:07</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/nights.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">nights - noites</span> 
+</div>
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Round your city, round the clock</p>
+      <p>Everybody needs you</p>
+      <p>No, you can't make everybody equal</p>
+      <p>Although you got beaucoup family</p>
+      <p>You don't even got nobody bein' honest with you</p>
+      <p>Breathe till I evaporated</p>
+      <p>My whole body see-through</p>
+      <p>Transportation, handmade (G)</p>
+      <p>And I know it better than most people</p>
+      <p>I don't trust 'em anyways</p>
+      <p>You can't break the law with them</p>
+      <p>Get some gushy, have a calm night</p>
+      <p>Shooters killin' left and right</p>
+      <p>Workin' through your worst night</p>
+      <p>If I get my money right, you know I won't need you</p>
+    </div>
+
+    <div class="stanza">
+      <p>And I tell you (bitch)</p>
+      <p>I hope the sack is full up</p>
+      <p>I'm fuckin', no, I'm fucked up</p>
+      <p>Spend it when I get that</p>
+      <p>I ain't tryna keep you</p>
+      <p>Can't keep up a conversation, can't nobody reach you</p>
+      <p>Why your eyes well up?</p>
+      <p>Did you call me from a séance?</p>
+      <p>You are from my past life</p>
+      <p>Hope you're doin' well, bruh</p>
+      <p>I been out here head first</p>
+      <p>Always like the head first</p>
+      <p>Signal comin' in and out</p>
+      <p>Hope you're doin' well, bruh</p>
+      <p>Everybody needs you</p>
+      <p>Everybody needs you</p>
+      <p>Ooh, nani, nani</p>
+      <p>This feel like a Quaalude</p>
+      <p>No sleep in my body</p>
+      <p>Ain't no bitch in my body, ah</p>
+    </div>
+
+    <div class="stanza">
+      <p>New beginnings, ah</p>
+      <p>New beginnings, wake up, ah</p>
+      <p>The Sun's goin' down</p>
+      <p>Time to start your day, bruh</p>
+      <p>Can't keep bein' laid off</p>
+      <p>Know you need the money if you gon' survive</p>
+      <p>Every night shit, every day shit</p>
+    </div>
+
+    <div class="stanza">
+      <p>Droppin' baby off at home before my night shift</p>
+      <p>You know I can't hear none of that spend the night shit</p>
+      <p>That kumbaya shit</p>
+      <p>Wanna see nirvana, but don't wanna die yet</p>
+      <p>Wanna feel that nana though, could you come by?</p>
+      <p>Fuck with me after my shift</p>
+      <p>Know them boys wanna see me broke down and shit</p>
+      <p>Bummed out and shit, stressed out and shit</p>
+      <p>That's every day shit</p>
+      <p>Shut the fuck up, I don't want your conversation</p>
+      <p>Rollin' marijuana, that's a cheap vacation</p>
+      <p>My every day shit, every night shit, every day shit</p>
+      <p>(Every night shit, night shit, night shit, night shit)</p>
+    </div>
+
+    <div class="stanza">
+      <p>All my night</p>
+      <p>Been ready for you all my night</p>
+      <p>Been waitin' on you all my night</p>
+      <p>I'll buzz you in, just let me know when you're outside</p>
+    </div>
+
+    <div class="stanza">
+      <p>All my night</p>
+      <p>You been missin' all my night</p>
+      <p>Still got some good nights memorized</p>
+      <p>And the look back's gettin' me right</p>
+    </div>
+
+    <div class="stanza">
+      <p>Every night fucks every day up</p>
+      <p>Every day patches the night up</p>
+      <p>On God, you should match it, it's that KO (the KO)</p>
+      <p>No white lighters till I fuck my twenty-eighth up (fire)</p>
+      <p>1998, my family had that Acura (fire)</p>
+      <p>Oh, the Legend (fire)</p>
+      <p>Kept at least six discs in the changer (hell yeah)</p>
+      <p>Back when Boswell and Percy had it active (massive)</p>
+      <p>Couple bishops in the city buildin' mansions (massive)</p>
+      <p>All the reverends (massive, massive, ooh)</p>
+      <p>Preachin' self-made millionaire status</p>
+      <p>When we could only eat at Shoney's on occasion</p>
+      <p>After 'Trina hit, I had to transfer campus</p>
+      <p>Your apartment out in Houston's where I waited</p>
+      <p>Stayin' with you when I didn't have a address</p>
+      <p>Fuckin' on you when I didn't own a mattress</p>
+      <p>Workin' on a way to make it outta Texas every night</p>
+    </div>
+
+    <div class="stanza">
+      <p>Droppin' baby off at home before my night shift, yeah (yeah)</p>
+      <p>You know I can't hear none of that spend the night shit</p>
+      <p>That kumbaya shit</p>
+      <p>Want to see nirvana, but don't wanna die yet</p>
+      <p>Wanna feel that nana though, could you come by?</p>
+      <p>Fuck with me after my shift</p>
+      <p>Know them boys wanna see me broke down</p>
+      <p>See me bummed out, stressed out</p>
+      <p>That's just every day shit</p>
+      <p>Shut the fuck up, I don't want your conversation</p>
+      <p>Rollin' marijuana, that's a cheap vacation</p>
+    </div>
+
+    <div class="stanza">
+      <p>Every day (night) shit, every day (night) shit</p>
+      <p>Every night (day) shit, every day (night) shit</p>
+      <p>Every day (night) shit, every day (night) shit</p>
+      <p>Every day (night) shit, every night shit</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Na sua cidade, 24 horas por dia</p>
+      <p>Todo mundo precisa de você</p>
+      <p>Não, você não pode dizer que todo mundo é igual</p>
+      <p>Mesmo que tenha uma família bem grande</p>
+      <p>As pessoas nem sequer são honestas com você</p>
+      <p>Eu respiro até evaporar</p>
+      <p>Meu corpo inteiro é transparente</p>
+      <p>Meio de transporte, personalizado (G)</p>
+      <p>E sei que é melhor do que a maioria das pessoas</p>
+      <p>De qualquer forma, eu não confio nelas</p>
+      <p>Você não pode infringir a lei com elas</p>
+      <p>Nem pegar umas minas, ter uma noite tranquila</p>
+      <p>Os assassinos estão matando a torto e a direito</p>
+      <p>Trabalhando durante sua pior noite</p>
+      <p>Se eu conseguir fazer meu dinheiro, sabe que não vou precisar de você</p>
+    </div>
+
+    <div class="stanza">
+      <p>E eu te digo (vadia)</p>
+      <p>Espero que o saco esteja cheio</p>
+      <p>Tô brincando, não, tô fodido</p>
+      <p>Vou gastar quando tiver grana</p>
+      <p>Não tô tentando manter você na minha vida</p>
+      <p>Não consegue manter uma conversa, ninguém consegue falar com você</p>
+      <p>Por que seus olhos estão arregalados?</p>
+      <p>Você me ligou de uma sessão espírita?</p>
+      <p>Você faz parte da minha vida passada</p>
+      <p>Espero que esteja bem, mano</p>
+      <p>Eu tô por aqui de cabeça erguida</p>
+      <p>Sempre gostei de um aquecimento primeiro</p>
+      <p>O sinal às vezes tá forte e às vezes tá fraco</p>
+      <p>Espero que esteja bem, mano</p>
+      <p>Todo mundo precisa de você</p>
+      <p>Todo mundo precisa de você</p>
+      <p>Ooh, a bucetinha, a bucetinha</p>
+      <p>Ela parece um antidepressivo</p>
+      <p>Não consigo dormir</p>
+      <p>Não tem ninguém comigo, ah</p>
+    </div>
+
+    <div class="stanza">
+      <p>Novos começos, ah</p>
+      <p>Novos começos, acorde, ah</p>
+      <p>O Sol tá se pondo</p>
+      <p>É hora de começar seu dia, mano</p>
+      <p>Não pode continuar sendo demitido</p>
+      <p>Sabe que precisa da grana se vai sobreviver</p>
+      <p>Uma noite comum, um dia comum</p>
+    </div>
+
+    <div class="stanza">
+      <p>Deixando o bebê em casa antes do meu turno noturno</p>
+      <p>Você sabe que não consigo ouvir nada dessa porra sobre passar a noite</p>
+      <p>Dessa porra de kumbayá</p>
+      <p>Quero ver o nirvana, mas ainda não quero morrer</p>
+      <p>Mas ainda quero sentir essa bucetinha, você pode vir até aqui?</p>
+      <p>Transar comigo depois do meu turno</p>
+      <p>Sei que aqueles garotos querem me ver pobre e tal</p>
+      <p>Na pior e tal, estressado e tal</p>
+      <p>Só mais um dia comum</p>
+      <p>Cala a porra da boca, não quero conversar com você</p>
+      <p>Bolando o baseado, é igual férias, só que mais barato</p>
+      <p>Meu dia comum, minha noite comum, dia comum</p>
+      <p>(Noite comum, noite comum, noite comum, noite comum)</p>
+    </div>
+
+    <div class="stanza">
+      <p>Minha noite inteira</p>
+      <p>Tô pronto pra você a minha noite inteira</p>
+      <p>Tô esperando por você a minha noite inteira</p>
+      <p>Vou te ligar, só me avise quando tiver lá fora</p>
+    </div>
+
+    <div class="stanza">
+      <p>Minha noite inteira</p>
+      <p>Você perdeu a minha noite inteira</p>
+      <p>Ainda lembro de algumas noites legais</p>
+      <p>E as retrospectivas fazem eu me sentir bem</p>
+    </div>
+
+    <div class="stanza">
+      <p>Toda noite destrói todo o dia</p>
+      <p>Todo dia conserta toda a noite</p>
+      <p>Juro por Deus, você deveria tentar, acende pra mim (acende)</p>
+      <p>Sem isqueiros brancos até eu atingir os vinte e oito (foda)</p>
+      <p>1998, minha família tinha aquele modelo Acura (foda)</p>
+      <p>Oh, o Legend (foda)</p>
+      <p>Guardava pelo menos seis CDs no toca-discos</p>
+      <p>Quando o Boswell e o Percy ainda faziam sucesso (muito sucesso)</p>
+      <p>Alguns bispos na cidade construíam mansões (muito grandes)</p>
+      <p>Todos os reverendos (muito sucesso, muito sucesso, ooh)</p>
+      <p>Dizendo que tinham se tornado milionários por meios próprios</p>
+      <p>Quando a gente só podia comer no Shoney's de vez em quando</p>
+      <p>Depois do furacão Katrina, eu tive que me mudar pro campus</p>
+      <p>Seu apartamento em Houston era onde eu esperava</p>
+      <p>Fiquei com você quando eu não tinha um endereço</p>
+      <p>Transei com você quando eu não tinha nem um colchão</p>
+      <p>Toda noite trabalhava e pensava num jeito de sair do Texas</p>
+    </div>
+
+    <div class="stanza">
+      <p>Deixando o bebê em casa antes do meu turno noturno, sim (sim)</p>
+      <p>Você sabe que não consigo ouvir nada dessa porra sobre passar a noite</p>
+      <p>Dessa porra de kumbayá</p>
+      <p>Quero ver o nirvana, mas ainda não quero morrer</p>
+      <p>Mas ainda quero sentir essa bucetinha, você pode vir até aqui?</p>
+      <p>Transar comigo depois do meu turno</p>
+      <p>Sei que aqueles garotos querem me ver pobre e tal</p>
+      <p>Me ver no fundo do poço, estressado</p>
+      <p>Só mais um dia comum</p>
+      <p>Cala a porra da boca, não quero conversar com você</p>
+      <p>Bolando o baseado, é igual férias, só que mais barato</p>
+    </div>
+
+    <div class="stanza">
+      <p>Um dia (noite) comum, um dia (noite) comum</p>
+      <p>Uma noite (dia) comum, um dia (noite) comum</p>
+      <p>Um dia (noite) comum, um dia (noite) comum</p>
+      <p>Uma noite (dia) comum, um dia comum</p>
+    </div>
+
+  </div> </div>
+
+</div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>A música "Nights", de Frank Ocean, utiliza uma transição marcante no meio da faixa para simbolizar uma virada importante na vida do artista. Essa mudança musical reflete a passagem de Ocean por momentos turbulentos para uma fase de autodescoberta e reconstrução. O contraste entre a primeira parte, mais agitada, e a segunda, mais introspectiva, reforça a dualidade entre passado e presente, dia e noite, que está presente em toda a canção.
+<br><br>
+A letra aborda a luta de Frank Ocean por independência e estabilidade após o furacão Katrina, que o forçou a deixar Nova Orleans e recomeçar em Houston. Trechos como “After 'Trina hit, I had to transfer campus / Your apartment out in Houston's where I waited” (Depois que o Katrina atingiu, tive que mudar de campus / Seu apartamento em Houston foi onde esperei) mostram claramente sua experiência de deslocamento e adaptação. O cotidiano difícil, marcado por turnos noturnos e a necessidade constante de dinheiro – “Know you need the money if you gon' survive / Every night shit, every day shit” (Você sabe que precisa de dinheiro se quiser sobreviver / Toda noite essa rotina, todo dia essa rotina) – revela a pressão de sobreviver longe de casa e a dificuldade de manter relações verdadeiras. A repetição de “every night shit, every day shit” reforça a sensação de um ciclo sem fim, onde noites e dias se misturam, e a busca por alívio nunca é suficiente para preencher o vazio.
+<br><br>
+Além disso, Ocean expressa nostalgia e saudade de tempos mais simples, lembrando do carro da família e dos encontros com amigos e parentes. "Nights" se transforma, assim, em um retrato honesto da tentativa de encontrar sentido e pertencimento em meio ao caos, equilibrando vulnerabilidade e resiliência. A estrutura dividida da música, elogiada pela crítica, espelha essa jornada emocional, tornando "Nights" uma das composições mais marcantes de Frank Ocean.</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

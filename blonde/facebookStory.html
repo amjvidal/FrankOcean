@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>facebook story - história de facebook - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa facebook story - história de facebook"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">1:09</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/facebookStory.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">facebook story - história de facebook</span> 
+</div>
+ 
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>I was just telling that I got this girl before</p>
+      <p>And I was together since 3 years</p>
+      <p>And em, I was not even cheating on her or what</p>
+      <p>And Facebook arrived</p>
+    </div>
+
+    <div class="stanza">
+      <p>And she wanted me to accept her on Facebook</p>
+      <p>And I don't want it because I was like in front of her</p>
+      <p>And she told me like: accept me on Facebook</p>
+      <p>It was virtual, made no sense</p>
+    </div>
+
+    <div class="stanza">
+      <p>So I say I'm in front of you</p>
+      <p>I don't need to accept you on Facebook</p>
+      <p>She started to be crazy</p>
+      <p>She thoughts that because I didn't accept her</p>
+      <p>She thought I was cheating</p>
+    </div>
+
+    <div class="stanza">
+      <p>She told me like, uh, it's over</p>
+      <p>And I can't believe it</p>
+      <p>It is crazy because I like her</p>
+    </div>
+
+    <div class="stanza">
+      <p>I'm in front of you, I'm every day</p>
+      <p>Here in your house</p>
+      <p>That's like jealousy</p>
+      <p>Pure jealousy for nothing</p>
+      <p>You know</p>
+      <p>Virtual thing</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Eu estava contando que eu estava com essa garota</p>
+      <p>Estávamos juntos fazia 3 anos</p>
+      <p>E eu nem estava traindo ela ou algo assim</p>
+      <p>E o Facebook chegou</p>
+    </div>
+
+    <div class="stanza">
+      <p>E ela queria que eu a aceitasse no Facebook</p>
+      <p>E eu não queria, porque estava na frente dela</p>
+      <p>E ela me disse assim: Me aceite no Facebook!</p>
+      <p>Era virtual, não fazia sentido</p>
+    </div>
+
+    <div class="stanza">
+      <p>Então eu disse: Eu estou na sua frente</p>
+      <p>Eu não preciso aceitá-la no Facebook</p>
+      <p>Ela começou a ficar louca</p>
+      <p>Ela pensou no porque de eu não aceitar ela</p>
+      <p>Ela pensou que eu estava a traindo</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ela me disse tipo: Uh, acabou</p>
+      <p>E eu não podia acreditar</p>
+      <p>É loucura, porque eu gostava dela</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu estou na sua frente, estou todos os dias</p>
+      <p>Aqui na sua casa</p>
+      <p>Isso é o ciúme</p>
+      <p>Puro ciúme, por nada</p>
+      <p>Você sabe</p>
+      <p>Coisa virtual</p>
+    </div>
+
+  </div> </div>
+
+
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+
+Em "Facebook Story", Frank Ocean utiliza o relato real do produtor SebastiAn para mostrar como atitudes simples no ambiente digital podem gerar grandes consequências na vida real. O término do relacionamento, motivado apenas pela recusa de aceitar a parceira no Facebook, evidencia como a fronteira entre o virtual e o presencial ficou cada vez mais tênue. O episódio revela que a confiança pode ser abalada por gestos aparentemente pequenos nas redes sociais, mostrando o peso que a validação online ganhou nas relações pessoais.
+<br><br>
+A narração casual de SebastiAn, especialmente quando diz “I'm in front of you, I'm every day here in your house” ("Estou na sua frente, estou aqui todos os dias na sua casa"), ressalta a ironia de ser acusado de traição mesmo estando presente fisicamente. Isso expõe como o ciúme e a insegurança podem ser alimentados por expectativas criadas nas plataformas digitais. Ao incluir essa história no álbum, Frank Ocean propõe uma reflexão sobre como as relações modernas são afetadas por ansiedades e cobranças do universo virtual, tornando o interlúdio um comentário direto sobre a fragilidade dos laços humanos na era das redes sociais.       
+
+</p></section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

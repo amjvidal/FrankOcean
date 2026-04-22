@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Life - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Sweet Life"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">4:23</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/sweetLife.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Sweet Life</span> 
+  <span class="title-pt">Doce Vida</span>
+</div>
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>The best song wasn't the single, but you weren't either</p>
+      <p>Livin' in Ladera Heights, the black Beverly Hills</p>
+      <p>Domesticated paradise, palm trees and pools</p>
+      <p>The water's blue, swallow the pill</p>
+    </div>
+
+    <div class="stanza">
+      <p>Keepin' it surreal, whatever you like</p>
+      <p>Whatever feels good, whatever takes you mountain high</p>
+      <p>Keepin' it surreal, not sugar-free</p>
+      <p>My TV ain't HD, that's too real</p>
+    </div>
+
+    <div class="stanza">
+      <p>Grapevine, mango, peaches, and limes, the sweet life</p>
+      <p>The sweet life, sweet life</p>
+      <p>Sweet life, sweet life</p>
+      <p>The sweet, sweet, sweet, sweet life</p>
+      <p>Sweet life, the sweet life</p>
+      <p>Sweetie pie</p>
+    </div>
+
+    <div class="stanza">
+      <p>You've had a landscaper and a house keeper since you were born</p>
+      <p>The sunshine always kept you warm</p>
+      <p>So why see the world, when you got the beach</p>
+      <p>Don't know why see the world, when you got the beach</p>
+      <p>The sweet life</p>
+    </div>
+
+    <div class="stanza">
+      <p>The best song wasn't the single, but you couldn't turn your radio down</p>
+      <p>Satellite need a receiver, can't seem to turn the signal fully off</p>
+      <p>Transmitting the waves</p>
+      <p>You're catching that breeze 'til you're dead in the grave</p>
+    </div>
+
+    <div class="stanza">
+      <p>But you're keepin' it surreal, whatever you like</p>
+      <p>Whatever feels good, whatever takes you mountain high</p>
+      <p>Keepin' it surreal, not sugar-free, my tv ain't HD, that's too real</p>
+    </div>
+
+    <div class="stanza">
+      <p>Grapevines, mango, peaches, and lime, a sweet life</p>
+      <p>A sweet life</p>
+      <p>A sweet life, yeah</p>
+      <p>A sweet life, a sweet life</p>
+      <p>A sweet life</p>
+      <p>Live and die in the life</p>
+    </div>
+
+    <div class="stanza">
+      <p>You've had a landscaper and a house keeper since you were born, yeah</p>
+      <p>The sunshine always kept you warm</p>
+      <p>So why see the world, when you got the beach</p>
+      <p>Don't know why see the world, when you got the beach</p>
+    </div>
+
+    <div class="stanza">
+      <p>And the water, is exactly what I wanted</p>
+      <p>It's everything I thought it would be (Thought it would be)</p>
+      <p>But this neighborhood is gettin' trippier every day</p>
+      <p>The neighborhood is goin' ape shit crazy</p>
+    </div>
+
+    <div class="stanza">
+      <p>You've had a landscaper and a house keeper since you were born</p>
+      <p>The starshine always kept you warm</p>
+      <p>So why see the world, when you got the beach</p>
+      <p>Don't know why see the world, when you got the beach</p>
+      <p>The sweet life</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>A melhor canção não era o single, mas você não era também</p>
+      <p>Vivendo em Ladera Heights, a Beverly Hills negra</p>
+      <p>Paraíso domesticado, palmeiras e piscinas</p>
+      <p>A água é azul, engula a pílula</p>
+    </div>
+
+    <div class="stanza">
+      <p>Mantendo o surreal, o que quer que você goste</p>
+      <p>O que quer seja bom pra você, o que quer que te leve ao alto da montanha</p>
+      <p>Mantendo o surreal, nada de sem-açúcar</p>
+      <p>Minha TV não é HD, isto é real demais</p>
+    </div>
+
+    <div class="stanza">
+      <p>Parreira, manga, pêssegos e limões, a doce vida</p>
+      <p>A doce vida, doce vida</p>
+      <p>Doce vida, doce vida</p>
+      <p>A doce, doce, doce, doce vida</p>
+      <p>Doce vida, doce vida</p>
+      <p>Benzinho</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você tem um paisagista e uma governanta desde que você nasceu</p>
+      <p>A luz do sol sempre te manteve aquecido</p>
+      <p>Então, por que ver o mundo, quando você tem a praia?</p>
+      <p>Não sei o porquê de ver o mundo, quando você tem a praia</p>
+      <p>A doce vida</p>
+    </div>
+
+    <div class="stanza">
+      <p>A melhor canção não era o single, mas você não poderia desligar o rádio</p>
+      <p>O satélite precisa de um receptor, parece que o sinal não desliga totalmente</p>
+      <p>Transmitindo as ondas</p>
+      <p>Você está pegando a brisa até que esteja morto na sepultura</p>
+    </div>
+
+    <div class="stanza">
+      <p>Mantendo o surreal, o que quer que você goste</p>
+      <p>O que quer seja bom, o que quer que te leve ao alto da montanha</p>
+      <p>Mantendo o surreal, nada de "sem-açúcar", minha TV não é HD, isto é real demais</p>
+    </div>
+
+    <div class="stanza">
+      <p>Parreira, manga, pêssegos e limões, a doce vida</p>
+      <p>Uma doce vida</p>
+      <p>Uma doce vida, é</p>
+      <p>Uma doce vida, uma doce vida</p>
+      <p>Uma doce vida</p>
+      <p>Viva e morra na vida</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você tem um paisagista e uma governanta desde que você nasceu, é</p>
+      <p>A luz do sol sempre te manteve aquecido</p>
+      <p>Então, por que ver o mundo, quando você tem a praia?</p>
+      <p>Não sei o porquê de ver o mundo, quando você tem a praia</p>
+    </div>
+
+    <div class="stanza">
+      <p>E a água é exatamente o que eu queria</p>
+      <p>É tudo que eu imaginei que seria (imaginei que seria)</p>
+      <p>Mas esse bairro está ficando mais violento a cada dia</p>
+      <p>O bairro vai enlouquecer</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você tem um paisagista e uma governanta desde que você nasceu</p>
+      <p>A luz das estrelas sempre te manteve aquecido</p>
+      <p>Então, por que ver o mundo, quando você tem a praia?</p>
+      <p>Não sei o porquê de ver o mundo, quando você tem a praia</p>
+      <p>A doce vida</p>
+    </div>
+
+  </div> </div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em “Sweet Life”, Frank Ocean utiliza uma atmosfera relaxada e um tom irônico para abordar a alienação e o vazio emocional presentes em uma vida de privilégios. Ao mencionar Ladera Heights como “the black Beverly Hills” (“o Beverly Hills negro”) e descrever um “paraíso domesticado” com “palmeiras e piscinas”, Ocean destaca o contraste entre o conforto material e a ausência de experiências autênticas. A repetição de frases como “you’ve had a landscaper and a house keeper since you were born” (“você teve um jardineiro e uma empregada desde que nasceu”) reforça a ideia de uma existência protegida, onde tudo é facilitado, mas que limita a visão de mundo e a profundidade das relações pessoais.
+<br><br>
+A ironia fica evidente quando Ocean questiona: “So why see the world, when you got the beach” (“então por que ver o mundo, se você tem a praia”). Ele sugere que o acesso constante ao luxo pode criar uma bolha, tornando desnecessário buscar algo além do próprio conforto. O verso “my TV ain’t HD, that’s too real” (“minha TV não é HD, isso é real demais”) brinca com a ideia de evitar a realidade crua em favor de uma versão filtrada da vida. Imagens como “grapevine, mango, peaches, and limes” (“videira, manga, pêssegos e limas”) reforçam o tema do hedonismo e da doçura superficial. A produção musical, inspirada no soul dos anos 70, cria um clima nostálgico que contrasta com a crítica à superficialidade, tornando “Sweet Life” um retrato sutil, porém incisivo, da alienação por trás de uma vida aparentemente perfeita.
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ivy - ivy - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa ivy - ivy"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">4:09</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/ivy.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">ivy - ivy</span> 
+</div>
+
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>I thought that I was dreamin' when you said you love me</p>
+      <p>The start of nothin'</p>
+      <p>I had no chance to prepare, I couldn't see you comin'</p>
+      <p>The start of nothin'</p>
+      <p>Ooh, I could hate you now</p>
+      <p>It's quite alright to hate me now</p>
+      <p>When we both know that deep down</p>
+      <p>The feeling still deep down is good</p>
+    </div>
+
+    <div class="stanza">
+      <p>If I could see through walls, I could see you're faking</p>
+      <p>If you could see my thoughts, you would see our faces</p>
+      <p>Safe in my rental like an armored truck back then</p>
+      <p>We didn't give a fuck back then</p>
+    </div>
+
+    <div class="stanza">
+      <p>I ain't a kid no more</p>
+      <p>We'll never be those kids again</p>
+      <p>We'd drive to Syd's</p>
+      <p>Had the X6 back then, back then</p>
+      <p>No matter what I did, my waves wouldn't dip back then</p>
+      <p>Everything sucked back then, we were friends</p>
+    </div>
+
+    <div class="stanza">
+      <p>I thought that I was dreamin' when you said you love me</p>
+      <p>The start of nothin'</p>
+      <p>I had no chance to prepare, I couldn't see you comin'</p>
+      <p>The start of nothin'</p>
+      <p>Ooh, I could hate you now</p>
+      <p>It's quite alright to hate me now</p>
+      <p>But we both know that deep down</p>
+      <p>The feeling still deep down is good</p>
+    </div>
+
+    <div class="stanza">
+      <p>In the halls of your hotel</p>
+      <p>Arm around my shoulder so I could tell</p>
+      <p>How much I meant to you, meant it sincere back then</p>
+      <p>We had time to kill back then</p>
+    </div>
+
+    <div class="stanza">
+      <p>You ain't a kid no more</p>
+      <p>We'll never be those kids again</p>
+      <p>It's not the same</p>
+      <p>Ivory's illegal</p>
+      <p>Don't you remember?</p>
+    </div>
+
+    <div class="stanza">
+      <p>I broke your heart last week</p>
+      <p>You'll probably feel better by the weekend</p>
+      <p>Still remember, had you goin' crazy</p>
+      <p>Screamin' my name, the feeling deep down is good</p>
+    </div>
+
+    <div class="stanza">
+      <p>I thought that I was dreamin' when you said you love me</p>
+      <p>The start of nothin'</p>
+      <p>Had no chance to prepare, couldn't see you comin'</p>
+      <p>And we started from nothin'</p>
+      <p>Ooh, I could hate you now</p>
+      <p>It's alright to hate me now</p>
+      <p>We both know that deep down</p>
+      <p>The feeling still deep down is good</p>
+    </div>
+
+    <div class="stanza">
+      <p>All the things I didn't mean to say</p>
+      <p>I didn't mean to do</p>
+      <p>There were things you didn't need to say</p>
+      <p>Did you mean to?</p>
+      <p>Mean to?</p>
+    </div>
+
+    <div class="stanza">
+      <p>I've been dreamin' of you</p>
+      <p>Dreamin' of you</p>
+      <p>I've been dreamin' of you</p>
+      <p>Dreamin' of you</p>
+      <p>I've been dreamin'</p>
+      <p>Dreamin'</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Eu pensei que estava sonhando quando você disse que me amava</p>
+      <p>O começo de nada</p>
+      <p>Eu não tive chance pra me preparar, não consegui ver você chegando</p>
+      <p>O começo de nada</p>
+      <p>Ooh, eu poderia te odiar agora</p>
+      <p>Não tem problema me odiar agora</p>
+      <p>Quando nós dois sabemos que lá no fundo</p>
+      <p>Lá no fundo o sentimento ainda é bom</p>
+    </div>
+
+    <div class="stanza">
+      <p>Se eu pudesse ver através das paredes, veria que você estava fingindo</p>
+      <p>Se você pudesse ver através dos meus pensamentos, veria os nossos rostos</p>
+      <p>Seguros de todas as mágoas, blindados como um tanque naquela época</p>
+      <p>Não ligávamos pra nada naquela época</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu não sou mais uma criança</p>
+      <p>Nós nunca vamos ser aquelas crianças de novo</p>
+      <p>Nós dirigíamos até a casa do Syd</p>
+      <p>Nós tínhamos um X6 naquela época, naquela época</p>
+      <p>Não importava o que eu fazia, as ondinhas do meu cabelo nunca ficavam certinhas</p>
+      <p>Tudo era uma merda naquela época, nós éramos amigos</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu pensei que estava sonhando quando você disse que me amava</p>
+      <p>O começo de nada</p>
+      <p>Eu não tive chance pra me preparar, não consegui ver você chegando</p>
+      <p>O começo de nada</p>
+      <p>Ooh, eu poderia te odiar agora</p>
+      <p>Não tem problema me odiar agora</p>
+      <p>Mas nós dois sabemos que lá no fundo</p>
+      <p>Lá no fundo o sentimento ainda é bom</p>
+    </div>
+
+    <div class="stanza">
+      <p>Nos corredores do seu hotel</p>
+      <p>Um braço por cima do meu ombro, por isso eu conseguia perceber</p>
+      <p>O quanto eu significava pra você, você era sincero naquela época</p>
+      <p>Nós tínhamos tempo pra desperdiçar naquela época</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você não é mais uma criança</p>
+      <p>Nós nunca mais vamos ser aquelas crianças</p>
+      <p>Não é a mesma coisa</p>
+      <p>O marfim é ilegal</p>
+      <p>Não lembra?</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu parti seu coração na semana passada</p>
+      <p>Você provavelmente vai se sentir melhor no fim de semana</p>
+      <p>Ainda me lembro, você ficou louco</p>
+      <p>Gritando meu nome, lá no fundo o sentimento ainda é bom</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu pensei que estava sonhando quando você disse que me amava</p>
+      <p>O começo de nada</p>
+      <p>Não tive chance pra me preparar, não consegui ver você chegando</p>
+      <p>E começamos do zero</p>
+      <p>Ooh, eu poderia te odiar agora</p>
+      <p>Não tem problema me odiar agora</p>
+      <p>Nós dois sabemos que lá no fundo</p>
+      <p>Lá no fundo o sentimento ainda é bom</p>
+    </div>
+
+    <div class="stanza">
+      <p>Todas as coisas que eu não tive a intenção de dizer</p>
+      <p>Eu não tive a intenção de fazer</p>
+      <p>Havia coisas que você não precisava dizer</p>
+      <p>Você teve a intenção?</p>
+      <p>Teve a intenção?</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu estive sonhando com você</p>
+      <p>Sonhando com você</p>
+      <p>Eu estive sonhando com você</p>
+      <p>Sonhando com você</p>
+      <p>Eu estive sonhando com você</p>
+      <p>Sonhando</p>
+    </div>
+
+  </div> </div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>O título "Ivy" traz um simbolismo importante para a música de Frank Ocean. A hera, planta que pode ser bonita, mas também sufocante, representa a dualidade do relacionamento retratado: envolvente e, ao mesmo tempo, potencialmente tóxico. Além disso, há uma possível referência à palavra "Ivory" (marfim), gíria para cocaína, sugerindo o lado viciante e destrutivo desse vínculo. Essa ambiguidade aparece em versos como “Ooh, I could hate you now / It's quite alright to hate me now / When we both know that deep down / The feeling still deep down is good” (“Eu poderia te odiar agora / Tudo bem me odiar agora / Quando nós dois sabemos que, lá no fundo / O sentimento ainda, lá no fundo, é bom”), mostrando como mágoa e carinho podem coexistir, mesmo após o fim do relacionamento.
+<br><br>
+Frank Ocean reforça o tom nostálgico ao alterar sua voz para soar mais jovem em alguns trechos, transmitindo a vulnerabilidade e a intensidade do amor na juventude. A frase “We'll never be those kids again” (“Nunca mais seremos aquelas crianças”) destaca a perda da inocência e o amadurecimento forçado pelas experiências dolorosas. Lembranças de momentos simples, como dirigir até a casa de amigos, contrastam com a consciência de que o tempo não volta e que a relação mudou para sempre. O trecho “All the things I didn't mean to say / I didn't mean to do / There were things you didn't need to say / Did you mean to?” (“Todas as coisas que eu não queria dizer / Eu não queria fazer / Houve coisas que você não precisava dizer / Você queria dizer?”) revela arrependimento e a dificuldade de lidar com palavras e atitudes que machucaram, mas que fazem parte do crescimento.
+<br><br>
+No fim, "Ivy" se destaca como uma reflexão sobre amor, amadurecimento e aceitação das imperfeições humanas. Frank Ocean transforma memórias dolorosas em arte, mostrando que, apesar das mágoas, o sentimento bom permanece. A canção convida o ouvinte a revisitar suas próprias lembranças de juventude, reconhecendo tanto a beleza quanto a dor que moldam quem somos.</p></section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

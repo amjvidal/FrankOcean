@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monks - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Monks"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">3:20</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/monks.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Monks</span> 
+  <span class="title-pt">Monges</span>
+</div>
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Mosh pits & bare chest</p>
+      <p>Stage diving sky diver</p>
+      <p>Spray the crowd with cold water</p>
+      <p>Now its mosh pits & wet tits</p>
+      <p>I think I need a cold shower</p>
+      <p>Cool waters</p>
+    </div>
+
+    <div class="stanza">
+      <p>African girl speaks in english accent</p>
+      <p>Likes to fuck boys in bands</p>
+      <p>Likes to watch westerns</p>
+      <p>And ride me without the hands</p>
+      <p>Show me her passport</p>
+      <p>She’s on her own tour</p>
+    </div>
+
+    <div class="stanza">
+      <p>But youre beautiful to me</p>
+      <p>Wave em high girl to the sky</p>
+      <p>But you’re beautiful to me</p>
+      <p>(we’re in the clouds)</p>
+      <p>Wave em high girl to the sky</p>
+      <p>But you’re beautiful to me</p>
+      <p>(life in the clouds)</p>
+      <p>Keep em high ya’ll</p>
+      <p>(beautiful stars)</p>
+      <p>In the sky</p>
+    </div>
+
+    <div class="stanza">
+      <p>Monks in the mosh pit</p>
+      <p>Stage diving Dalai Lama</p>
+      <p>Feet covered in cut flowers</p>
+      <p>They mosh for enlightenment</p>
+      <p>Clean chakra good karma</p>
+      <p>One with the water</p>
+    </div>
+
+    <div class="stanza">
+      <p>Indian girl sleeps above the temple</p>
+      <p>Planning a run away young at heart</p>
+      <p>You found a boyfriend</p>
+      <p>And now you wanna get away</p>
+      <p>Just a virgin lover on a getaway</p>
+      <p>And at sunset they’re gonna try & get away</p>
+      <p>Abhaya Mudra</p>
+    </div>
+
+    <div class="stanza">
+      <p>I never ask for much</p>
+      <p>But please keep up lover</p>
+      <p>We’ve got no choices left</p>
+      <p>The running’s fast</p>
+    </div>
+
+    <div class="stanza">
+      <p>Run run run run</p>
+      <p>You’re beautiful to me</p>
+      <p>Run run run run you’d better run</p>
+      <p>You mean so much to me</p>
+      <p>In my world</p>
+    </div>
+
+    <div class="stanza">
+      <p>We made it safely</p>
+      <p>Even with your father’s army trailing us</p>
+      <p>We escaped him</p>
+      <p>Even with his archer’s bows at our backs</p>
+      <p>What a great escape</p>
+      <p>But theres a long way still in fact</p>
+    </div>
+
+    <div class="stanza">
+      <p>We’re lost in a jungle underneath these clouds</p>
+      <p>There’s a monsoon that never ends</p>
+      <p>A coke white tiger woke us from our slumber</p>
+      <p>To guide & protect us til the end</p>
+      <p>We’re in the clouds</p>
+    </div>
+
+    <div class="stanza">
+      <p>Wave em high now to the sky</p>
+      <p>But you’re beautiful to me</p>
+      <p>Keep em high ya’ll show you right</p>
+      <p>But you’re beautiful to me</p>
+      <p>Beautiful</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Roda-punk e peito nu</p>
+      <p>Mergulhe o paraquedista no palco</p>
+      <p>Pulverizar a multidão com água fria</p>
+      <p>Agora é roda-punk e peitos molhados</p>
+      <p>Acho que preciso de um banho frio</p>
+      <p>Águas frias</p>
+    </div>
+
+    <div class="stanza">
+      <p>Africano menina fala em sotaque inglês</p>
+      <p>Gosta de foder com garotos que estão em bandas</p>
+      <p>Gosta de assistir a filmes de faroeste</p>
+      <p>E montar em mim sem as mãos</p>
+      <p>Mostre-me o passaporte dela</p>
+      <p>Ela está em sua própria turnê</p>
+    </div>
+
+    <div class="stanza">
+      <p>Mas você é linda para mim</p>
+      <p>Acene para a garota chapada até o céu</p>
+      <p>Mas você é linda para mim</p>
+      <p>(Estamos nas nuvens)</p>
+      <p>Acene para a garota chapada até o céu</p>
+      <p>Mas você é linda para mim</p>
+      <p>(A vida nas nuvens)</p>
+      <p>Mantenha o aceno alto, pessoal</p>
+      <p>(Belas estrelas)</p>
+      <p>No céu</p>
+    </div>
+
+    <div class="stanza">
+      <p>Monges na roda-punk</p>
+      <p>Mergulhe Dalai Lama no palco</p>
+      <p>Pés cobertos de flores cortadas</p>
+      <p>Eles fazem roda-punk para a iluminação</p>
+      <p>Limpe chakra bom karma</p>
+      <p>Um com a água</p>
+    </div>
+
+    <div class="stanza">
+      <p>Menina indiana dorme acima do templo</p>
+      <p>Planejando fugir jovens no coração</p>
+      <p>Você encontrou um namorado</p>
+      <p>E agora você quer fugir</p>
+      <p>Apenas um amante virgem em uma fuga</p>
+      <p>E ao pôr do Sol eles vão tentar e ficar longe</p>
+      <p>Abhaya Mudra</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu nunca pedir muito</p>
+      <p>Mas por favor, mantenha-se amante</p>
+      <p>Nós não temos escolhas a deixar</p>
+      <p>A corrida rápida</p>
+    </div>
+
+    <div class="stanza">
+      <p>Corra corra corra corra</p>
+      <p>Você é linda para mim</p>
+      <p>Run Run run run é melhor você correr</p>
+      <p>Você significa muito para mim</p>
+      <p>No meu mundo</p>
+    </div>
+
+    <div class="stanza">
+      <p>Nós fizemos isso com segurança</p>
+      <p>Mesmo com o exército de seu pai à direita nos</p>
+      <p>Nós escapamos dele</p>
+      <p>Mesmo com seus arcos mirados em nossas costas</p>
+      <p>O que é uma grande fuga</p>
+      <p>Mas há um longo caminho ainda de fato</p>
+    </div>
+
+    <div class="stanza">
+      <p>Estamos perdidos em uma selva debaixo dessas nuvens</p>
+      <p>Há uma monção que nunca acaba</p>
+      <p>Um tigre branco nos acordou do nosso sono</p>
+      <p>Para guiar e proteger-nos até o fim</p>
+      <p>Estamos nas nuvens</p>
+    </div>
+
+    <div class="stanza">
+      <p>Acene alto agora para o céu</p>
+      <p>Mas você é linda para mim</p>
+      <p>Mantenha o aceno alto, pessoal, mostre direito</p>
+      <p>Mas você é linda para mim</p>
+      <p>Belo</p>
+    </div>
+
+  </div> </div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em “Monks”, Frank Ocean explora o contraste entre o caos da juventude e a busca por transcendência espiritual. Ele descreve cenas de shows intensos, com “mosh pits” e “stage diving”, e insere figuras inesperadas como o Dalai Lama nesse ambiente. No verso “Monks in the mosh pit / Stage diving Dalai Lama / Feet covered in cut flowers” (“Monges no mosh pit / Dalai Lama pulando do palco / Pés cobertos de flores cortadas”), Ocean sugere que é possível buscar iluminação e paz mesmo em meio à desordem e à excitação da vida moderna. Essa fusão de espiritualidade e rebeldia mostra que o significado pode ser encontrado nos lugares mais improváveis.
+<br><br>
+A letra também fala sobre relacionamentos passageiros e o desejo de fuga, como nas menções à “African girl” e à “Indian girl”, que representam experiências intensas, mas breves, durante a vida na estrada. O trecho “You found a boyfriend / And now you wanna get away / Just a virgin lover on a getaway” (“Você encontrou um namorado / E agora quer fugir / Apenas um amante virgem em uma fuga”) mostra a vontade de escapar das expectativas e das amarras. O refrão “But you’re beautiful to me” (“Mas você é linda para mim”) traz um tom de admiração, mesmo diante da instabilidade. Imagens como “clouds”, “monsoon” e “coke white tiger” criam uma atmosfera sonhadora e surreal, refletindo a sensação de estar perdido, mas protegido, durante a jornada de autodescoberta. “Monks” se destaca por equilibrar desejo, espiritualidade e a busca por pertencimento.
+
+        
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

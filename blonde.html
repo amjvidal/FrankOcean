@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blonde — Frank Ocean</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('home.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('home.html');}">VOLTAR</span>
+
+<div class="album-head">
+  <div class="cover"><img src="imagens/blonde.png" alt="Blonde"></div>
+  <div class="info">
+    <div class="album-name"><em>blonde</em></div>
+    <p class="desc">Lançado em 2016 de forma quase mítica, Blonde é uma obra-prima atmosférica e intensamente pessoal construída sobre o conceito da dualidade. O álbum é um reflexo das complexidades da vida e da própria identidade de Frank Ocean, que abraça abertamente sua bissexualidade ao explorar o amor, o desejo e a desilusão de forma fluida e sem amarras de gênero — uma dualidade presente até no título, que brinca com as versões masculina ('Blond') e feminina ('Blonde') da palavra. Essa natureza dividida molda a própria estrutura do disco: cortado exatamente ao meio pela genial transição de batida da faixa 'Nights', o projeto nos transporta da claridade acústica e nostálgica do dia para a melancolia eletrônica e introspectiva da noite. Minimalista, etéreo e incrivelmente cru, Blonde é um mergulho profundo nas memórias e um espaço de cura que consolida Frank como um dos artistas mais autênticos e brilhantes da nossa geração.</p>
+  </div>
+</div>
+
+<section class="tracks-wrap">
+  <div class="tracks-head">
+    <span class="tracks-title">MÚSICAS</span>
+    <span class="tracks-info">17 FAIXAS - 1 HORA</span>
+  </div>
+  <div id="tl"></div>
+</section>
+
+<footer>
+  <p class="fl">PROJETO POR:</p>
+  <p class="fn">Mário Vidal - Estudante de Engenharia de Software IFPE - Belo Jardim</p>
+</footer>
+
+<script>
+// Lista completa de faixas para Blonde (Cores e links corretos)
+var tracks = [
+  ['01','Nikes','5:14','blonde/nikes.html'],
+  ['02','Ivy','4:09','blonde/ivy.html'],
+  ['03','Pink + White','3:05','blonde/pinkWhite.html'],
+  ['04','Be Yourself','1:27','blonde/beYourself.html'],
+  ['05','Solo','4:17','blonde/solo.html'],
+  ['06','Skyline To','3:05','blonde/skylineTo.html'],
+  ['07','Self Control','4:10','blonde/selfControl.html'],
+  ['08','Good Guy','1:07','blonde/goodGuy.html'],
+  ['09','Nights','5:07','blonde/nights.html'],
+  ['10','Solo (Reprise)','1:19','blonde/soloReprise.html'],
+  ['11','Pretty Sweet','2:38','blonde/prettySweet.html'],
+  ['12','Facebook Story','1:09','blonde/facebookStory.html'],
+  ['13','Close to You','1:26','blonde/closeToYou.html'],
+  ['14','White Ferrari','4:09','blonde/whiteFerrari.html'],
+  ['15','Seigfried','5:35','blonde/seigfried.html'],
+  ['16','Godspeed','2:58','blonde/godspeed.html'],
+  ['17','Futura Free','9:24','blonde/futuraFree.html']
+];
+
+var tl = document.getElementById('tl');
+tracks.forEach(function(t) {
+  var d = document.createElement('div'); d.className = 'track';
+  var a11y = t[3] ? ' role="button" tabindex="0" onclick="window.parent.navigate(\''+t[3]+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();window.parent.navigate(\''+t[3]+'\');}"' : '';
+  d.innerHTML = '<span class="tnum">'+t[0]+'</span>'
+              + '<span class="tname'+(t[3]?' link':'')+'"'+a11y+'>'+t[1]+'</span>'
+              + '<span class="tdur">'+t[2]+'</span>';
+  tl.appendChild(d);
+});
+</script>
+</body>
+</html>

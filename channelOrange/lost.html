@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lost - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Lost"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">3:54</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/lost.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Lost</span> 
+  <span class="title-pt">Perdida</span>
+</div>
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Double D</p>
+      <p>Big full breasts on my baby (yo, we going to Florida)</p>
+      <p>Triple weight</p>
+      <p>Couldn't weigh the love I've got for the girl</p>
+      <p>And I just wanna know</p>
+      <p>Why you ain't been going to work</p>
+      <p>Boss ain't working you like this</p>
+      <p>He can't take care of you like this</p>
+    </div>
+
+    <div class="stanza">
+      <p>Now you're lost</p>
+      <p>Lost in the heat of it all</p>
+      <p>Girl, you know you're lost</p>
+      <p>Lost in the thrill of it all</p>
+    </div>
+
+    <div class="stanza">
+      <p>Miami, Amsterdam</p>
+      <p>Tokyo, Spain, lost</p>
+      <p>Los Angeles, India</p>
+      <p>Lost on a train, lost</p>
+    </div>
+
+    <div class="stanza">
+      <p>Got on my buttercream silk shirt and it's Versace</p>
+      <p>Hand me my triple weight</p>
+      <p>So I can weigh the work I got on your girl (too weird to live, too rare to die)<br><br></p>
+      <p>No, I don't really wish</p>
+      <p>I don't wish the titties was yours</p>
+      <p>No, have I ever</p>
+      <p>Have I ever let you get caught</p>
+    </div>
+
+    <div class="stanza">
+      <p>Lost</p>
+      <p>Lost in the heat of it all</p>
+      <p>Girl, you know you're lost</p>
+      <p>Lost in the thrill of it all</p>
+    </div>
+
+    <div class="stanza">
+      <p>Miami, Amsterdam</p>
+      <p>Tokyo, Spain, lost</p>
+      <p>Los Angeles, India</p>
+      <p>Lost on a train, lost</p>
+    </div>
+
+    <div class="stanza">
+      <p>She's at a stove (who?)</p>
+      <p>Can't believe I got her out here cooking dope (cooking dope)</p>
+      <p>I promise she'll be</p>
+      <p>Whipping meals up for a family of her own some day</p>
+    </div>
+
+    <div class="stanza">
+      <p>Nothing wrong</p>
+      <p>(Nothing wrong, ain't nothing wrong)</p>
+      <p>No, nothing wrong with a lie</p>
+      <p>Nothing wrong with another short plane ride</p>
+      <p>(Nothing wrong, ain't nothing wrong)</p>
+      <p>Through the sky</p>
+      <p>Up in the sky</p>
+      <p>You and I</p>
+      <p>Just you and I</p>
+    </div>
+
+    <div class="stanza">
+      <p>Lost</p>
+      <p>Lost in the heat of it all</p>
+      <p>Girl, you know you're lost</p>
+      <p>Lost in the thrill of it all</p>
+    </div>
+
+    <div class="stanza">
+      <p>Miami, Amsterdam</p>
+      <p>Tokyo, Spain, lost</p>
+      <p>Los Angeles, India</p>
+      <p>Lost on a train, lost</p>
+    </div>
+
+    <div class="stanza">
+      <p>Love, lost, lost</p>
+      <p>Love, love</p>
+      <p>Love, lost, lost</p>
+      <p>Love, love</p>
+      <p>Love, lost</p>
+      <p>Love, love</p>
+      <p>Love, lost</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Tamanho GG</p>
+      <p>Seios fartos no meu amor (ei, nós vamos para Flórida)</p>
+      <p>Peso triplo</p>
+      <p>Não poderia medir o amor que eu tenho pela garota</p>
+      <p>E eu só quero saber</p>
+      <p>Porque você não tem ido ao trabalho</p>
+      <p>O chefe não está te deixando assim</p>
+      <p>Ele não pode cuidar de você assim</p>
+    </div>
+
+    <div class="stanza">
+      <p>Agora você está perdida</p>
+      <p>Perdida no calor disso tudo</p>
+      <p>Garota, você sabe você está perdida</p>
+      <p>Perdida na adrenalina disso tudo</p>
+    </div>
+
+    <div class="stanza">
+      <p>Miami, Amsterdã</p>
+      <p>Tóquio, Espanha, perdida</p>
+      <p>Los Angeles, Índia</p>
+      <p>Perdida em um trem, perdida</p>
+    </div>
+
+    <div class="stanza">
+      <p>Tenho na minha camisa de seda creme de manteiga e é Versace</p>
+      <p>Passe-me o meu peso triplo</p>
+      <p>Para que eu possa medir o trabalho que eu tenho em você (Muito estranha para viver, muito rara para morrer)</p>
+      <p>Não, eu realmente não desejo</p>
+      <p>Eu não queria que os peitos fossem seus</p>
+      <p>Não, eu jamais</p>
+      <p>Eu jamais deixei você ser pega</p>
+    </div>
+
+    <div class="stanza">
+      <p>Perdida</p>
+      <p>Perdida no calor disso tudo</p>
+      <p>Garota, você sabe você está perdida</p>
+      <p>Perdida na adrenalina disso tudo</p>
+    </div>
+
+    <div class="stanza">
+      <p>Miami, Amsterdã</p>
+      <p>Tóquio, Espanha, perdida</p>
+      <p>Los Angeles, Índia</p>
+      <p>Perdida em um trem, perdida</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ela está no fogão (quem?)</p>
+      <p>Não posso acreditar eu tenho ela aqui usando drogas (usando drogas)</p>
+      <p>Eu prometo que ela vai estar</p>
+      <p>Preparando refeições para a sua própria família um dia</p>
+    </div>
+
+    <div class="stanza">
+      <p>Nada de errado</p>
+      <p>(Nada de errado, não há nada de errado)</p>
+      <p>Nada de errado com uma mentira</p>
+      <p>Nada de errado com outro passeio curto de avião</p>
+      <p>(Nada de errado, não há nada de errado)</p>
+      <p>Através do céu</p>
+      <p>Acima, no céu</p>
+      <p>Você e eu</p>
+      <p>Somente você e eu</p>
+    </div>
+
+    <div class="stanza">
+      <p>Perdida</p>
+      <p>Perdida no calor disso tudo</p>
+      <p>Garota, você sabe você está perdida</p>
+      <p>Perdida na adrenalina disso tudo</p>
+    </div>
+
+    <div class="stanza">
+      <p>Miami, Amsterdã</p>
+      <p>Tóquio, Espanha, perdida</p>
+      <p>Los Angeles, Índia</p>
+      <p>Perdida em um trem, perdida</p>
+    </div>
+
+    <div class="stanza">
+      <p>Amor, perdida</p>
+      <p>Amor, amor</p>
+      <p>Amor, perdida</p>
+      <p>Amor, amor</p>
+      <p>Amor, perdido</p>
+      <p>Amor, amor</p>
+      <p>Amor, perdida</p>
+    </div>
+
+  </div> </div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+A música “Lost” de Frank Ocean explora como o envolvimento com o tráfico de drogas pode ser ao mesmo tempo sedutor e destrutivo. A letra destaca o contraste entre o glamour, representado por marcas de luxo como Versace e viagens para lugares como “Miami, Amsterdam, Tokyo, Spain, Los Angeles, India”, e o perigo constante dessa vida. O casal retratado está sempre em movimento, mas nunca encontra estabilidade ou pertencimento, o que é reforçado pelo refrão: “Lost in the heat of it all” (Perdido no calor de tudo isso). Essa frase resume a sensação de estar perdido tanto pela intensidade da paixão quanto pelo caos das escolhas feitas.
+<br><br>
+O contexto revela que a personagem feminina é envolvida pelo parceiro no transporte de drogas, como fica claro no verso: “Can't believe I got her out here cooking dope” (Não acredito que a coloquei aqui cozinhando droga). A promessa de um futuro melhor, expressa em “I promise she'll be whipping meals up for a family of her own some day” (Prometo que um dia ela vai preparar refeições para sua própria família), soa vazia diante da realidade perigosa em que ela vive. O uso repetido da palavra “lost” vai além do sentido literal de estar perdido fisicamente, indicando também uma perda de identidade e direção, tanto emocional quanto moral. O videoclipe, com Frank Ocean viajando por vários países, reforça visualmente essa sensação de deslocamento e busca por algo inalcançável.    
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

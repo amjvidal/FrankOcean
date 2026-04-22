@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crack Rock - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Crack Rock"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">3:44</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/crackRock.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Crack Rock</span> 
+  <span class="title-pt">Pedra de Crack</span>
+</div>
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>You don't know how little you matter</p>
+      <p>Until you're all alone</p>
+      <p>In the middle of Arkansas</p>
+      <p>With a little rock left in that glass dick</p>
+    </div>
+
+    <div class="stanza">
+      <p>Used to date a blonde</p>
+      <p>You used to hit it raw</p>
+      <p>Cause she was and you were madly involved</p>
+      <p>Madly involved</p>
+    </div>
+
+    <div class="stanza">
+      <p>Hittin stones in glass homes</p>
+      <p>You're smokin stones in abandoned homes</p>
+      <p>You hit them stones and broke your home</p>
+      <p>Crack rock, crack rock</p>
+      <p>Crack rock, crack rock</p>
+    </div>
+
+    <div class="stanza">
+      <p>Hittin stones in glass homes</p>
+      <p>You're smokin stones in abandoned homes</p>
+      <p>You're hittin stones and broke your home</p>
+      <p>Crack rock, crack rock</p>
+      <p>Crack rock, crack rock</p>
+    </div>
+
+    <div class="stanza">
+      <p>You're shuckin' and jivin'</p>
+      <p>Stealin' and robbin'</p>
+      <p>To get the fixing that you're itching for</p>
+      <p>Your family stopped inviting you to things</p>
+      <p>Won't let you hold their infant</p>
+    </div>
+
+    <div class="stanza">
+      <p>You used to get a little cut-up from time to time</p>
+      <p>But the freaks ain't trying to sleep with cracky</p>
+    </div>
+
+    <div class="stanza">
+      <p>Hittin' stones in glass homes</p>
+      <p>You're smokin stones in abandoned homes</p>
+      <p>You hit them stones and you broke your home</p>
+      <p>Crack rock, crack rock, crack rock</p>
+    </div>
+
+    <div class="stanza">
+      <p>Crooked cop, dead cop</p>
+      <p>How much dope can you push to me</p>
+      <p>Crooked cop, dead cop</p>
+      <p>No good for community</p>
+    </div>
+
+    <div class="stanza">
+      <p>Fuckin' pig get shot</p>
+      <p>300 men will search for me</p>
+      <p>My brother get popped</p>
+      <p>And don't no one hear the sound</p>
+      <p>Don't no one hear the rounds</p>
+      <p>Don't no one hear the shouts</p>
+      <p>Don't no one hear a sound</p>
+    </div>
+
+    <div class="stanza">
+      <p>Don't no one disturb the peace for riot</p>
+      <p>Don't no one disrupt nirvana</p>
+      <p>Don't no one wanna blow the high</p>
+    </div>
+
+    <div class="stanza">
+      <p>Crack rock</p>
+      <p>Crack rock</p>
+      <p>Crack rock</p>
+    </div>
+
+    <div class="stanza">
+      <p>How you feeling, girl?</p>
+      <p>How's the gutter doing?</p>
+      <p>Crack rock</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Você não sabe quão pouco importa</p>
+      <p>Até estar completamente sozinho</p>
+      <p>No meio do Arkansas</p>
+      <p>Com um pouco de pedra deixada naquele bong</p>
+    </div>
+
+    <div class="stanza">
+      <p>Costumava namorar uma loira</p>
+      <p>Você costumava fazer sem camisinha</p>
+      <p>Porque ela era e você era loucamente envolvidos</p>
+      <p>Loucamente envolvidos</p>
+    </div>
+
+    <div class="stanza">
+      <p>Jogando pedras em casas de vidro</p>
+      <p>Você está fumando pedras em casas abandonadas</p>
+      <p>Você joga pedras nelas e destrói seu lar</p>
+      <p>Pedra de crack, pedra de crack</p>
+      <p>Pedra de crack, pedra de crack</p>
+    </div>
+
+    <div class="stanza">
+      <p>Jogando pedras em casas de vidro</p>
+      <p>Você está fumando pedras em casas abandonadas</p>
+      <p>Você joga pedras nelas e destrói seu lar</p>
+      <p>Pedra de crack, pedra de crack</p>
+      <p>Pedra de crack, pedra de crack</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você está enrolando</p>
+      <p>Roubando</p>
+      <p>Para conseguir consertar o que te incomoda</p>
+      <p>Sua família parou de convidá-lo pras coisas</p>
+      <p>Não deixam mais segurar o bebê deles</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você costumava transar um pouco de vez em quando</p>
+      <p>Mas as loucas não estão tentando dormir com cracudos</p>
+    </div>
+
+    <div class="stanza">
+      <p>Jogando pedras em casas de vidro</p>
+      <p>Você está fumando pedras em casas abandonadas</p>
+      <p>Você joga pedras nelas e destrói seu lar</p>
+      <p>Pedra de crack, pedra de crack, pedra de crack</p>
+    </div>
+
+    <div class="stanza">
+      <p>Policial corrupto, policial morto</p>
+      <p>Quanta droga você consegue empurrar pra mim?</p>
+      <p>Policial corrupto, policial morto</p>
+      <p>Não é bom pra comunidade</p>
+    </div>
+
+    <div class="stanza">
+      <p>Porco maldito levou um tiro</p>
+      <p>300 homens procurarão por mim</p>
+      <p>Meu irmão apareceu</p>
+      <p>E não, ninguém ouve nada</p>
+      <p>Não, ninguém ouve as balas</p>
+      <p>Não, ninguém ouvi os gritos</p>
+      <p>Não, ninguém ouve nada</p>
+    </div>
+
+    <div class="stanza">
+      <p>Não, ninguém perturba a paz por revolta</p>
+      <p>Não, ninguém perturba o nirvana</p>
+      <p>Não, ninguém quer se esforçar</p>
+    </div>
+
+    <div class="stanza">
+      <p>Pedra de crack</p>
+      <p>Pedra de crack</p>
+      <p>Pedra de crack</p>
+    </div>
+
+    <div class="stanza">
+      <p>Como está se sentindo, garota?</p>
+      <p>Como a sarjeta está indo?</p>
+      <p>Pedra de crack</p>
+    </div>
+
+  </div> </div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+"Crack Rock", de Frank Ocean, aborda de forma direta o impacto devastador do vício em crack, destacando o ciclo de destruição e isolamento vivido pelos dependentes. Ocean utiliza imagens fortes e repetitivas, como em “You don't know how little you matter / Until you're all alone” (Você não sabe o quanto importa pouco / Até estar completamente sozinho), para mostrar o sentimento de insignificância e solidão que acompanha o vício. A ambientação em locais esquecidos, como “the middle of Arkansas” (no meio do Arkansas) e “abandoned homes” (casas abandonadas), reforça a ideia de marginalização social. O termo “glass dick” é uma gíria para o cachimbo de crack, e a repetição de “crack rock” ao longo da música serve como um lembrete constante da presença sufocante da droga e da perda de vínculos afetivos e sonhos, algo inspirado por experiências pessoais de Ocean e relatos reais.
+<br><br>
+A música também faz uma crítica social clara, especialmente ao abordar a corrupção policial em “Crooked cop, dead cop / How much dope can you push to me” (Policial corrupto, policial morto / Quanto entorpecente você pode me vender). Ocean denuncia o papel de agentes do Estado que, em vez de proteger, acabam perpetuando o ciclo do vício e da violência. O afastamento familiar é evidenciado em “Your family stopped inviting you to things / Won't let you hold their infant” (Sua família parou de te convidar para as coisas / Não deixa você segurar o bebê deles), enquanto “Don't no one hear the sound” (Ninguém ouve o som) ressalta a invisibilidade dos dependentes. Inspirado por histórias próximas, Frank Ocean constrói um retrato honesto e empático dos efeitos do crack, sem romantizar ou suavizar a realidade.
+
+        
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

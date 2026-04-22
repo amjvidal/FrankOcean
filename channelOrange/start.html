@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Start"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">0:48</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/start.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Start</span> 
+  <span class="title-pt">Começar</span>
+</div>
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>*Laughter*</p>
+      <p>They look like twins</p>
+      <p>That was embarrassing</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>* Risos *</p>
+      <p>Eles parecem gêmeos</p>
+      <p>Isso foi constrangedor</p>
+    </div>
+
+  </div> </div> 
+
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em "Start", Frank Ocean utiliza uma faixa instrumental curta, marcada por sons eletrônicos, teclas de computador e cliques de mouse, para criar a sensação de que o ouvinte está entrando em um ambiente digital. Essa escolha sonora simula o início de uma experiência online, como se estivéssemos "logando" no universo pessoal do artista. Esse recurso prepara o terreno para os temas mais complexos que serão desenvolvidos ao longo do álbum "Channel Orange".
+<br><br>
+A fala breve presente na faixa – "They look like twins / That was embarrassing" (Eles parecem gêmeos / Isso foi constrangedor) – acompanhada de uma risada, transmite um momento casual e íntimo, semelhante a um trecho espontâneo de uma conversa do dia a dia. Essa abordagem aproxima o ouvinte de Frank Ocean, criando uma atmosfera autêntica e vulnerável. Ao iniciar o álbum dessa forma, o artista convida o público a mergulhar em sua narrativa pessoal, sinalizando que as próximas faixas trarão honestidade, múltiplas camadas e situações desconcertantes, refletindo a complexidade da vida real.
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

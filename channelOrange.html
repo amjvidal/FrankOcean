@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Channel Orange — Frank Ocean</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('home.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('home.html');}">VOLTAR</span>
+
+<div class="album-head">
+  <div class="cover"><img src="imagens/channelOrange.jpg" alt="Channel Orange"></div>
+  <div class="info">
+    <div class="album-name"><em>channel</em> ORANGE</div>
+    <p class="desc">Lançado em 2012, Channel Orange é o aclamado álbum de estreia que catapultou Frank Ocean para o reconhecimento global e transformou de vez a paisagem do R&B contemporâneo. O projeto funciona como uma viagem cinematográfica, embalado por uma sonoridade rica em sintetizadores, texturas quentes e arranjos exuberantes. Ao longo do disco, Frank explora de forma brilhante e vulnerável as complexidades do amor não correspondido, as desilusões da juventude e a solidão, entregando faixas épicas e ousadas como 'Pyramids' e hinos intimistas como 'Thinkin Bout You'. Mais do que uma simples coleção de músicas, Channel Orange é uma obra-prima atemporal que captura com perfeição o som, as cores e os sentimentos de um verão inesquecível.</p>
+  </div>
+</div>
+
+<section class="tracks-wrap">
+  <div class="tracks-head">
+    <span class="tracks-title">MÚSICAS</span>
+    <span class="tracks-info">17 FAIXAS - 55 MINUTOS</span>
+  </div>
+  <div id="tl"></div>
+</section>
+
+<footer>
+  <p class="fl">PROJETO POR:</p>
+  <p class="fn">Mário Vidal - Estudante de Engenharia de Software IFPE - Belo Jardim</p>
+</footer>
+
+<script>
+// Lista completa de faixas e links corretos
+var tracks = [
+  ['01','Start','0:48','channelOrange/start.html'],
+  ['02','Thinkin Bout You','3:21','channelOrange/thinkinBoutYou.html'],
+  ['03','Fertilizer','0:40','channelOrange/fertilizer.html'],
+  ['04','Sierra Leone','2:29','channelOrange/sierraLeone.html'],
+  ['05','Sweet Life','4:23','channelOrange/sweetLife.html'],
+  ['06','Not Just Money','1:00','channelOrange/notJustMoney.html'],
+  ['07','Super Rich Kids (feat. Earl Sweatshirt)','5:05','channelOrange/superRichKids.html'],
+  ['08','Pilot Jones','3:04','channelOrange/pilotJones.html'],
+  ['09','Crack Rock','3:44','channelOrange/crackRock.html'],
+  ['10','Pyramids','9:53','channelOrange/pyramids.html'],
+  ['11','Lost','3:54','channelOrange/lost.html'],
+  ['12','White (feat. John Mayer)','1:16','channelOrange/white.html'],
+  ['13','Monks','3:20','channelOrange/monks.html'],
+  ['14','Bad Religion','2:55','channelOrange/badReligion.html'],
+  ['15','Pink Matter (feat. André 3000)','4:29','channelOrange/pinkMatter.html'],
+  ['16','Forrest Gump','3:15','channelOrange/forrestGump.html'],
+  ['17','End','2:15','channelOrange/end.html']
+];
+
+var tl = document.getElementById('tl');
+tracks.forEach(function(t) {
+  var d = document.createElement('div'); d.className = 'track';
+  var a11y = t[3] ? ' role="button" tabindex="0" onclick="window.parent.navigate(\''+t[3]+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();window.parent.navigate(\''+t[3]+'\');}"' : '';
+  d.innerHTML = '<span class="tnum">'+t[0]+'</span>'
+              + '<span class="tname'+(t[3]?' link':'')+'"'+a11y+'>'+t[1]+'</span>'
+              + '<span class="tdur">'+t[2]+'</span>';
+  tl.appendChild(d);
+});
+</script>
+</body>
+</html>

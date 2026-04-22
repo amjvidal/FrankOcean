@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,400;1,6..72,700&display=swap');
+
+/* fontes - google (newsreader, import na primeira linha) */
+
+/* fontes - locais (regras font-face) */
+@font-face {
+    font-family: 'BlondeCustom';
+    src: url('fontes/Blonde.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OratorCustom';
+    src: url('fontes/OratorRegular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CooperCustom';
+    src: url('fontes/COOPBL.TTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* base global (reset, corpo, voltar) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2d2b29;
+    color: #d0ccc8;
+    font-family: 'Newsreader', serif;
+}
+
+.back {
+    display: block;
+    padding: 18px 50px 0;
+    font-size: .72rem;
+    letter-spacing: .18em;
+    color: #706c68;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.back:hover {
+    color: #d0ccc8;
+}
+
+/* rodape global */
+footer {
+    padding: 40px 50px;
+    border-top: 1px solid #3a3835;
+    margin: 0 50px;
+}
+
+.fl {
+    font-size: .68rem;
+    letter-spacing: .24em;
+    color: #706c68;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.fn {
+    font-size: .78rem;
+    color: #706c68;
+}
+
+/* temas por album (channel orange / blonde) */
+.theme-co .fill {
+    background: #e8622a;
+}
+
+.theme-co .tname {
+    color: #e8622a;
+}
+
+.theme-co .album-name {
+    color: #e8622a;
+}
+
+.theme-co .album-name em {
+    color: #e8e4df;
+}
+
+.theme-co .play-btn {
+    background-color: #e8622a;
+    border-radius: 50%;
+}
+
+.theme-co .play-btn svg path {
+    fill: #ffffff;
+}
+
+.theme-co .title-pt {
+    color: #e8622a;
+}
+
+.theme-bl .fill {
+    background: #3d7a4f;
+}
+
+.theme-bl .tname {
+    color: #3d7a4f;
+}
+
+.theme-bl .album-name,
+.theme-bl .album-name em {
+    color: #e8e4df;
+    font-family: 'BlondeCustom', sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: -0.05em;
+}
+
+.theme-bl .album-name {
+    line-height: 0.8;
+    margin-bottom: 40px;
+}
+
+.theme-bl .play-btn {
+    background-color: #3d7a4f;
+    border-radius: 50%;
+}
+
+.theme-bl .play-btn svg path {
+    fill: #ffffff;
+}
+
+.theme-bl .title-pt {
+    color: #3d7a4f;
+}
+
+/* navbar (iframe) */
+.nav-body {
+    background: #3a3835;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0 50px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-family: 'Newsreader', serif;
+    font-weight: 700;
+    letter-spacing: .18em;
+    color: #e8e4df;
+    cursor: pointer;
+    user-select: none;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+}
+
+.links a {
+    font-family: 'Newsreader', serif;
+    font-size: .75rem;
+    letter-spacing: .15em;
+    color: #c8c4c0;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color .2s ease;
+}
+
+.links a:hover {
+    color: #ffffff;
+}
+
+/* tela home */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.hero img {
+    width: 400px;
+    display: block;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+.hero-text {
+    max-width: 420px;
+}
+
+.hero-text h2 {
+    font-size: 2.2rem;
+    font-family: 'Newsreader', serif;
+    font-weight: 700;
+    letter-spacing: .08em;
+    margin-bottom: 20px;
+    color: #e8e4df;
+}
+
+.hero-text p {
+    font-size: .95rem;
+    line-height: 1.9;
+    color: #a8a4a0;
+    text-align: justify;
+}
+
+.disc {
+    border: 1px solid #4a4744;
+    padding: 60px 80px;
+    margin-bottom: 40px;
+}
+
+.disc-title {
+    text-align: center;
+    letter-spacing: .35em;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #d0ccc8;
+}
+
+.albums {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.yr-o {
+    color: #e8622a;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .25em;
+}
+
+.yr-g {
+    color: #3d7a4f;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .25em;
+}
+
+.lp {
+    font-size: .7rem;
+    letter-spacing: .2em;
+    color: #807c78;
+    font-weight: 600;
+}
+
+.name-co {
+    font-size: 2.4rem;
+    color: #e8622a;
+    font-family: 'OratorCustom', sans-serif;
+    font-weight: normal;
+    letter-spacing: .15em;
+}
+
+.name-co em {
+    font-family: 'CooperCustom', serif;
+    color: #e8e4df;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: lowercase;
+    font-size: 2.6rem;
+}
+
+.name-bl {
+    font-size: 1.8rem;
+    color: #e8e4df;
+    font-family: 'BlondeCustom', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: -0.05em;
+}
+
+.container footer {
+    border-top: none;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+/* tela album (capa, info, lista de faixas) */
+.album-head {
+    display: flex;
+    align-items: center;
+    padding: 30px 50px 60px;
+    gap: 80px;
+}
+
+.cover {
+    flex: 0 0 42%;
+    max-width: 500px;
+}
+
+.cover img {
+    width: 100%;
+    display: block;
+}
+
+.info {
+    flex: 1;
+}
+
+.album-name {
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+    font-family: 'OratorCustom', sans-serif;
+}
+
+.album-name em {
+    font-family: 'CooperCustom', serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: -0.01em;
+}
+
+.desc {
+    font-size: 0.99rem;
+    line-height: 2;
+    color: #a8a4a0;
+    text-align: justify;
+}
+
+.tracks-wrap {
+    margin: 0 50px 60px;
+    border: 1px solid #4a4744;
+    padding: 50px 60px 60px;
+}
+
+.tracks-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.tracks-title {
+    font-size: 1.8rem;
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    letter-spacing: .15em;
+    color: #e8e4df;
+}
+
+.tracks-info {
+    font-size: .7rem;
+    letter-spacing: .18em;
+    color: #908c88;
+    text-transform: uppercase;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.tnum {
+    width: 60px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #d0ccc8;
+}
+
+.tname {
+    flex: 1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Newsreader', serif;
+    transition: opacity .2s;
+}
+
+.tname.link {
+    cursor: pointer;
+}
+
+.tname.link:hover {
+    opacity: .7;
+}
+
+.tdur {
+    width: 60px;
+    text-align: right;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #d0ccc8;
+}
+
+/* tela musica (player, titulos, letras, significado) */
+.player {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px 40px;
+    gap: 20px;
+}
+
+.thumb {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-btn {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.time {
+    font-size: .75rem;
+    color: #706c68;
+    min-width: 35px;
+    font-weight: 600;
+}
+
+.prog {
+    flex: 1;
+    height: 3px;
+    background: #4a4744;
+    cursor: pointer;
+    position: relative;
+}
+
+.fill {
+    height: 100%;
+    width: 0%;
+    transition: width .1s linear;
+}
+
+.letra-lbl {
+    padding: 0 50px 10px;
+    font-size: 1.4rem;
+    letter-spacing: .25em;
+    color: #706c68;
+    font-weight: 600;
+}
+
+.song-title-wrapper {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title-en {
+    font-family: 'CooperCustom', serif;
+    font-size: 3rem;
+    color: #e8e4df;
+    margin-right: 15px;
+}
+
+.title-pt {
+    font-family: 'OratorCustom', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: .05em;
+}
+
+.lyrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 50px;
+    margin-bottom: 80px;
+}
+
+#en {
+    text-align: right;
+    color: #e8e4df;
+}
+
+#pt {
+    text-align: left;
+    color: #a8a4a0;
+}
+
+.stanza {
+    margin-bottom: 25px;
+}
+
+.stanza p {
+    font-size: 1.2rem;
+    line-height: 2;
+    font-family: 'Newsreader', serif;
+}
+
+.sig {
+    border-top: 1px solid #3a3835;
+    padding: 40px 50px;
+    margin: 0 50px;
+}
+
+.sig-title {
+    font-size: 1.4rem;
+    letter-spacing: .28em;
+    color: #d0ccc8;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sig-text {
+    font-size: 1.2rem;
+    line-height: 2.1;
+    color: #a8a4a0;
+    text-align: justify;
+}
+
+.theme-bl .title-nights {
+    font-family: 'CooperCustom', serif;
+    font-size: 3.5rem;
+    color: #e8e4df;
+    font-style: italic;
+    letter-spacing: -0.02em;
+}
+
+.play-btn:focus-visible,
+.links a:focus-visible,
+.logo:focus-visible,
+.back:focus-visible,
+.card:focus-visible,
+.tname.link:focus-visible {
+    outline: 2px solid #e8e4df;
+    outline-offset: 3px;
+}
+
+/* tela shell (index - iframes navbar + conteudo) */
+html.shell,
+html.shell body {
+    height: 100%;
+    overflow: hidden;
+    background: #2d2b29;
+}
+
+html.shell #nav-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    border: none;
+    z-index: 10;
+}
+
+html.shell #content-frame {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 65px);
+    border: none;
+}

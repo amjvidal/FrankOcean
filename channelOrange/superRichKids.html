@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Super Rich Kids - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Super Rich Kids"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">5:05</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/superRichKids.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Super Rich Kids</span> 
+  <span class="title-pt">Crianças Super Ricas</span>
+</div>
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Too many bottles of this wine we can’t pronounce</p>
+      <p>Too many bowls of that green, no Lucky Charms</p>
+      <p>The maids come around too much</p>
+      <p>Parents ain’t around enough</p>
+      <p>Too many joy rides in daddy’s Jaguar</p>
+      <p>Too many white lies and white lines</p>
+      <p>Super rich kids with nothing but loose ends</p>
+      <p>Super rich kids with nothing but fake friends</p>
+    </div>
+
+    <div class="stanza">
+      <p>Start my day up on the roof</p>
+      <p>There’s nothing like this type of view</p>
+      <p>Point the clicker at the tube</p>
+      <p>I prefer expensive news</p>
+      <p>New car, new girl</p>
+      <p>New ice, new glass</p>
+      <p>New watch, good times babe</p>
+      <p>It's good times, yeah</p>
+    </div>
+
+    <div class="stanza">
+      <p>She wash my back three times a day</p>
+      <p>This shower head feels so amazing</p>
+      <p>We’ll both be high, the help don’t stare</p>
+      <p>They just walk by, they must don’t care</p>
+      <p>A million one, a million two</p>
+      <p>A hundred more will never do</p>
+    </div>
+
+    <div class="stanza">
+      <p>Too many bottles of this wine we can’t pronounce</p>
+      <p>Too many bowls of that green, no Lucky Charms</p>
+      <p>The maids come around too much</p>
+      <p>Parents ain’t around enough</p>
+      <p>Too many joy rides in daddy’s Jaguar</p>
+      <p>Too many white lies and white lines</p>
+      <p>Super rich kids with nothing but loose ends</p>
+      <p>Super rich kids with nothing but fake friends</p>
+    </div>
+
+    <div class="stanza">
+      <p>Real love, I'm searching for a real love</p>
+      <p>Oh, real love, I'm searching for a real love</p>
+      <p>Oh, real love</p>
+    </div>
+
+    <div class="stanza">
+      <p>[Earl Sweatshirt]</p>
+      <p>Close your eyes to what you can't imagine</p>
+      <p>We are the Xanny-gnashing</p>
+      <p>Caddy-smashing, bratty ass</p>
+      <p>He mad, he snatched his daddy's Jag</p>
+      <p>And used the shit for batting practice</p>
+      <p>Adamant and he thrashing</p>
+      <p>Purchasing crappy grams with half the hand of cash you handed</p>
+      <p>Panic and patch me up</p>
+      <p>Pappy done latch-keyed us</p>
+      <p>Toying with Raggy Anns and Mammy done had enough</p>
+      <p>Brash as fuck, breaching all these aqueducts</p>
+      <p>Don’t believe us</p>
+      <p>Treat us like we can’t erupt, yup</p>
+    </div>
+
+    <div class="stanza">
+      <p>Polo sweats and Hermes blankets</p>
+      <p>Them label hoes be stealing my shit</p>
+      <p>And all they clothes revealing they tits</p>
+      <p>Pills, high enough to touch the rim in that bitch</p>
+      <p>We party in my living room</p>
+    </div>
+
+    <div class="stanza">
+      <p>Cause father is gone</p>
+      <p>And he left me this empire</p>
+      <p>That runs on its own</p>
+      <p>So all I got to do is whatever the fuck I want</p>
+      <p>All we ever do is whatever the fuck we want</p>
+    </div>
+
+    <div class="stanza">
+      <p>We end our day up on the roof</p>
+      <p>I say I’ll jump, I never do</p>
+      <p>But when I'm drunk I act a fool</p>
+      <p>Talking bout, do they sew wings on tailored suits</p>
+      <p>I'm on that ledge, she grabs my arm</p>
+      <p>She slaps my head</p>
+      <p>It's good times, yeah</p>
+    </div>
+
+    <div class="stanza">
+      <p>Sleeve rips off, I slip, I fall</p>
+      <p>The market's down like 60 stories</p>
+      <p>And some don’t end the way they should</p>
+      <p>My silver spoon has fed me good</p>
+      <p>A million one, a million cash</p>
+      <p>Close my eyes and feel the crash</p>
+    </div>
+
+    <div class="stanza">
+      <p>Too many bottles of this wine we can’t pronounce</p>
+      <p>Too many bowls of that green, no Lucky Charms</p>
+      <p>The maids come around too much</p>
+      <p>Parents ain’t around enough</p>
+      <p>Too many joy rides in daddy’s Jaguar</p>
+      <p>Too many white lies and white lines</p>
+      <p>Super rich kids with nothing but loose ends</p>
+      <p>Super rich kids with nothing but fake friends</p>
+    </div>
+
+    <div class="stanza">
+      <p>Real love, ain't that something rare</p>
+      <p>I'm searching for a real love, talking bout real love</p>
+      <p>Real love yeah</p>
+      <p>Real love</p>
+      <p>I'm searching for a real love</p>
+      <p>Talking bout a real love</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Muitas garrafas deste vinho que não conseguimos pronunciar</p>
+      <p>Muitas vasilhas com aquela coisa verde, nada de cereal</p>
+      <p>As empregadas estão sempre por perto</p>
+      <p>Os pais nunca estão em casa</p>
+      <p>Muitos passeios de curtição no Jaguar do papai</p>
+      <p>Muitas mentiras brancas e carreirinhas brancas</p>
+      <p>Crianças super ricas com nada além de pontas soltas</p>
+      <p>Crianças super ricas com nada além de falsos amigos</p>
+    </div>
+
+    <div class="stanza">
+      <p>Começo o meu dia na cobertura</p>
+      <p>Não há nada como este tipo de visão</p>
+      <p>Ligo a TV</p>
+      <p>Eu prefiro notícias de novidades caras</p>
+      <p>Novo carro, nova garota</p>
+      <p>Novo diamante, novo óculos</p>
+      <p>Novo relógio, bons tempos querida</p>
+      <p>É bons tempos, sim</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ela lavar minhas costas três vezes por dia</p>
+      <p>Esse chuveiro é tão surpreendente</p>
+      <p>Nós dois ficamos chapados, os ajudantes nem olham</p>
+      <p>Eles só passam direto, eles devem não se importar</p>
+      <p>Um milhão e um, um milhão e dois</p>
+      <p>Centenas a mais não fazem diferença</p>
+    </div>
+
+    <div class="stanza">
+      <p>Muitas garrafas deste vinho que não conseguimos pronunciar</p>
+      <p>Muitas vasilhas com aquela coisa verde, nada de cereal</p>
+      <p>As empregadas estão sempre por perto</p>
+      <p>Os pais nunca estão em casa</p>
+      <p>Muitos passeios de curtição no Jaguar do papai</p>
+      <p>Muitas mentiras brancas e carreirinhas brancas</p>
+      <p>Crianças super ricas com nada além de pontas soltas</p>
+      <p>Crianças super ricas com nada além de falsos amigos</p>
+    </div>
+
+    <div class="stanza">
+      <p>Amor verdadeiro, eu estou procurando por um amor verdadeiro</p>
+      <p>Amor verdadeiro, eu estou procurando por um amor verdadeiro</p>
+      <p>Oh, amor verdadeiro</p>
+    </div>
+
+    <div class="stanza">
+      <p>[Earl Sweatshirt]</p>
+      <p>Feche os olhos para o que você não pode imaginar</p>
+      <p>Nós somos a galera do Xanax</p>
+      <p>Esmagadores de Cadillac, pegando bundas</p>
+      <p>Ele é louco, ele arrebatou o Jaguar do seu papai</p>
+      <p>E usou para a prática de rebatidas</p>
+      <p>Adam e Annie se debatendo</p>
+      <p>Comprando maconhas ruins que valem metade do dinheiro que você pagou</p>
+      <p>Pânico e tratamento</p>
+      <p>O papi nos trancou em casa</p>
+      <p>Foi brincar com as bonequinhas e a servente já fez o suficiente</p>
+      <p>Frágil para caramba, está quase explodindo com a pressão</p>
+      <p>Não acreditam em nós</p>
+      <p>Nos tratam como se não pudéssemos entrar em erupção, claro</p>
+    </div>
+
+    <div class="stanza">
+      <p>Agasalhos Ralph Lauren Polo e cobertores Hermes</p>
+      <p>Aqueles filhas da mãe estão pegando as minhas coisas</p>
+      <p>E todas as roupas deles revela os seios delas</p>
+      <p>Pílulas, alto o suficiente para encestar o aro daquela vadia</p>
+      <p>Nós festejamos na minha sala de estar</p>
+    </div>
+
+    <div class="stanza">
+      <p>Porque o meu pai se foi</p>
+      <p>E ele me deixou este império</p>
+      <p>Que se governa sozinho</p>
+      <p>Então, tudo o que tenho a fazer é as merdas que eu quiser</p>
+      <p>Tudo o que sempre fazemos é as merdas que queremos</p>
+    </div>
+
+    <div class="stanza">
+      <p>Nós terminamos nosso dia na cobertura</p>
+      <p>Eu digo que vou pular, eu nunca pulo</p>
+      <p>Mas quando estou bêbado eu ajo como um tolo</p>
+      <p>(Falando mais), eles costuram asas nos ternos?</p>
+      <p>Estou na borda, ela agarra meu braço</p>
+      <p>Ela dá um tapa na minha cabeça</p>
+      <p>É bons tempos, sim</p>
+    </div>
+
+    <div class="stanza">
+      <p>A manga rasga, eu deslizo, eu caio</p>
+      <p>As ações estão caindo como na quebra da bolsa de valores</p>
+      <p>E algumas não terminam do jeito que deveriam</p>
+      <p>Minha colher de prata me alimentou bem</p>
+      <p>Um milhão e um, um milhão de notas de dinheiro</p>
+      <p>Fecho os olhos e sinto a colisão</p>
+    </div>
+
+    <div class="stanza">
+      <p>Muitas garrafas deste vinho que não conseguimos pronunciar</p>
+      <p>Muitas vasilhas com aquela coisa verde, nada de cereal</p>
+      <p>As empregadas estão sempre por perto</p>
+      <p>Os pais nunca estão em casa</p>
+      <p>Muitos passeios de curtição no Jaguar do papai</p>
+      <p>Muitas mentiras brancas e carreirinhas brancas</p>
+      <p>Super crianças ricas com nada além de pontas soltas</p>
+      <p>Super crianças ricas com nada além de falsos amigos</p>
+    </div>
+
+    <div class="stanza">
+      <p>Amor verdadeiro, não é algo raro</p>
+      <p>Eu estou procurando por um amor verdadeiro (falando sobre amor verdadeiro)</p>
+      <p>Amor verdadeiro, sim</p>
+      <p>Amor verdadeiro</p>
+      <p>Eu estou procurando por um amor verdadeiro</p>
+      <p>Falando sobre amor verdadeiro</p>
+    </div>
+
+  </div> </div> 
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em "Super Rich Kids", Frank Ocean expõe de forma direta o vazio que existe por trás do luxo e dos privilégios. Logo nos versos “Super rich kids with nothing but loose ends / Super rich kids with nothing but fake friends” (Crianças super ricas com nada além de pontas soltas / Crianças super ricas com nada além de amigos falsos), ele mostra que, apesar do acesso a carros de luxo, festas e drogas caras, esses jovens enfrentam uma profunda falta de afeto e autenticidade. O refrão, ao repetir a busca por "real love" (amor verdadeiro), reforça que, mesmo no topo da sociedade, o essencial não pode ser comprado.
+<br><br>
+Frank Ocean se inspirou em obras como o filme "Traffic" para abordar o tema do privilégio e da desconexão emocional. Isso aparece em versos como “The maids come around too much / Parents ain’t around enough” (As empregadas aparecem demais / Os pais não estão presentes o suficiente), mostrando como a negligência dos pais é mascarada por uma rotina de serviços terceirizados e ausência de vínculos reais. A referência a “white lies and white lines” (mentiras brancas e linhas brancas) faz alusão tanto a pequenas mentiras quanto ao uso de cocaína, ilustrando a superficialidade das relações e o abuso de drogas como fuga do tédio e da solidão.
+<br><br>
+A participação de Earl Sweatshirt acrescenta uma crítica ao comportamento autodestrutivo desses jovens, como no verso “snatched his daddy's Jag / And used the shit for batting practice” (pegou o Jaguar do pai / e usou aquilo para treino de rebatidas). A cena final, com o personagem à beira do telhado, sugere o risco real de autodestruição. Assim, "Super Rich Kids" faz um retrato ácido de uma juventude cercada de excessos, mas carente de algo verdadeiro.
+
+        
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

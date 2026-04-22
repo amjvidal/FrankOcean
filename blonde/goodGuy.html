@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>good guy - bom rapaz - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa good guy - bom rapaz"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">1:07</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/goodGuy.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">good guy - bom rapaz</span> 
+</div>
+
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>It's a good guy, he hooked it up</p>
+      <p>Said if I was in NY I should look you up</p>
+      <p>I, first time I done saw you</p>
+      <p>You text nothing like you look</p>
+    </div>
+
+    <div class="stanza">
+      <p>Here's to the gay bar you took me to</p>
+      <p>It's when I realized you talk too much, more than I do</p>
+      <p>I, it's highlights when I was convinced</p>
+      <p>That it isn't much more it's so not you</p>
+    </div>
+
+    <div class="stanza">
+      <p>I know you don't need me right now</p>
+      <p>And to you it's just a late night out</p>
+    </div>
+
+    <div class="stanza">
+      <p>This nigga, all the bitches in the neighborhood wanna fuck you nigga</p>
+      <p>He told me</p>
+      <p>I used to fuck with all of 'em</p>
+      <p>Yeah I ain't got bitches no more</p>
+      <p>But now I don't care about bitches like that my nigga</p>
+    </div>
+
+    <div class="stanza">
+      <p>That shit Jasmine fucking wrecked my heart</p>
+      <p>I don't even know how to even feel about it</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>É um bom rapaz, ele ficou</p>
+      <p>Disse que se eu estava em NY eu deveria te procurar</p>
+      <p>Eu, primeira vez que eu já te vi</p>
+      <p>Você não digita nada como parece</p>
+    </div>
+
+    <div class="stanza">
+      <p>Daqui para o bar gay você me levou</p>
+      <p>É quando percebi que você fala demais, mais do que eu</p>
+      <p>Eu, isso se destacou quando eu estava convencido</p>
+      <p>Que não é muito mais, é tão não você</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu sei que você não precisa de mim agora</p>
+      <p>E para você é só uma noitada</p>
+    </div>
+
+    <div class="stanza">
+      <p>Esse mano, todas as putas no bairro querem te foder mano</p>
+      <p>Ele me disse</p>
+      <p>Eu costumava transar com todos elas</p>
+      <p>É, eu não tenho mais putas</p>
+      <p>Mas agora eu não me importo com putas como esse meu mano</p>
+    </div>
+
+    <div class="stanza">
+      <p>Que merda, Jasmine ferrou meu coração</p>
+      <p>Eu nem sei como me sentir sobre isso</p>
+    </div>
+
+  </div> </div>
+
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+
+"Good Guy", de Frank Ocean, aborda de forma direta a frustração e o vazio presentes em encontros modernos, especialmente quando a expectativa de uma conexão real não se concretiza. O verso “You text nothing like you look” (Você escreve de um jeito totalmente diferente de como parece) revela a diferença entre a imagem criada nas redes sociais e a realidade, mostrando como as aparências podem enganar. O brinde em um bar gay sugere tanto a busca por pertencimento quanto a superficialidade desses ambientes, onde o protagonista percebe que a conversa é superficial e que a outra pessoa só quer uma diversão passageira: “And to you it's just a late night out” (E para você é só mais uma noite na rua). Isso reforça o sentimento de solidão e desilusão, mesmo estando acompanhado.
+<br><br>
+No final da música, um monólogo de outro homem desabafando sobre uma decepção amorosa causada por Jasmine aprofunda o tema da desilusão. Ele comenta que perdeu o interesse em outras mulheres após o término, mostrando como experiências negativas podem afetar a forma como lidamos com novos relacionamentos. Frank Ocean, ao incluir esse relato cru e pessoal, destaca a dificuldade de encontrar intimidade genuína e o impacto emocional das relações efêmeras. "Good Guy" se torna, assim, um retrato honesto da vulnerabilidade e do desencanto que marcam muitos encontros na vida contemporânea.
+
+
+</p></section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

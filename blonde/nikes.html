@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nikes - nikes - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa nikes - nikes"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">5:14</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/nikes.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">nikes - nikes</span> 
+</div>
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>These bitches want Nikes</p>
+      <p>They lookin' for a check</p>
+      <p>Tell 'em it ain't likely</p>
+      <p>Said she need a ring like Carmelo</p>
+      <p>You must be on that white like Othello</p>
+      <p>All you want is Nikes, but the real ones</p>
+      <p>Just like you, just like me</p>
+    </div>
+
+    <div class="stanza">
+      <p>I don't play, I don't make time</p>
+      <p>But if you need dick, I got you, and I yam from the line</p>
+      <p>Pour up for A$AP, RIP Pimp C</p>
+      <p>RIP Trayvon, that nigga look just like me</p>
+      <p>Woo</p>
+      <p>Fuckin' buzzin', woo</p>
+    </div>
+
+    <div class="stanza">
+      <p>That my little cousin, he got a little trade</p>
+      <p>His girl keep the scales, a little mermaid</p>
+      <p>We out by the pool, some little mermaids</p>
+      <p>Me and them gel like twigs with them bangs</p>
+      <p>Now, that's a real mermaid</p>
+      <p>You been holdin' your breath, weighted down</p>
+      <p>Punk madre, punk papá</p>
+    </div>
+
+    <div class="stanza">
+      <p>He don't care for me, but he cares for me</p>
+      <p>And that's good enough</p>
+      <p>We don't talk much or nothin'</p>
+      <p>But when we talkin' 'bout somethin'</p>
+      <p>We have good discussion</p>
+    </div>
+
+    <div class="stanza">
+      <p>I met his friends last week</p>
+      <p>Feels like they're up to somethin'</p>
+      <p>That's good for us</p>
+      <p>We'll let you guys prophesy</p>
+      <p>We'll let you guys prophesy</p>
+      <p>We gon' see the future first</p>
+      <p>We'll let you guys prophesy</p>
+      <p>We gon' see the future first</p>
+    </div>
+
+    <div class="stanza">
+      <p>Livin' so the last night</p>
+      <p>Feels like a past life</p>
+      <p>Speakin' of the don't know what got into people</p>
+      <p>Devil be possessin' homies, demons try to body-jump</p>
+      <p>Why you think I'm in this bitch wearin' a fuckin' yarmulke?</p>
+    </div>
+
+    <div class="stanza">
+      <p>Acid on me like the rain</p>
+      <p>Weed crumbles into glitter</p>
+      <p>Rain, glitter</p>
+      <p>We laid out on this wet floor</p>
+      <p>Away turf, no Astro</p>
+      <p>Mesmerized how the strobes glow</p>
+      <p>Look at all the people feet dance</p>
+    </div>
+
+    <div class="stanza">
+      <p>I know that your nigga came witcha</p>
+      <p>But he ain't witcha</p>
+      <p>We only human and it's humid in these Balmains</p>
+      <p>I mean my balls stickin' to my jeans</p>
+      <p>We breathin' pheromones, Amber Rose</p>
+      <p>Sippin' pink-gold lemonades</p>
+      <p>Feelin'</p>
+    </div>
+
+    <div class="stanza">
+      <p>I may be younger, but I'll look after you</p>
+      <p>We're not in love, but I'll make love to you</p>
+      <p>When you're not here, I'll save some for you</p>
+      <p>I'm not him, but I'll mean something to you</p>
+      <p>I'll mean something to you</p>
+      <p>I'll mean something to you</p>
+      <p>You got a roommate, he'll hear what we do</p>
+      <p>It's only awkward if you're fuckin' him too</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Essas vadias querem Nikes</p>
+      <p>Elas estão em busca de um cheque</p>
+      <p>Fala pra elas que as chances são baixas</p>
+      <p>Disse que precisa de um anel igual o do Carmelo</p>
+      <p>Você deve tá cheirando aquele pózinho igual o Othello</p>
+      <p>Tudo que você quer são Nikes, mas os verdadeiros</p>
+      <p>Igual você, igual a mim</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu não brinco, eu não arranjo tempo</p>
+      <p>Mas se precisa transar, conta comigo, e eu vou te ligar</p>
+      <p>Um brinde ao A$AP, que o Pimp C descanse em paz</p>
+      <p>Que o Trayvon descanse em paz, aquele cara era igualzinho a mim</p>
+      <p>Uou</p>
+      <p>Fazendo barulho pra caralho, uou</p>
+    </div>
+
+    <div class="stanza">
+      <p>Aquele lá é a meu priminho, ele é meio enrustido</p>
+      <p>A namorada dele guarda as drogas, uma pequena sereia</p>
+      <p>Estamos na piscina, umas pequenas sereias</p>
+      <p>O meu cabelo na água fica igual o penteado da FKA twigs</p>
+      <p>Agora, ela é uma sereia de verdade</p>
+      <p>Você tá prendendo a respiração, afunde de verdade</p>
+      <p>Pai e mãe da pesada</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ele não se importa comigo, mas cuida de mim</p>
+      <p>E isso é bom o suficiente</p>
+      <p>Não conversamos muito nem nada do tipo</p>
+      <p>Mas quando conversamos sobre alguma coisa</p>
+      <p>Temos uma boa discussão</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu conheci os amigos dele na semana passada</p>
+      <p>Parece que eles estão tramando alguma coisa</p>
+      <p>Isso é bom pra gente</p>
+      <p>Nós vamos deixar vocês profetizarem</p>
+      <p>Nós vamos deixar vocês profetizarem</p>
+      <p>Nós vamos ver o futuro primeiro</p>
+      <p>Nós vamos deixar vocês profetizarem</p>
+      <p>Nós vamos ver o futuro primeiro</p>
+    </div>
+
+    <div class="stanza">
+      <p>Vivendo de um jeito que a noite passada</p>
+      <p>Pareça mais uma vida passada</p>
+      <p>Falando nisso, não sei o que deu nas pessoas</p>
+      <p>O demônio tá possuindo os meus amigos, controlando os corpos deles</p>
+      <p>Por que você acha que tô nessa porra usando a porra de um quipá?</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ácido no meu corpo como se fosse chuva</p>
+      <p>Maconha se despedaça como se fosse glitter</p>
+      <p>Chuva, glitter</p>
+      <p>Estamos deitados nesse chão molhado</p>
+      <p>Grama verdadeira, não a falsa</p>
+      <p>Perplexo com como os flashes brilham</p>
+      <p>Olha pra todos esses pés dançando</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu sei que seu namorado veio com você</p>
+      <p>Mas ele não tá com você</p>
+      <p>Somos só humanos e tá meio úmido nesse Balmain</p>
+      <p>Quer dizer, minhas bolas estão grudando no meu jeans</p>
+      <p>Estamos respirando feromônios, Amber Rose</p>
+      <p>Bebendo limonadas rosas e douradas</p>
+      <p>Sentindo que</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu posso ser mais jovem, mas vou cuidar de você</p>
+      <p>Não estamos apaixonados, mas vou fazer amor com você</p>
+      <p>Quando você não tiver aqui, vou guardar um pouco pra você</p>
+      <p>Não sou ele, mas vou significar alguma coisa pra você</p>
+      <p>Eu vou significar alguma coisa pra você</p>
+      <p>Eu vou significar alguma coisa pra você</p>
+      <p>Você tem um colega de quarto, ele vai ouvir o que vamos fazer</p>
+      <p>Só vai ser estranho se você tiver transando com ele também</p>
+    </div>
+
+  </div> </div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>Em "Nikes", Frank Ocean faz uma crítica direta ao materialismo e à busca por status, usando a marca Nike como símbolo desse comportamento. Logo no início, ele canta: “These bitches want Nikes / They lookin' for a check” (Essas garotas querem Nikes / Elas estão atrás de um cheque), apontando como o consumismo e a necessidade de validação por bens materiais influenciam as relações. Ocean reforça essa crítica ao misturar referências à cultura pop, como Carmelo Anthony, e à literatura, como Othello, sugerindo que as expectativas em relacionamentos podem ser tão inalcançáveis quanto um anel de campeão ou tão ilusórias quanto o uso de drogas (“on that white like Othello”).
+<br><br>
+A música também aborda temas de perda e identidade, especialmente ao homenagear figuras como Trayvon Martin e Pimp C: “Pour up for A$AP, RIP Pimp C / RIP Trayvon, that nigga look just like me” (Beba por A$AP, descanse em paz Pimp C / Descanse em paz Trayvon, aquele cara se parece comigo). Aqui, Ocean conecta sua experiência pessoal à violência racial e à cultura hip-hop, mostrando empatia e identificação. O videoclipe reforça temas de dualidade e androginia, presentes em imagens como “little mermaids” e nas referências a relações fluidas. Trechos como “We only human and it's humid in these Balmains” (Somos apenas humanos e está abafado nesses Balmains) misturam sensualidade, vulnerabilidade e humor, enquanto “It's only awkward if you're fuckin' him too” (Só é estranho se você também estiver transando com ele) revela a honestidade e a complexidade dos relacionamentos modernos. "Nikes" é, assim, uma reflexão sobre desejo, perda, identidade e a busca por significado em meio à superficialidade do mundo atual.</p></div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

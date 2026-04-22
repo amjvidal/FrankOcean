@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fertilize - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Fertilize"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">0:40</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/fertilizer.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Fertilize</span> 
+  <span class="title-pt">Fertilizante</span>
+</div>
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Fertilize</p>
+      <p>I'll take bullshit if that's all you got</p>
+      <p>Some fertilizer</p>
+      <p>Fertilizer</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Fertilizante</p>
+      <p>Eu aceito merda se isso é tudo que você tem</p>
+      <p>Algum fertilizante</p>
+      <p>Fertilizante</p>
+    </div>
+
+  </div> </div> 
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em "Fertilizer", Frank Ocean utiliza a metáfora do "fertilizer" (fertilizante) para abordar a aceitação das dificuldades e imperfeições em um relacionamento. Ao dizer que está disposto a receber o "bullshit" do outro, Ocean sugere uma postura de resignação, mas também de esperança, acreditando que até mesmo experiências negativas podem servir de base para o crescimento, assim como o fertilizante ajuda as plantas a se desenvolverem.
+<br><br>
+O formato da música, um interlúdio curto com sonoridade que lembra um jingle de TV, reforça a ideia de que essas pequenas concessões e momentos de aceitação fazem parte do cotidiano dos relacionamentos. A melodia leve e a voz suave de Ocean criam um contraste com a mensagem da letra, mostrando que lidar com as imperfeições do outro pode ser algo natural e até necessário para o amadurecimento conjunto. Assim, "Fertilizer" destaca como a aceitação dos defeitos e problemas do parceiro pode fortalecer a relação, transformando situações negativas em oportunidades de crescimento.
+
+        
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

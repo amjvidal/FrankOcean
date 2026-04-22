@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pyramids - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Pyramids"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">9:53</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/pyramids.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Pyramids</span> 
+  <span class="title-pt">PIRÂMIDES</span>
+</div>
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    <div class="stanza">
+      <p>Oh, oh, oh, oh</p>
+      <p>Set the cheetahs on the loose</p>
+      <p>Oh, oh, oh, oh</p>
+      <p>There's a thief out on the move</p>
+      <p>Oh, oh, oh, ooh</p>
+      <p>Underneath our legion's view</p>
+      <p>Oh, oh, oh, oh</p>
+      <p>They have taken Cleopatra</p>
+    </div>
+    
+    <div class="stanza">
+      <p>Run, run, run (Cleopatra)</p>
+      <p>Come back for my glory (Cleopatra)</p>
+      <p>Bring her back to me (Cleopatra)</p>
+      <p>Run, run, run (Cleopatra)</p>
+      <p>The crown of our pharaoh (Cleopatra)</p>
+      <p>The throne of our queen is empty (Cleopatra)</p>
+    </div>
+
+    <div class="stanza">
+      <p>We'll run to the future, shinin' like diamonds</p>
+      <p>In a rocky world, rocky, 'cky world</p>
+      <p>Our skin like bronze and our hair like cashmere</p>
+      <p>As we march to the rhythm on the palace floor, ah-ooh</p>
+      <p>Chandeliers inside the pyramids tremble from the force</p>
+      <p>Cymbals crash inside the pyramids, voices fill up the halls</p>
+    </div>
+
+    <div class="stanza">
+      <p>Oh, oh, oh, ooh</p>
+      <p>Set the cheetahs on the loose</p>
+      <p>I, I, I, I</p>
+      <p>There's a thief out on the move</p>
+      <p>Oh, oh, oh, ooh</p>
+      <p>Underneath our legion's view</p>
+      <p>They have taken Cleopatra, Cleopatra</p>
+    </div>
+
+    <div class="stanza">
+      <p>The jewel of Africa, jewel</p>
+      <p>What good is a jewel that ain't still precious?</p>
+      <p>How could you run off on me? How could you run off on us?</p>
+      <p>You feel like God inside that gold</p>
+      <p>I found you layin' down with Samson and his full head of hair</p>
+      <p>I found my black queen Cleopatra</p>
+      <p>Bad dreams, Cleopatra</p>
+    </div>
+
+    <div class="stanza">
+      <p>Oh, oh, oh, remove her</p>
+      <p>Send the cheetahs to the tomb</p>
+      <p>Oh, oh, oh, our war is over</p>
+      <p>Our queen has met her doom</p>
+      <p>No more, she lives no more, serpent in her room</p>
+      <p>Oh, no more</p>
+      <p>He has killed Cleopatra, Cleopatra</p>
+    </div>
+
+    <div class="stanza">
+      <p>Big Sun comin' strong through the motel blinds</p>
+      <p>Wake up to your girl</p>
+      <p>For now, let's call her Cleopatra, Cleopatra</p>
+      <p>I watch you fix your hair</p>
+      <p>Then put your panties on in the mirror, Cleopatra</p>
+      <p>Then your lipstick, Cleopatra</p>
+      <p>Then your six-inch heels, catch her</p>
+      <p>She's headed to the pyramid</p>
+    </div>
+
+    <div class="stanza">
+      <p>She's workin' at the pyramid tonight</p>
+      <p>Workin' at the pyramid</p>
+      <p>Workin' at the pyramid tonight</p>
+      <p>Workin' at the pyramid, woah</p>
+      <p>Workin' at the pyramid tonight, yeah</p>
+      <p>Workin' at the pyramid, oh</p>
+      <p>Workin' at the pyramid tonight</p>
+      <p>Workin' at the pyramid</p>
+      <p>Workin' at the pyramid tonight</p>
+    </div>
+
+    <div class="stanza">
+      <p>Pimpin' in my convos</p>
+      <p>Bubbles in my champagne, let it be some jazz playin'</p>
+      <p>Top floor motel suite, twistin' my cigars</p>
+      <p>Floor model TV with the VCR</p>
+      <p>Got rubies in my damn chain</p>
+      <p>Whip ain't got no gas tank, but it still got woodgrain</p>
+      <p>Got your girl workin' for me</p>
+      <p>Hit the strip and my bills paid</p>
+      <p>That keep my bills paid</p>
+      <p>Hit the strip and my bills paid</p>
+      <p>Keep a nigga bills paid</p>
+    </div>
+
+    <div class="stanza">
+      <p>She's workin' at the pyramid tonight</p>
+      <p>Workin' at the pyramid, yeah, yeah</p>
+      <p>Workin' at the pyramid tonight, yeah</p>
+      <p>Workin' at the pyramid, oh, I</p>
+      <p>Workin' at the pyramid tonight, yeah</p>
+      <p>Workin' at the pyramid, ooh</p>
+      <p>Workin' at the pyramid tonight</p>
+      <p>Workin' at the pyramid</p>
+    </div>
+
+    <div class="stanza">
+      <p>You showed up after work, I'm bathin' your body</p>
+      <p>Touch you in places only I know</p>
+      <p>You're wet and you're warm just like our bathwater</p>
+      <p>Can we make love before you go?</p>
+      <p>The way you say my name makes me feel like</p>
+      <p>I'm that nigga, but I'm still unemployed</p>
+      <p>You say it's big, but you take it</p>
+      <p>Ride cowgirl</p>
+      <p>But your love ain't free no more, baby</p>
+      <p>But your love ain't free no more</p>
+    </div>
+
+    <div class="stanza">
+      <p>She's workin' at the pyramid tonight (oh, woah)</p>
+      <p>Workin' at the pyramid, yeah</p>
+      <p>Workin' at the pyramid tonight, yeah</p>
+      <p>Workin' at the pyramid, that's right</p>
+      <p>Workin' at the pyramid tonight, yeah</p>
+      <p>Workin' at the pyramid, ooh</p>
+      <p>Workin' at the pyramid tonight</p>
+      <p>Workin' at the pyramid</p>
+      <p>Workin' at the pyramid tonight</p>
+    </div>
+  </div>
+
+  <div class="col" id="pt" lang="pt-BR">
+    <div class="stanza">
+      <p>Ah, ah, ah, ah</p>
+      <p>Deixem os leopardos à solta</p>
+      <p>Ah, ah, ah, ah</p>
+      <p>Há um ladrão em fuga</p>
+      <p>Ah, ah, ah, uh</p>
+      <p>Diante dos olhos da nossa legião</p>
+      <p>Ah, ah, ah, ah</p>
+      <p>Eles levaram a Cleópatra</p>
+    </div>
+
+    <div class="stanza">
+      <p>Fuja, fuja, fuja (Cleópatra)</p>
+      <p>Volte pela minha glória (Cleópatra)</p>
+      <p>Tragam ela de volta pra mim (Cleópatra)</p>
+      <p>Fuja, fuja, fuja (Cleópatra)</p>
+      <p>A coroa do nosso faraó (Cleópatra)</p>
+      <p>O trono da nossa rainha tá vazio (Cleópatra)</p>
+    </div>
+
+    <div class="stanza">
+      <p>Vamos correr pro futuro, brilhando como diamantes</p>
+      <p>Num mundo rochoso, mundo rochoso, oso</p>
+      <p>Nossa pele é como bronze e nosso cabelo é como caxemira</p>
+      <p>Enquanto marchamos ao ritmo no chão do palácio, ah-uh</p>
+      <p>Os candelabros dentro das pirâmides tremem com a força</p>
+      <p>Os pratos batem dentro das pirâmides, as vozes enchem os corredores</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ah, ah, ah, uh</p>
+      <p>Deixem os leopardos à solta</p>
+      <p>Eu, eu, eu</p>
+      <p>Há um ladrão em fuga</p>
+      <p>Ah, ah, ah, uh</p>
+      <p>Diante dos olhos da nossa legião</p>
+      <p>Eles levaram a Cleópatra</p>
+    </div>
+
+    <div class="stanza">
+      <p>A joia da África, a joia</p>
+      <p>Do que serve uma joia que não é mais preciosa?</p>
+      <p>Como você pôde fugir de mim? Como você pôde fugir de nós?</p>
+      <p>Você sente como se Deus tivesse dentro daquele ouro</p>
+      <p>Eu te encontrei deitada ao lado de Sansão, com um punhado do cabelo dele</p>
+      <p>Encontrei minha rainha negra, Cleópatra</p>
+      <p>Pesadelos, Cleópatra</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ah, ah, ah, retirem ela</p>
+      <p>Mandem leopardos pra tumba</p>
+      <p>Ah, ah, ah, nossa guerra acabou</p>
+      <p>Nossa rainha encontrou seu destino</p>
+      <p>Não mais, ela não vive mais, uma serpente no quarto dela</p>
+      <p>Ah, não mais</p>
+      <p>Ele matou a Cleópatra, Cleópatra</p>
+    </div>
+
+    <div class="stanza">
+      <p>Um grande e poderoso Sol surge por trás das cortinas do motel</p>
+      <p>Acordo com a sua mina</p>
+      <p>Por enquanto, vamos chamar ela de Cleópatra, Cleópatra</p>
+      <p>Eu te vejo arrumar seu cabelo</p>
+      <p>Depois, colocar sua calcinha na frente do espelho, Cleópatra</p>
+      <p>Depois, seu batom, Cleópatra</p>
+      <p>Depois, seu salto bem alto, peguem ela</p>
+      <p>Ela tá a caminho da pirâmide</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ela tá trabalhando na pirâmide essa noite</p>
+      <p>Trabalhando na pirâmide</p>
+      <p>Trabalhando na pirâmide essa noite</p>
+      <p>Trabalhando na pirâmide</p>
+      <p>Trabalhando na pirâmide essa noite, sim</p>
+      <p>Trabalhando na pirâmide, ah</p>
+      <p>Trabalhando na pirâmide essa noite</p>
+      <p>Trabalhando na pirâmide</p>
+      <p>Trabalhando na pirâmide essa noite</p>
+    </div>
+
+    <div class="stanza">
+      <p>Seduzindo com minhas palavras</p>
+      <p>Bolhas no meu champanhe, que toquem um pouco de jazz</p>
+      <p>Suíte na cobertura do motel, apagando meus cigarros</p>
+      <p>Uma TV antiga, de chão, com videocassete</p>
+      <p>Tenho rubis na droga do meu cordão</p>
+      <p>Meu carrão não tem gasolina, mas o piso ainda é de madeira cara</p>
+      <p>Sua garota tá trabalhando pra mim</p>
+      <p>Chego no clube de striptease e minhas contas são pagas</p>
+      <p>É isso que paga as minhas contas</p>
+      <p>Chego no clube de striptease e minhas contas são pagas</p>
+      <p>É isso que paga as contas desse cara</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ela tá trabalhando na pirâmide essa noite</p>
+      <p>Trabalhando na pirâmide, sim, sim</p>
+      <p>Trabalhando na pirâmide essa noite, sim</p>
+      <p>Trabalhando na pirâmide, ah, eu</p>
+      <p>Trabalhando na pirâmide essa noite, sim</p>
+      <p>Trabalhando na pirâmide, uh</p>
+      <p>Trabalhando na pirâmide essa noite</p>
+      <p>Trabalhando na pirâmide</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você aparece depois do trabalho, tô molhando seu corpo</p>
+      <p>Toco em você em lugares que só eu conheço</p>
+      <p>Você tá molhada e quente, igual à água do nosso banho</p>
+      <p>Podemos fazer amor antes de você ir embora?</p>
+      <p>O jeito que você diz meu nome me faz sentir como</p>
+      <p>Se eu fosse fodão, mas ainda tô desempregado</p>
+      <p>Você diz que é grande, mas mesmo assim aguenta</p>
+      <p>Quica em mim</p>
+      <p>Mas seu amor não é mais de graça, querida</p>
+      <p>Mas seu amor não é mais de graça</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ela tá trabalhando na pirâmide essa noite (ah, uou)</p>
+      <p>Trabalhando na pirâmide, sim</p>
+      <p>Trabalhando na pirâmide essa noite, sim</p>
+      <p>Trabalhando na pirâmide, isso mesmo</p>
+      <p>Trabalhando na pirâmide essa noite, sim</p>
+      <p>Trabalhando na pirâmide, uh</p>
+      <p>Trabalhando na pirâmide essa noite</p>
+      <p>Trabalhando na pirâmide</p>
+      <p>Trabalhando na pirâmide essa noite</p>
+    </div>
+  </div>
+
+</div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>Em "Pyramids", Frank Ocean constrói um paralelo marcante entre a figura histórica de Cleópatra e uma mulher contemporânea que trabalha em um clube de strip-tease. A música explora como a imagem e o valor da mulher mudaram ao longo do tempo, mostrando a transição de uma rainha poderosa para alguém cuja sensualidade é explorada comercialmente. A pirâmide, símbolo do Egito Antigo, é usada como metáfora para o clube noturno, conectando o passado glorioso ao presente marcado pela objetificação.
+<br><br>
+A letra traz referências diretas à Cleópatra, como em “The crown of our pharaoh (Cleopatra) / The throne of our queen is empty” (A coroa do nosso faraó (Cleópatra) / O trono da nossa rainha está vazio), destacando a perda de poder e status. Já versos como “She's workin' at the pyramid tonight” (Ela está trabalhando na pirâmide esta noite) e “But your love ain't free no more, baby” (Mas seu amor não é mais de graça, querida) evidenciam a realidade atual, em que o corpo feminino é tratado como mercadoria. A estrutura da música, que começa grandiosa e termina de forma mais sombria e sensual, acompanha a trajetória da personagem e reforça o contraste entre adoração e exploração. Assim, "Pyramids" propõe uma reflexão sobre poder, desejo e a persistente luta feminina contra a objetificação, mostrando que, apesar das mudanças históricas, certos desafios permanecem.</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

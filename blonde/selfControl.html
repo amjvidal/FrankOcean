@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>self control - autocontrole - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa self control - autocontrole"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">4:10</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/selfControl.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">self control - autocontrole</span> 
+</div>
+
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Poolside convo about your summer last night, oh, yeah</p>
+      <p>About your summer last night</p>
+      <p>Ain't give you no play, hmm</p>
+      <p>Could I make you shive last night?</p>
+      <p>Could I make you shy on the last night? (Last night)</p>
+      <p>Could we make it in? (Do we have time?)</p>
+    </div>
+
+    <div class="stanza">
+      <p>I'll be the boyfriend in your wet dreams tonight</p>
+      <p>Noses on a rail, little virgin wears the white</p>
+      <p>You cut your hair, but you used to live a blonded life</p>
+      <p>Wish I was there, wish we'd grown up on the same advice</p>
+      <p>And our time was right</p>
+    </div>
+
+    <div class="stanza">
+      <p>Keep a place for me, for me</p>
+      <p>I'll sleep between y'all, it's nothing</p>
+      <p>It's nothing, it's nothing</p>
+      <p>Keep a place for me, for me</p>
+    </div>
+
+    <div class="stanza">
+      <p>Now and then you miss it, sounds make you cry</p>
+      <p>Some nights you dance with tears in your eyes</p>
+      <p>I came to visit, 'cause you see me like a UFO</p>
+      <p>That's like never, 'cause I made you use your self-control</p>
+      <p>And you made me lose my self-control, my self-control</p>
+    </div>
+
+    <div class="stanza">
+      <p>Keep a place for me, for me</p>
+      <p>I'll sleep between y'all, it's nothing</p>
+      <p>Keep a place for me</p>
+      <p>It's nothing, it's nothing</p>
+      <p>It's nothing, it's nothing</p>
+    </div>
+
+    <div class="stanza">
+      <p>Sometimes you'll miss it</p>
+      <p>And the sound will make you cry</p>
+      <p>And some nights you're dancing</p>
+      <p>With tears in your eyes</p>
+    </div>
+
+    <div class="stanza">
+      <p>I, I, I</p>
+      <p>Know you gotta leave, leave, leave</p>
+      <p>Take down some summer time</p>
+      <p>Give up, just tonight, night, night</p>
+    </div>
+
+    <div class="stanza">
+      <p>I, I, I</p>
+      <p>Know you got someone comin'</p>
+      <p>You're spittin' game, know you got it</p>
+    </div>
+
+    <div class="stanza">
+      <p>I, I, I</p>
+      <p>Know you gotta leave, leave, leave</p>
+      <p>Take down some summer time</p>
+      <p>Give up, just tonight, night, night</p>
+    </div>
+
+    <div class="stanza">
+      <p>I, I, I</p>
+      <p>Know you got someone comin'</p>
+      <p>You're spittin' game, know you got it</p>
+      <p>(Nobody else, nobody else)</p>
+    </div>
+
+    <div class="stanza">
+      <p>I, I, I</p>
+      <p>Know you gotta leave, leave, leave</p>
+      <p>Take down some summer time</p>
+      <p>Give up, just tonight, night, night</p>
+    </div>
+
+    <div class="stanza">
+      <p>I, I, I</p>
+      <p>Know you got someone comin'</p>
+      <p>You're spittin' game, know you got it</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Conversa à beira da piscina sobre o seu verão ontem à noite, oh, sim</p>
+      <p>Sobre o seu verão ontem à noite</p>
+      <p>Sem te dar nenhuma chance, humm</p>
+      <p>Eu poderia te fazer tremer noite passada?</p>
+      <p>Eu poderia te envergonhar noite passada? (Noite passada)</p>
+      <p>Poderíamos fazer acontecer? (Nós temos tempo?)</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu vou ser o namorado em seus sonhos eróticos esta noite</p>
+      <p>Narizes em uma grade, virgenzinha veste branco</p>
+      <p>Você cortou o cabelo, mas costumava viver uma vida de patricinha</p>
+      <p>Quem dera eu estar lá, quem dera tivéssemos crescido com os mesmos conselhos</p>
+      <p>E a nossa hora fosse certa</p>
+    </div>
+
+    <div class="stanza">
+      <p>Guarde um lugar pra mim, para mim</p>
+      <p>Vou dormir entre vocês, não é nada</p>
+      <p>Não é nada, não é nada</p>
+      <p>Guarde um lugar pra mim, para mim</p>
+    </div>
+
+    <div class="stanza">
+      <p>De vez em quando você sente falta, sons fazem você chorar</p>
+      <p>Algumas noites você dança com lágrimas nos olhos</p>
+      <p>Vim te visitar, porque você me vê como um OVNI</p>
+      <p>É como nunca, porque fiz você usar o seu autocontrole</p>
+      <p>E você me fez perder meu autocontrole, meu autocontrole</p>
+    </div>
+
+    <div class="stanza">
+      <p>Guarde um lugar pra mim, para mim</p>
+      <p>Vou dormir entre vocês, não é nada</p>
+      <p>Guarde um lugar pra mim</p>
+      <p>Não é nada, não é nada</p>
+      <p>Não é nada, não é nada</p>
+    </div>
+
+    <div class="stanza">
+      <p>Às vezes você vai sentir falta</p>
+      <p>E o som vai te fazer chorar</p>
+      <p>E algumas noites você vai estar dançando</p>
+      <p>Com lágrimas nos olhos</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu, eu, eu</p>
+      <p>Sei que você tem que ir, ir, ir</p>
+      <p>Tirar umas férias</p>
+      <p>Renda-se, só essa noite, noite, noite</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu, eu, eu</p>
+      <p>Sei que você tem alguém a caminho</p>
+      <p>Você é jogo sujo, sei que você entendeu</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu, eu, eu</p>
+      <p>Sei que você tem que ir, ir, ir</p>
+      <p>Tirar umas férias</p>
+      <p>Renda-se, só essa noite, noite, noite</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu, eu, eu</p>
+      <p>Sei que você tem alguém a caminho</p>
+      <p>Você é jogo sujo, sei que você entendeu</p>
+      <p>(Ninguém mais, ninguém mais)</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu, eu, eu</p>
+      <p>Sei que você tem que ir, ir, ir</p>
+      <p>Tirar umas férias</p>
+      <p>Renda-se, só essa noite, noite, noite</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu, eu, eu</p>
+      <p>Sei que você tem alguém a caminho</p>
+      <p>Você é jogo sujo, sei que você entendeu</p>
+    </div>
+
+  </div> </div>
+
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+
+Em "Self Control", Frank Ocean expõe de forma direta a vulnerabilidade e o desencontro emocional entre dois parceiros. Logo no início, o verso “I’ll be the boyfriend in your wet dreams tonight” (“Serei o namorado dos seus sonhos molhados esta noite”) mostra que a presença dele só pode existir no imaginário do outro. Já a frase “noses on a rail, little virgin wears the white” traz um duplo sentido: pode se referir tanto à inocência perdida quanto a experiências marcadas por excessos na juventude, como o uso de drogas ("rail" sendo gíria para linha de cocaína). O contexto da música, reforçado por discussões online e entrevistas, indica que Ocean escreveu sobre um relacionamento em que ambos sentiam algo, mas não estavam em sintonia, o que aparece no lamento de não terem "crescido sob os mesmos conselhos" e no desejo de que "nosso tempo fosse o certo".
+<br><br>
+A nostalgia é um elemento forte, especialmente nas lembranças de conversas à beira da piscina e na repetição do pedido “keep a place for me” (“guarde um lugar para mim”). Essa frase, repetida como um mantra, expressa a esperança de ainda ocupar um espaço na vida do outro, mesmo que de forma distante. O contraste entre autocontrole e entrega é central: Ocean admite ter feito o outro usar autocontrole, enquanto ele próprio perdeu o seu, mostrando a dinâmica de desejo e contenção que marca o fim do relacionamento. A melancolia aumenta quando ele reconhece que a pessoa amada já tem “alguém chegando” e que, apesar do desejo de reviver o passado, é preciso aceitar a separação. A produção musical, com camadas vocais e arranjos orquestrais, reforça essa atmosfera de saudade e amadurecimento, tornando "Self Control" uma reflexão sensível sobre perda e a dificuldade de deixar ir.
+
+
+</p></section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

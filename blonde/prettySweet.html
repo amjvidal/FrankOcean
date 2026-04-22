@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pretty sweet - bem doce - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa pretty sweet - bem doce"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">2:38</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/prettySweet.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">pretty sweet - bem doce</span> 
+</div>
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Now</p>
+      <p>To the edge I'll race</p>
+      <p>To the end I'll make it</p>
+      <p>All the risk, I'll take it</p>
+      <p>Headbang with my four friends</p>
+      <p>We pour a taste out for the dead</p>
+    </div>
+
+    <div class="stanza">
+      <p>This is the blood, the body, the life right now</p>
+      <p>The height right now</p>
+      <p>Might be what I need</p>
+      <p>Might be what I need</p>
+    </div>
+
+    <div class="stanza">
+      <p>Said you wanna hurt me now</p>
+      <p>You can't end me now</p>
+      <p>That might be what you need</p>
+      <p>(What it means to be alive on this side)</p>
+      <p>Said you wanna kill me now</p>
+      <p>(On this side)</p>
+      <p>Don't let me down</p>
+      <p>(On this side)</p>
+      <p>Down, down</p>
+      <p>(Fuck the other side)</p>
+    </div>
+
+    <div class="stanza">
+      <p>I'm on this side, I'm on this side, I'm on this side</p>
+      <p>How it feels to have arrived</p>
+      <p>I'm inside, I'm inside</p>
+      <p>Those are my niggas for life</p>
+    </div>
+
+    <div class="stanza">
+      <p>Mother of us be kind</p>
+      <p>To the fathers on whom we rely</p>
+      <p>Fathers of us be kind</p>
+      <p>To the mothers on whom we rely</p>
+    </div>
+
+    <div class="stanza">
+      <p>(Ah-ah-ahhh, ah-ah-ahh, ah-ah-ahhhh)</p>
+      <p>(Ah-ah-ahhh, ah-ah-ahh, ah-ah-ahhhh)</p>
+    </div>
+
+    <div class="stanza">
+      <p>We know you're sugar</p>
+      <p>We know you're sweet like a sucker</p>
+      <p>Pretty sweet</p>
+      <p>Pretty sweet</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Agora</p>
+      <p>Para a borda, eu vou correr</p>
+      <p>Até o fim, eu irei</p>
+      <p>Todo o risco, eu vou tomar</p>
+      <p>Bater cabeça com quatro amigos</p>
+      <p>Nós derramamos um gosto pelos mortos</p>
+    </div>
+
+    <div class="stanza">
+      <p>Este é o sangue, o corpo, a vida agora</p>
+      <p>A altura agora</p>
+      <p>Pode ser o que eu preciso</p>
+      <p>Pode ser o que eu preciso</p>
+    </div>
+
+    <div class="stanza">
+      <p>Disse que você quer me machucar agora</p>
+      <p>Você não pode me destruir agora</p>
+      <p>Isso pode ser o que você precisa</p>
+      <p>(O que significa estar vivo deste lado)</p>
+      <p>Disse que quer me matar agora</p>
+      <p>(Neste lado)</p>
+      <p>Não me decepcione</p>
+      <p>(Neste lado)</p>
+      <p>Para baixo, para baixo</p>
+      <p>(Foda-se o outro lado)</p>
+    </div>
+
+    <div class="stanza">
+      <p>Estou deste lado, estou deste lado, estou deste lado</p>
+      <p>Como é ter chegado</p>
+      <p>Estou dentro, estou dentro</p>
+      <p>Esses são meus manos para a vida</p>
+    </div>
+
+    <div class="stanza">
+      <p>Mãe de nós seja gentil</p>
+      <p>Aos pais em quem confiamos</p>
+      <p>Pais nossos sejam gentis</p>
+      <p>Para as mães com quem contamos</p>
+    </div>
+
+    <div class="stanza">
+      <p>(Ah-ah-ahhh, ah-ah-ahh, ah-ah-ahhhh)</p>
+      <p>(Ah-ah-ahhh, ah-ah-ahh, ah-ah-ahhhh)</p>
+    </div>
+
+    <div class="stanza">
+      <p>Nós sabemos que você é doce</p>
+      <p>Nós sabemos que você é doce como um otário</p>
+      <p>Bem doce</p>
+      <p>Bem doce</p>
+    </div>
+
+  </div> </div>
+
+
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+
+Em "Pretty Sweet", Frank Ocean constrói uma narrativa marcada por contrastes sonoros e emocionais. A música começa com uma explosão caótica de instrumentos, que logo dá lugar a um coral infantil suave. Essa transição não é apenas musical, mas também simbólica: representa a passagem de momentos turbulentos para uma sensação de esperança e renovação. Ocean utiliza essa estrutura para ilustrar sua jornada de autodescoberta e resiliência, como mostram os versos “To the edge I'll race, to the end I'll make it, all the risk, I'll take it” (Vou correr até o limite, vou chegar até o fim, vou assumir todos os riscos). Aqui, ele revela coragem para enfrentar desafios e ultrapassar limites, mesmo diante de ameaças, como em “Said you wanna hurt me now / You can't end me now” (Disse que quer me machucar agora / Você não pode me acabar agora).
+<br><br>
+A repetição de “I'm on this side” (Estou deste lado) reforça a afirmação de identidade e a escolha de um caminho próprio, em oposição ao que seria esperado socialmente ou ao que representa o "outro lado". O verso “Fuck the other side” (Que se dane o outro lado) deixa claro esse posicionamento. Além disso, as referências à amizade e à família – “Those are my niggas for life” (Esses são meus irmãos para a vida toda) e “Mother of us be kind / To the fathers on whom we rely” (Mãe de todos nós, seja gentil / Com os pais em quem confiamos) – destacam a importância dos laços afetivos e do apoio mútuo na construção dessa identidade. O final, com o coral infantil e a frase “We know you're sugar / We know you're sweet like a sucker / Pretty sweet” (Sabemos que você é doce / Sabemos que você é doce como um pirulito / Bem doce), suaviza o clima e sugere que, apesar das dificuldades, há beleza e doçura no processo de amadurecimento e aceitação.
+        
+
+</p></section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thinkin Bout You - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Thinkin Bout You"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">3:21</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/thinkinBoutYou.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Thinkin Bout You</span> 
+  <span class="title-pt">Pensando Em Você</span>
+</div>
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>A tornado flew around my room before you came</p>
+      <p>Excuse the mess it made, it usually doesn't rain in</p>
+      <p>Southern California, much like Arizona</p>
+      <p>My eyes don't shed tears, but, boy, they pour when</p>
+    </div>
+
+    <div class="stanza">
+      <p>I'm thinkin' 'bout you</p>
+      <p>Ooh, no, no, no</p>
+      <p>I've been thinkin' bout you</p>
+      <p>You know, know, know</p>
+      <p>I've been thinkin' bout you</p>
+      <p>Do you think about me still?</p>
+      <p>Do ya? Do ya?</p>
+    </div>
+
+    <div class="stanza">
+      <p>Or do you not think so far ahead? (Ahead)</p>
+      <p>'Cause I been thinkin' bout forever, ooh (ooh)</p>
+      <p>Or do you not think so far ahead? (Ahead)</p>
+      <p>'Cause I been thinkin' bout forever, ooh</p>
+    </div>
+
+    <div class="stanza">
+      <p>No, I don't like you, I just thought you were cool enough to kick it</p>
+      <p>Got a beach house I could sell you in Idaho</p>
+      <p>Since you think I don't love you, I just thought you were cute</p>
+      <p>That's why I kissed you</p>
+      <p>Got a fighter jet, I don't get to fly it though, I'm lyin' down</p>
+    </div>
+
+    <div class="stanza">
+      <p>I'm thinkin' 'bout you</p>
+      <p>Ooh, no, no, no</p>
+      <p>I've been thinkin' bout you</p>
+      <p>You know, know, know</p>
+      <p>I've been thinkin' bout you</p>
+      <p>Do you think about me still? (Do you think?)</p>
+      <p>Do ya? Do ya? (Do you think?)</p>
+    </div>
+
+    <div class="stanza">
+      <p>Or do you not think so far ahead? (Ahead)</p>
+      <p>'Cause I been thinkin' bout forever, ooh (ooh)</p>
+      <p>Or do you not think so far ahead? (Ahead)</p>
+      <p>'Cause I been thinkin' bout forever, ooh</p>
+    </div>
+
+    <div class="stanza">
+      <p>Yes, of course</p>
+      <p>I remember, how could I forget (how could I forget)</p>
+      <p>How you feel? (How you feel?)</p>
+      <p>You know you were my first time (yeah)</p>
+      <p>A new feel</p>
+    </div>
+
+    <div class="stanza">
+      <p>It won't ever get old</p>
+      <p>Not in my soul, not in my spirit, keep it alive</p>
+      <p>We'll go down this road till it turns from color to black and white</p>
+    </div>
+
+    <div class="stanza">
+      <p>Or do you not think so far ahead? (Ahead)</p>
+      <p>'Cause I been thinkin' bout forever, ooh (ooh)</p>
+      <p>Or do you not think so far ahead? (Ahead)</p>
+      <p>'Cause I been thinkin' bout forever, ooh</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Um tornado passou pelo meu quarto antes de você chegar</p>
+      <p>Desculpa a bagunça que ele fez, normalmente não chove no</p>
+      <p>Sul da Califórnia, assim como no Arizona</p>
+      <p>Meus olhos não derramam lágrimas, mas, garoto, eles lacrimejam quando</p>
+    </div>
+
+    <div class="stanza">
+      <p>Estou pensando em você</p>
+      <p>Ooh, não, não, não</p>
+      <p>Eu tenho pensado em você</p>
+      <p>Você sabe, sabe, sabe</p>
+      <p>Eu tenho pensado em você</p>
+      <p>Você ainda pensa em mim?</p>
+      <p>Você pensa? Você pensa?</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ou você não pensa tão longe no futuro? (No futuro)</p>
+      <p>Porque tenho pensado nisso há muito tempo, ooh (ooh)</p>
+      <p>Ou você não pensa tão longe no futuro? (No futuro)</p>
+      <p>Porque tenho pensado nisso há muito tempo, ooh</p>
+    </div>
+
+    <div class="stanza">
+      <p>Não, eu não gosto de você, só te achei legal o suficiente pra gente ficar</p>
+      <p>Tenho uma casa de praia em Idaho que poderia te vender</p>
+      <p>Já que você acha que eu não te amo, só te achei bonitinho</p>
+      <p>Foi por isso que eu te beijei</p>
+      <p>Tenho um jato de combate, mas não posso pilotar, estou deitado</p>
+    </div>
+
+    <div class="stanza">
+      <p>Estou pensando em você</p>
+      <p>Ooh, não, não, não</p>
+      <p>Eu tenho pensado em você</p>
+      <p>Você sabe, sabe, sabe</p>
+      <p>Eu tenho pensado em você</p>
+      <p>Você ainda pensa em mim? (Você pensa?)</p>
+      <p>Você pensa? Você pensa? (Você pensa?)</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ou você não pensa tão longe no futuro? (No futuro)</p>
+      <p>Porque tenho pensado nisso há muito tempo, ooh (ooh)</p>
+      <p>Ou você não pensa tão longe no futuro? (No futuro)</p>
+      <p>Porque tenho pensado nisso há muito tempo, ooh</p>
+    </div>
+
+    <div class="stanza">
+      <p>Sim, é claro</p>
+      <p>Que eu lembro, como eu poderia esquecer (como eu poderia esquecer)</p>
+      <p>Como você se sente? (Como você se sente?)</p>
+      <p>Você sabe que foi minha primeira vez (sim)</p>
+      <p>Um novo sentimento</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ele nunca vai envelhecer</p>
+      <p>Nem na minha alma, nem no meu espírito, o mantenho vivo</p>
+      <p>Vamos seguir por esse caminho até ele deixar de ser colorido e passar a ser preto e branco</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ou você não pensa tão longe no futuro? (No futuro)</p>
+      <p>Porque tenho pensado nisso há muito tempo, ooh (ooh)</p>
+      <p>Ou você não pensa tão longe no futuro? (No futuro)</p>
+      <p>Porque tenho pensado nisso há muito tempo, ooh</p>
+    </div>
+
+  </div> </div> 
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em "Thinkin Bout You", Frank Ocean explora a vulnerabilidade emocional desde o início, usando a metáfora do tornado para ilustrar o caos interno antes da chegada de alguém especial. O verso “My eyes don't shed tears, but, boy, they pour when I'm thinkin' 'bout you” (“Meus olhos não derramam lágrimas, mas, cara, elas caem quando penso em você”) revela a intensidade do sentimento, mostrando que, apesar de tentar manter o controle, a saudade e a dor do amor não correspondido acabam transbordando.
+<br><br>
+O contexto do lançamento da música, junto à carta aberta de Frank Ocean sobre seu amor por um homem, acrescenta uma dimensão importante à letra, tornando a canção um marco de representatividade LGBTQ+ no R&B. A letra alterna entre confissão e negação, como em “No, I don't like you, I just thought you were cool enough to kick it” (“Não, eu não gosto de você, só achei que você era legal o bastante pra sair junto”), onde o narrador tenta esconder seus sentimentos, mas logo admite o afeto. Imagens como “beach house I could sell you in Idaho” (“casa de praia que eu poderia te vender em Idaho”) e “fighter jet, I don't get to fly it though” (“caça, mas eu não posso pilotá-lo”) reforçam o tom de fantasia e impossibilidade, sugerindo que o relacionamento, apesar de intenso, talvez nunca tenha tido chance de se concretizar.
+<br><br>
+O refrão “Or do you not think so far ahead? 'Cause I been thinkin' bout forever” (“Ou você não pensa tão à frente? Porque eu tenho pensado sobre o para sempre”) destaca o contraste entre o desejo de permanência e a incerteza do outro. Ao lembrar que foi “a primeira vez” e que esse sentimento “não envelhece na alma ou no espírito”, Frank Ocean transforma sua experiência pessoal em algo universal, abordando temas como descoberta, nostalgia e a dificuldade de seguir em frente. A música se destaca pela honestidade emocional e por trazer uma perspectiva rara sobre o amor no mainstream do R&B.
+
+        
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

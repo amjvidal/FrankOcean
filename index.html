@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="shell">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frank Ocean</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <iframe id="nav-frame" src="navbar.html" scrolling="no"></iframe>
+  <iframe id="content-frame" src="home.html"></iframe>
+
+  <script>
+    /* ROTEADOR: Esta função é chamada pelos botões dentro dos iframes.
+      Em vez de procurar variáveis, ela simplesmente muda o 'src' (link) do iframe.
+    */
+    window.navigate = function(fileName) {
+      document.getElementById('content-frame').src = fileName;
+    };
+  </script>
+</body>
+</html>

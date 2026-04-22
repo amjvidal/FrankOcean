@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>futura free - futura grátis - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa futura free - futura grátis"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">9:24</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/futuraFree.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">futura free - futura grátis</span> 
+</div>
+ 
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>If I was being honest</p>
+      <p>I'd say long as I could fuck three times a day</p>
+      <p>And not skip a meal I'm good</p>
+      <p>I used to work on my feet for 7 dollars a hour</p>
+      <p>Call my momma like momma</p>
+      <p>I ain't making minimum wage momma</p>
+      <p>I'm on momma</p>
+      <p>I'm on</p>
+    </div>
+
+    <div class="stanza">
+      <p>Now I'm making 400, 600, 800k momma</p>
+      <p>To stand on my feet momma</p>
+      <p>Play these songs, it's therapy momma, they paying me momma</p>
+      <p>I should be paying them</p>
+      <p>I should be paying y'all honest to God</p>
+      <p>I'm just a guy I'm not a god</p>
+      <p>Sometimes I feel like I'm a god but I'm not a god</p>
+      <p>If I was I don't know which heaven would have me momma</p>
+    </div>
+
+    <div class="stanza">
+      <p>Let me run this bitch</p>
+      <p>I'ma run it into the ground momma, the whole galaxy</p>
+      <p>God damn, fuck these lames, they don't want none</p>
+      <p>Fuck these lames, they don't want none</p>
+      <p>Fuck these niggas</p>
+      <p>Fuck these niggas, they don't want none</p>
+      <p>Fuck these niggas</p>
+      <p>Fuck you niggas</p>
+      <p>Fuck me if I hated on you</p>
+    </div>
+
+    <div class="stanza">
+      <p>I'ma stick around</p>
+      <p>I'm gon' let my nuts hang</p>
+      <p>Nigga you got some just like me don't you?</p>
+      <p>Or maybe not just like me</p>
+      <p>You know I'm Africano Americano</p>
+      <p>And even if you're half Japanese</p>
+      <p>Roots run deep</p>
+      <p>Family tree, throw a big shadow, tech company</p>
+      <p>Please gimme immortality</p>
+    </div>
+
+    <div class="stanza">
+      <p>I'm going rapidly</p>
+      <p>Fading drastically</p>
+      <p>Or pulled the zip down</p>
+      <p>Wet your lips first</p>
+      <p>Lick the tip now</p>
+      <p>Smoke some'n</p>
+      <p>Jamming to the rhythm it's a face to face</p>
+      <p>Keep me high castrati</p>
+      <p>Poonani fade the stress</p>
+      <p>Bugatti left some stretch marks on that freeway</p>
+      <p>They tryna find 2Pac</p>
+      <p>Don't let 'em find 2Pac</p>
+      <p>He evade the press</p>
+      <p>He escape the stress</p>
+    </div>
+
+    <div class="stanza">
+      <p>La da da da da</p>
+      <p>La da da da da</p>
+      <p>La da da da da</p>
+    </div>
+
+    <div class="stanza">
+      <p>I'll keep quiet and let you run your phone bill up</p>
+      <p>I know you love to talk</p>
+      <p>I ain't on your schedule</p>
+      <p>I ain't on no schedule</p>
+      <p>I ain't had me a job since 2009</p>
+      <p>I ain't on no sales floor</p>
+    </div>
+
+    <div class="stanza">
+      <p>You say I'm changing on you</p>
+      <p>I feel like Selena</p>
+      <p>They wanna murder a nigga</p>
+      <p>Murder me like Selena</p>
+      <p>You must ain't get the memo</p>
+      <p>I don't cut bitches no more</p>
+      <p>But your bitch my exception</p>
+      <p>Come get her outta my four door</p>
+    </div>
+
+    <div class="stanza">
+      <p>I only got one four door</p>
+      <p>Remember when I had that Lexus no</p>
+      <p>Our friendship don't go back that far</p>
+      <p>Tyler slept on my sofa yeah</p>
+      <p>Niggas go back that far</p>
+      <p>I ain't smoked all year</p>
+      <p>This the last song so</p>
+      <p>I'm finna wipe that off</p>
+    </div>
+
+    <div class="stanza">
+      <p>Tolerance is so low, still smoke a whole 'gar</p>
+      <p>Menage on my birthday</p>
+      <p>Tap out on the first stroke</p>
+      <p>Cause this ain't no work day</p>
+      <p>She don't give head anyway</p>
+      <p>Cuz what niggas say</p>
+      <p>That's what she tell her man</p>
+      <p>What a difference distance makes</p>
+    </div>
+
+    <div class="stanza">
+      <p>Niggas want fight in the streets now</p>
+      <p>Shit starting to make my head hurt</p>
+      <p>Jay hit me on the email</p>
+      <p>Said I oughta act my net worth</p>
+      <p>Dog this is chess now</p>
+      <p>Not fetch I ain't runnin for a nigga</p>
+      <p>Ain't ran since track meet</p>
+      <p>That's the only time I ran from a nigga</p>
+    </div>
+
+    <div class="stanza">
+      <p>You could change this track now</p>
+      <p>Could've changed this bitch a long time ago</p>
+      <p>Know and know</p>
+      <p>Know and know</p>
+      <p>Shout out to Hollygrove</p>
+      <p>I'm from that 7th though</p>
+      <p>Twins know and Lance</p>
+      <p>Clark know and Matt know</p>
+      <p>Shit went 180 on me</p>
+      <p>Please run that back though</p>
+      <p>Tucks til 24</p>
+    </div>
+
+    <div class="stanza">
+      <p>You say some shit about me?</p>
+      <p>On God he grabbed me</p>
+      <p>Had this nigga like</p>
+      <p>Make sure you speak up</p>
+      <p>Okay</p>
+      <p>What's your name?</p>
+      <p>Frank</p>
+      <p>Yo, aye be quiet. What's your name?</p>
+      <p>What do you do? What's your first memory?</p>
+    </div>
+
+    <div class="stanza">
+      <p>The first word I learned to say or that I ever said</p>
+      <p>What's the most amazing thing you've ever witnessed?</p>
+      <p>You're gonna do amazing out here control the world, control the world</p>
+      <p>Hahaha</p>
+      <p>Hahahaha, alright, what three superpowers do you wish you had?</p>
+      <p>They say they have to be</p>
+      <p>Flying, super strength</p>
+    </div>
+
+    <div class="stanza">
+      <p>Alright, what's your name?</p>
+      <p>I wish I could sleep without being dead</p>
+      <p>But sleep forever at the same time</p>
+      <p>Yo what's your stop, stop, stop</p>
+      <p>Very very tall</p>
+      <p>That's fucked up. Start over right now</p>
+    </div>
+
+    <div class="stanza">
+      <p>Best thing about being me is</p>
+      <p>That I keep a pretty clear mind most of the time</p>
+      <p>Being great</p>
+      <p>I a lot, probably too much</p>
+      <p>Talents, got any secret talents?</p>
+      <p>I don't think so, I'm pretty open in everything I do</p>
+      <p>Talents? I can play the Tyler nah actually fuck him</p>
+    </div>
+
+    <div class="stanza">
+      <p>I don't know, probably cause he doesn't have to do anything at all</p>
+      <p>What's your name?</p>
+      <p>Sage Elsesser</p>
+      <p>What do you do?</p>
+      <p>I play soccer and go to school.</p>
+      <p>I wanna be better at skating</p>
+      <p>Alright that's it</p>
+      <p>Ever ever thought about trying</p>
+      <p>How far is a light year?</p>
+      <p>How far is a light year?</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Se eu era honesto</p>
+      <p>Eu diria enquanto pudesse que fodo três vezes por dia</p>
+      <p>E sem pular nenhuma refeição, estou bem</p>
+      <p>Eu costumava trabalhar de pé por 7 dólares a hora</p>
+      <p>Ligar pra minha mãe, tipo mãe</p>
+      <p>Eu não estou conseguindo um salário mínimo, mãe</p>
+      <p>Eu to dentro mãe</p>
+      <p>Eu to dentro</p>
+    </div>
+
+    <div class="stanza">
+      <p>Agora eu to conseguindo 400, 600, 800 mil, mãe</p>
+      <p>Pra ficar em pé, mãe</p>
+      <p>Tocar essas músicas, é terapia mãe, eles me pagam, mãe</p>
+      <p>Eu devia estar pagando eles</p>
+      <p>Eu devia estar pagando todos vocês, pra ser honesto</p>
+      <p>Eu sou só um cara, eu não sou um deus</p>
+      <p>Às vezes eu me sinto um deus, mas não sou um deus</p>
+      <p>Se eu fosse eu não sei que Céu me teria, mãe</p>
+    </div>
+
+    <div class="stanza">
+      <p>Deixe-me tomar as rédeas disso</p>
+      <p>Eu vou aproveitar até enjoar, mãe, toda a galáxia</p>
+      <p>Puta merda, foda-se esses escrotos, ninguém quer eles</p>
+      <p>Foda-se esses escrotos, ninguém quer eles</p>
+      <p>Foda-se esses manos</p>
+      <p>Foda-se esses manos, ninguém quer eles</p>
+      <p>Foda-se esses manos</p>
+      <p>Fodam-se, manos</p>
+      <p>Me fodam se eu difamei vocês</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu fico na área</p>
+      <p>Eu vou abaixar minha calça</p>
+      <p>Mano, você tem uns iguais a mim, não tem?</p>
+      <p>Ou talvez não só iguais a mim</p>
+      <p>Você sabe, eu sou afro americano</p>
+      <p>E mesmo se você for meio japonesa</p>
+      <p>Raízes vão fundo</p>
+      <p>Árvore genealógica, jogue uma grande sombra, empresa de tecnologia</p>
+      <p>Por favor, me dê imortalidade</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu estou indo rapidamente</p>
+      <p>Sumindo drasticamente</p>
+      <p>Ou abrindo o zíper</p>
+      <p>Molhe seus lábios primeiro</p>
+      <p>Lambe a ponta agora</p>
+      <p>Chupe um pouco</p>
+      <p>Seguindo o ritmo, é cara a cara</p>
+      <p>Me deixa gemendo agudo, castrato</p>
+      <p>'Buceta' faz o estresse sumir</p>
+      <p>Os pneus do bugatti deixaram marcas naquela avenida</p>
+      <p>Eles tentam achar o 2 Pac</p>
+      <p>Não deixe-os acharem o 2 Pac</p>
+      <p>Ele evita a imprensa</p>
+      <p>Ele escapa do estresse</p>
+    </div>
+
+    <div class="stanza">
+      <p>La da da da da</p>
+      <p>La da da da da</p>
+      <p>La da da da da</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ficarei quieto e deixarei você acumular contas de telefone</p>
+      <p>Eu sei que você ama falar</p>
+      <p>Eu não estou na sua agenda</p>
+      <p>Eu não estou em nenhuma agenda</p>
+      <p>Eu não tenho um trabalho desde 2009</p>
+      <p>Eu não estou em nenhuma área de vendas</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você diz que eu estou mudando em você</p>
+      <p>Eu me sinto a Selena</p>
+      <p>Eles querem matar um mano</p>
+      <p>Me matar como a Selena</p>
+      <p>Você não deve receber o memorando</p>
+      <p>Eu não corto putas, não mais</p>
+      <p>Mas sua puta é minha exceção</p>
+      <p>Vem tirar ela do meu quatro portas</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu só tenho um quatro portas</p>
+      <p>Lembre de quando eu tinha aquele Lexus, não</p>
+      <p>Nossa amizade não é tão antiga</p>
+      <p>Tyler dormiu no meu sofá, é</p>
+      <p>Os manos são tão antigos</p>
+      <p>Eu não fumava o ano todo</p>
+      <p>Essa é a última canção, e então</p>
+      <p>Eu vou acabar com isso</p>
+    </div>
+
+    <div class="stanza">
+      <p>A tolerância é tão baixa, ainda fumo um cigarro inteiro</p>
+      <p>Menage no meu aniversário</p>
+      <p>Tira a primeira estocada</p>
+      <p>Porque esse não é um dia de trabalho</p>
+      <p>Ela não vai chupar mesmo</p>
+      <p>Porque o que os manos dizem</p>
+      <p>É o que ela disse para o homem dela</p>
+      <p>Que diferença a distância faz</p>
+    </div>
+
+    <div class="stanza">
+      <p>Os manos querem lutar nas ruas agora</p>
+      <p>Isso está começando a fazer minha cabeça doer</p>
+      <p>Jay me manda um e-mail</p>
+      <p>Diz que eu tenho que trabalhar os meus contatos</p>
+      <p>Cadela, isso é xadrez agora</p>
+      <p>Sem busca, eu não estou correndo atrás de um mano</p>
+      <p>Não rolou desde que os rumos se encontram</p>
+      <p>Aquela foi a única vez que eu corri de um mano</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você poderia mudar esse rumo agora</p>
+      <p>Poderia ter mudado essa puta muito tempo atrás</p>
+      <p>Sabe e sabe</p>
+      <p>Sabe e sabe</p>
+      <p>Saudações para Hollygrove</p>
+      <p>Eu sou da 7ª porém</p>
+      <p>Os gêmeos sabem e Lance</p>
+      <p>Clark sabe e Matt sabe</p>
+      <p>Tudo virou 180 graus em mim</p>
+      <p>Por favor, volte isso para trás</p>
+      <p>Arregaça até 24</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você falou alguma merda de mim?</p>
+      <p>Por Deus, ele me agarrou</p>
+      <p>Teve esse mano, tipo</p>
+      <p>Tenha certeza que você se pronunciou</p>
+      <p>OK</p>
+      <p>Qual é o seu nome?</p>
+      <p>Frank</p>
+      <p>Você fica quieto. Qual é o seu nome?</p>
+      <p>O que você faz? Qual é a sua primeira memória?</p>
+    </div>
+
+    <div class="stanza">
+      <p>A primeira palavra que eu aprendi a dizer ou que eu já disse</p>
+      <p>Qual é a coisa mais maravilhosa que você já testemunhou?</p>
+      <p>Você vai ser incrível por aqui, controle o mundo, controle o mundo</p>
+      <p>Hahaha</p>
+      <p>Hahahaha, tudo bem, quais três superpoderes você queria ter?</p>
+      <p>Eles dizem que tem de ser</p>
+      <p>Voo, superforça</p>
+    </div>
+
+    <div class="stanza">
+      <p>Tudo bem, qual é o seu nome?</p>
+      <p>Eu queria poder dormir sem estar morto</p>
+      <p>Mas dormir para sempre ao mesmo tempo</p>
+      <p>Ei, qual é a sua parada, parada, parada</p>
+      <p>Muito, muito alto</p>
+      <p>Isso é fodido. Começa de novo agora</p>
+    </div>
+
+    <div class="stanza">
+      <p>A melhor coisa sobre ser eu é</p>
+      <p>Que eu mantenho uma mente bem clara na maior parte do tempo</p>
+      <p>Sendo ótimo</p>
+      <p>Eu muito, provavelmente demais</p>
+      <p>Talentos, você tem algum talento secreto?</p>
+      <p>Eu não acho, eu sou bem aberto em tudo o que faço</p>
+      <p>Talentos? Eu toco o Tyler, nah, na verdade eu como ele</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu não sei, provavelmente porque ele não tem nada mesmo pra fazer</p>
+      <p>Qual é o seu nome?</p>
+      <p>Sage Elsesser</p>
+      <p>O que você faz?</p>
+      <p>Eu jogo futebol e vou pra escola</p>
+      <p>Eu queria ser melhor no skate</p>
+      <p>Tudo bem, é isso</p>
+      <p>Já pensou alguma vez em tentar</p>
+      <p>Até onde é um ano-luz?</p>
+      <p>Até onde é um ano-luz?</p>
+    </div>
+
+  </div> </div>
+
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+
+“Futura Free”, de Frank Ocean, ganha um significado ainda mais profundo após a morte de Ryan Breaux, irmão mais novo do artista, em 2020. A participação de Ryan na segunda parte da música, em uma gravação descontraída e íntima, transforma esse trecho em um registro nostálgico e tocante, quase como uma premonição. O título faz referência à fonte tipográfica Futura, conectando a faixa à estética visual do álbum e à influência de Stanley Kubrick, o que sugere uma busca por identidade e legado artístico.
+<br><br>
+Na primeira metade da música, Frank Ocean adota um tom irreverente e reflexivo, misturando relatos pessoais sobre sua ascensão social — “I used to work on my feet for 7 dollars a hour... Now I'm making 400, 600, 800k momma” (“Eu costumava trabalhar em pé por 7 dólares por hora... Agora estou ganhando 400, 600, 800 mil, mãe”) — com questionamentos existenciais e referências à fama, religião e sexualidade. Ao citar Tupac e Selena, artistas que morreram jovens, ele revela a vulnerabilidade de quem alcança o sucesso, mas ainda enfrenta a mortalidade e forças externas. O fluxo de consciência e as frases soltas reforçam a autenticidade, enquanto versos como “I'm just a guy I'm not a god” (“Sou só um cara, não sou um deus”) mostram o conflito entre o ego alimentado pela fama e a consciência de suas limitações humanas.
+<br><br>
+A segunda parte, marcada pela entrevista gravada com Ryan, traz um clima de infância e inocência, contrastando com as pressões da vida adulta. Perguntas simples como “What’s your name?” (“Qual é o seu nome?”) e “What three superpowers do you wish you had?” (“Quais três superpoderes você gostaria de ter?”) evocam um tempo em que tudo parecia possível, ampliando o sentimento de nostalgia. Assim, “Futura Free” se destaca como uma reflexão sobre crescimento, identidade, perda e a busca por liberdade, marcada por uma estrutura experimental que reforça a autenticidade e vulnerabilidade de Frank Ocean.
+
+
+</p></section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

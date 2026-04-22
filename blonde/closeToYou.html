@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>close to you - perto de você - Blonde | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-bl">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('blonde.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('blonde.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/blonde.png" alt="Capa do álbum Blonde - faixa close to you - perto de você"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">1:26</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/closeToYou.mp3"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-nights">close to you - perto de você</span> 
+</div>
+ 
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>I will be honest, I wasn't devastated</p>
+      <p>But you could've held my hand through this, baby</p>
+      <p>Let my mind run underneath warm jets</p>
+      <p>I run my hands through what's left</p>
+    </div>
+
+    <div class="stanza">
+      <p>But we're getting older, baby</p>
+      <p>Don't have much longer baby</p>
+      <p>Why am I preaching?</p>
+      <p>To this choir, to this atheist</p>
+    </div>
+
+    <div class="stanza">
+      <p>Just like mine version of these belong to you</p>
+      <p>After while</p>
+      <p>They're keeping me close to you</p>
+      <p>(Just like me, they long to be)</p>
+      <p>(Close to you)</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Vou ser honesto, eu não estava devastado</p>
+      <p>Mas você poderia ter segurado minha mão nessa, amor</p>
+      <p>Deixo minha mente viajar sob um banho quente</p>
+      <p>Eu corro minhas mãos através do que restou</p>
+    </div>
+
+    <div class="stanza">
+      <p>Mas nós estamos ficando velhos, amor</p>
+      <p>Não temos tanto tempo, amor</p>
+      <p>Por que estou discursando?</p>
+      <p>Para este coro, para este ateísta</p>
+    </div>
+
+    <div class="stanza">
+      <p>Assim como a minha versão daquilo pertence a você</p>
+      <p>Depois de um tempo</p>
+      <p>Eles me mantém perto de você</p>
+      <p>(Assim como eu, eles querem estar)</p>
+      <p>(Perto de você)</p>
+    </div>
+
+  </div> </div>
+
+
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+
+Frank Ocean escolheu reinterpretar "Close To You" inspirado pela versão de Stevie Wonder, buscando transmitir a mesma vulnerabilidade e intensidade emocional que o marcou. A faixa se destaca pelo uso de vocais processados e uma atmosfera etérea, que reforçam o sentimento de distância e saudade. A letra revela uma honestidade direta sobre a dificuldade de lidar com o afastamento de alguém importante. No trecho “I will be honest, I wasn't devastated / But you could've held my hand through this, baby” (Sendo honesto, eu não fiquei devastado / Mas você poderia ter segurado minha mão durante isso, amor), Ocean admite que não foi completamente destruído pelo fim, mas sente falta do apoio e da intimidade, expressando uma dor sutil e resignada.
+<br><br>
+A frase “preaching to this choir, to this atheist” (pregando para esse coral, para esse ateu) adiciona ambiguidade, sugerindo o esforço inútil de tentar convencer alguém que já não acredita mais na relação, ou até a sensação de falar sozinho, sem ser ouvido. O verso final, “Just like me, they long to be close to you” (Assim como eu, eles desejam estar perto de você), faz referência direta à canção original de Bacharach e David, mas, na voz de Ocean, ganha um tom mais melancólico e introspectivo. A produção minimalista e o efeito Prismizer criam uma atmosfera de sonho e distância. A performance com Brad Pitt no FYF Fest, marcada por vulnerabilidade pública, reforça como "Close To You" se tornou um espaço para Ocean expressar e compartilhar fragilidades emocionais.
+
+
+</p></section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+// O ícone branco gerido pelo CSS
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

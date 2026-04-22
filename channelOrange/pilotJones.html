@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilot Jones - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Pilot Jones"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">3:04</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/pilotJones.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Pilot Jones</span> 
+  <span class="title-pt">Piloto Jones</span>
+</div>
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>We once had things in common</p>
+      <p>Now the only thing we share is the refrigerator</p>
+      <p>Ice cold baby I told you</p>
+      <p>I'm ice cold</p>
+    </div>
+
+    <div class="stanza">
+      <p>You out here flying high</p>
+      <p>Go ahead fly that thing</p>
+      <p>High high</p>
+      <p>But fly alone</p>
+    </div>
+
+    <div class="stanza">
+      <p>You always smoking in the house</p>
+      <p>What if my mother comes over</p>
+      <p>You can't get up and get a job</p>
+      <p>Cause this little hustle's getting you by</p>
+    </div>
+
+    <div class="stanza">
+      <p>You're the dealer and the stoner</p>
+      <p>With the sweetest kiss I've ever known</p>
+      <p>(I knew what I was on)</p>
+      <p>I had a pilot jones</p>
+      <p>(What you know about him)</p>
+      <p>She took me high</p>
+      <p>(Oh did she now)</p>
+      <p>Then she took me home (we talkin bout)</p>
+      <p>Pilot jones, pilot jones</p>
+    </div>
+
+    <div class="stanza">
+      <p>Tonight you came stumbling across my lawn again</p>
+      <p>I just don't know why</p>
+      <p>I keep on trying to keep a grown woman sober</p>
+      <p>See there you go reaching up your blouse</p>
+      <p>And no I don't want a child</p>
+      <p>But I ain't been touched in a while</p>
+    </div>
+
+    <div class="stanza">
+      <p>By the dealer and the stoner</p>
+      <p>With the sweetest kiss I've ever known</p>
+      <p>(I knew what I was on)</p>
+      <p>I had a pilot jones</p>
+      <p>(What you know about him)</p>
+      <p>She took me high</p>
+      <p>(Oh did she now)</p>
+      <p>Then she took me home</p>
+      <p>(We talkin' bout)</p>
+      <p>Pilot jones, pilot jones</p>
+    </div>
+
+    <div class="stanza">
+      <p>In the sky up above the birds</p>
+      <p>I saw the sky like I never seen before</p>
+      <p>You thought I was above you</p>
+      <p>Above this in</p>
+      <p>So many ways</p>
+    </div>
+
+    <div class="stanza">
+      <p>But if I got a condo on a cloud</p>
+      <p>Then I guess you can stay at my place</p>
+      <p>I'ma get one</p>
+      <p>I need ya</p>
+      <p>Admit it</p>
+      <p>You're my pilot jones</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Já tivemos coisas em comum</p>
+      <p>Agora a única coisa que compartilhamos é a geladeira</p>
+      <p>Frio como gelo, amor, eu te disse</p>
+      <p>Sou frio como gelo</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você esteve voando alto por aqui</p>
+      <p>Vá em frente que a coisa voa</p>
+      <p>Alto, alto</p>
+      <p>Mas voe sozinha</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você está sempre fumando em casa</p>
+      <p>E se minha mãe chegasse?</p>
+      <p>Você não pode se levantar cedo e arranjar um trabalho</p>
+      <p>Pois esse pequeno empurrão que te dei não funcionou</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você é a traficante e a usuária</p>
+      <p>Com o beijo mais doce que eu já conheci</p>
+      <p>(Eu sabia onde eu estava)</p>
+      <p>Eu tinha um piloto Jones</p>
+      <p>(O que você sabe sobre ele?)</p>
+      <p>Ela me levou às alturas</p>
+      <p>(Oh ela fez agora)</p>
+      <p>Então ela me levou para casa (estamos falando disso)</p>
+      <p>Piloto Jones, piloto Jones</p>
+    </div>
+
+    <div class="stanza">
+      <p>Hoje à noite você veio tropeçando em meu gramado novo</p>
+      <p>Eu só não sei por que</p>
+      <p>Eu continuo tentando manter uma mulher adulta sóbria</p>
+      <p>Tá vendo, lá vai você tirar sua blusa</p>
+      <p>E não, eu não quero ter um filho</p>
+      <p>Mas já faz um tempo que não sou tocado</p>
+    </div>
+
+    <div class="stanza">
+      <p>Pela traficante e usuária</p>
+      <p>Com o beijo mais doce que eu já conheci</p>
+      <p>(Eu não sabia aonde estava)</p>
+      <p>Eu tinha um piloto Jones</p>
+      <p>(O que você sabe sobre ele)</p>
+      <p>Ela me levava às alturas</p>
+      <p>(Ah, ela fez de novo)</p>
+      <p>Então ela me levou pra casa</p>
+      <p>(Estamos falando disso)</p>
+      <p>Piloto Jones, piloto Jones</p>
+    </div>
+
+    <div class="stanza">
+      <p>No céu acima das aves</p>
+      <p>Eu vi o céu como nunca vi antes</p>
+      <p>Você pensava que eu estava acima de você</p>
+      <p>Acima de tudo</p>
+      <p>De tantas formas</p>
+    </div>
+
+    <div class="stanza">
+      <p>Mas se eu tivesse um condomínio em uma nuvem</p>
+      <p>Então eu acho que você pode ficar no meu espaço</p>
+      <p>Eu terei um</p>
+      <p>Eu preciso de você</p>
+      <p>Admita isso</p>
+      <p>Você é o meu piloto jones</p>
+    </div>
+
+  </div> </div> 
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em “Pilot Jones”, Frank Ocean usa a metáfora do voo para retratar um relacionamento marcado por dependência emocional e autodestruição. O título traz um duplo sentido: “Pilot” sugere alguém que conduz o narrador por altos e baixos, enquanto “Jones” é uma gíria para desejo intenso ou vício. Essa ideia aparece claramente no verso “You’re the dealer and the stoner / With the sweetest kiss I’ve ever known” (Você é a fornecedora e a usuária / Com o beijo mais doce que já conheci), mostrando a parceira como fonte e consumidora do vício, tanto literal quanto emocional.
+<br><br>
+A letra revela o desgaste do relacionamento, evidenciado pelo distanciamento e pela frieza: “We once had things in common / Now the only thing we share is the refrigerator / Ice cold baby I told you / I’m ice cold” (Já tivemos coisas em comum / Agora a única coisa que dividimos é a geladeira / Frio como gelo, eu te disse / Eu sou frio como gelo). As imagens de voo e céu, como “You out here flying high” (Você está voando alto) e “If I got a condo on a cloud / Then I guess you can stay at my place” (Se eu tivesse um apartamento numa nuvem / Acho que você poderia ficar lá), reforçam a busca por fuga e sensações intensas, mas também destacam a solidão e o isolamento. No fim, o narrador admite sua dependência: “I need ya / Admit it / You’re my pilot jones” (Eu preciso de você / Admita / Você é meu pilot jones), refletindo o conflito entre desejo, vício e a dificuldade de romper com padrões destrutivos.
+
+        
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pink Matter - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Pink Matter"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">4:29</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/pinkMatter.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Pink Matter</span> 
+  <span class="title-pt">Matéria Rosa</span>
+</div>
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>And the peaches and the mangos that you could sell for me</p>
+      <p>What do you think my brain is made for?</p>
+      <p>Is it just a container for the mind?</p>
+      <p>This great grey matter</p>
+      <p>Sensei replied: What is your woman?</p>
+      <p>Is she just a container for the child?</p>
+      <p>That soft pink matter</p>
+    </div>
+
+    <div class="stanza">
+      <p>Cotton candy, Majin Boo, ooh, ooh, ooh</p>
+      <p>Close my eyes and fall into you, you, you</p>
+      <p>My God, she's giving me pleasure</p>
+      <p>What on Earth?</p>
+    </div>
+
+    <div class="stanza">
+      <p>What if the sky and the stars are for show</p>
+      <p>And the aliens are watching live</p>
+      <p>From the purple matter?</p>
+    </div>
+
+    <div class="stanza">
+      <p>Sensei went quiet, then violent</p>
+      <p>And we sparred until we both grew tired</p>
+      <p>Nothing mattered</p>
+    </div>
+
+    <div class="stanza">
+      <p>Cotton candy, Majin Boo, ooh, ooh, ooh</p>
+      <p>Dim the lights and fall into you, you, you</p>
+      <p>My God, giving me pleasure, pleasure</p>
+      <p>Pleasure, pleasure</p>
+      <p>Pleasure over matter</p>
+    </div>
+
+    <div class="stanza">
+      <p>(Hey, hey)</p>
+      <p>Since you been gone, I been havin' withdrawals</p>
+      <p>You were such a habit to call</p>
+      <p>I ain't myself at all, had to tell myself: Naw</p>
+      <p>She better with some fella with a regular job</p>
+    </div>
+
+    <div class="stanza">
+      <p>I didn't wanna get her involved</p>
+      <p>By dinner, Mister Benjamin was sittin' in awe</p>
+      <p>Hopped into my car, drove far</p>
+      <p>Far's too close and I remember my memory's no sharp</p>
+    </div>
+
+    <div class="stanza">
+      <p>Butter knife, what a life, anyway</p>
+      <p>I'm buildin' y'all a clock, stop, what am I? Hemingway?</p>
+      <p>She had the kind of body that would probably intimidate</p>
+      <p>Any of 'em that were unsouthern, not me, cousin</p>
+    </div>
+
+    <div class="stanza">
+      <p>If models are made for modelin'</p>
+      <p>Thick girls are made for cuddlin'</p>
+      <p>Switch worlds and we can huddle then</p>
+      <p>Who needs another friend? I need to hold your hand</p>
+      <p>You'd need no other man, we'd flee to other lands</p>
+    </div>
+
+    <div class="stanza">
+      <p>(Grey matter)</p>
+      <p>(Blue used to be my favorite color)</p>
+      <p>(Now I ain't got no choice)</p>
+      <p>(Blue matter)</p>
+    </div>
+
+    <div class="stanza">
+      <p>You're good at being bad (yeah)</p>
+      <p>You're bad at being good (yeah)</p>
+      <p>For heaven's sakes, go to hell (yeah)</p>
+      <p>Nah, knock on wood, hey</p>
+    </div>
+
+    <div class="stanza">
+      <p>You're good at being bad (you're bad at being good)</p>
+      <p>For heaven's sakes, go to hell (knock on wood)</p>
+      <p>For heaven's sakes, go to hell</p>
+      <p>Knock, knock, knock, knock on wood</p>
+    </div>
+
+    <div class="stanza">
+      <p>Well, frankly, when that ocean so mu'fucking good</p>
+      <p>Make her swab the mu'fucking wood</p>
+      <p>Make her walk the mu'fucking plank</p>
+      <p>Make her rob a mu'fucking bank</p>
+      <p>With no mask on and a rusty revolver</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>E os pêssegos e as mangas que você poderia me vender</p>
+      <p>Pro que você acha que o meu cérebro foi feito?</p>
+      <p>Será que ele é só um recipiente pra mente?</p>
+      <p>Esta grande matéria cinzenta</p>
+      <p>O sensei respondeu: O que é a sua esposa?</p>
+      <p>Será que ela é só um recipiente pro filho?</p>
+      <p>Aquela matéria rosa e suave</p>
+    </div>
+
+    <div class="stanza">
+      <p>Algodão-doce, Majin Boo, ooh, ooh, ooh</p>
+      <p>Fecho os meus olhos e caio nos seus, seus, seus braços</p>
+      <p>Meu Deus, ela tá me dando prazer</p>
+      <p>O que tá acontecendo?</p>
+    </div>
+
+    <div class="stanza">
+      <p>E se o céu e as estrelas fossem só uma fachada</p>
+      <p>E os alienígenas estivessem assistindo ao vivo</p>
+      <p>Lá da matéria roxa?</p>
+    </div>
+
+    <div class="stanza">
+      <p>O sensei se calou, depois ficou violento</p>
+      <p>E brigamos até ficarmos cansados</p>
+      <p>Nada importava</p>
+    </div>
+
+    <div class="stanza">
+      <p>Algodão-doce, Majin Boo, ooh, ooh, ooh</p>
+      <p>Apago as luzes e caio nos seus, seus, seus braços</p>
+      <p>Meu Deus, me dando prazer, prazer</p>
+      <p>Prazer, prazer</p>
+      <p>Prazer além da matéria</p>
+    </div>
+
+    <div class="stanza">
+      <p>(Ei, ei)</p>
+      <p>Desde que você foi embora, tô tendo crises de abstinência</p>
+      <p>Ligar pra você era um hábito tão comum</p>
+      <p>Eu não sou mais eu, tive que falar pra mim mesmo: Não</p>
+      <p>É melhor ela estar com um cara que tenha um emprego comum</p>
+    </div>
+
+    <div class="stanza">
+      <p>Eu não queria envolver ela</p>
+      <p>No jantar, o Senhor Benjamin tava sentado admirado</p>
+      <p>Entrei no meu carro, dirigi bem rápido</p>
+      <p>Não importa quão longe, e lembro que minha memória não é afiada</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ela tá mais pra uma faca de manteiga, que vida, de qualquer forma</p>
+      <p>Tô construindo um relógio pra vocês, pera aí, quem eu sou? O Hemingway?</p>
+      <p>Ela tinha o tipo de corpo que provavelmente intimidaria</p>
+      <p>Qualquer um deles que não fosse sulista, não eu, primo</p>
+    </div>
+
+    <div class="stanza">
+      <p>Se as modelos foram feitas pra modelar</p>
+      <p>Garotas gostosas foram feitas pra aconchegar</p>
+      <p>Troque os mundos e aí a gente possa nos juntar</p>
+      <p>Quem precisa de mais uma amiga? Eu preciso segurar sua mão</p>
+      <p>Você não precisa de outro homem, vamos viajar pra outras terras</p>
+    </div>
+
+    <div class="stanza">
+      <p>(Matéria cinzenta)</p>
+      <p>(O azul costumava ser minha cor preferida)</p>
+      <p>(Agora eu não tenho outra escolha)</p>
+      <p>(Matéria azul)</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você é boa em ser má (sim)</p>
+      <p>Você é ruim em ser boa (sim)</p>
+      <p>Pelo amor de Deus, vai pro inferno (sim)</p>
+      <p>Não, bate na madeira, ei</p>
+    </div>
+
+    <div class="stanza">
+      <p>Você é boa em ser má (você é ruim em ser boa)</p>
+      <p>Pelo amor de Deus, vai pro inferno (bate na madeira)</p>
+      <p>Pelo amor de Deus, vai pro inferno</p>
+      <p>Bate, bate, bate, bate na madeira</p>
+    </div>
+
+    <div class="stanza">
+      <p>Bem, francamente, essa porra de oceano é tão bom</p>
+      <p>Que faz ela esfregar a porra da madeira</p>
+      <p>Que faz ela andar na porra da prancha</p>
+      <p>Que faz ela roubar a porra de um banco</p>
+      <p>Sem máscara e com um revólver enferrujado</p>
+    </div>
+
+  </div> </div>
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em “Pink Matter (feat. André 3000)”, Frank Ocean utiliza referências da cultura pop, como Majin Buu de “Dragon Ball”, para simbolizar o desejo intenso e, por vezes, incontrolável. O título da música sugere um contraste entre a racionalidade (matéria cinzenta do cérebro) e a sensualidade ou emoção (matéria rosa), estabelecendo um diálogo entre o físico e o emocional que atravessa toda a faixa.
+<br><br>
+A letra traz questionamentos filosóficos sobre o propósito do corpo e da mente, como em “What do you think my brain is made for? Is it just a container for the mind?” (O que você acha que meu cérebro foi feito para ser? Ele é só um recipiente para a mente?) e “Is she just a container for the child?” (Ela é só um recipiente para a criança?). Essas perguntas, respondidas de forma enigmática pelo “sensei”, apontam para uma busca de significado mais profunda, questionando papéis tradicionais e a superficialidade das relações. O verso “Cotton candy, Majin Boo” (Algodão-doce, Majin Buu) associa o prazer físico a algo doce, passageiro e potencialmente perigoso. A produção minimalista reforça o tom introspectivo e sensual da música.
+<br><br>
+A participação de André 3000 traz vulnerabilidade e autocrítica, especialmente ao abordar a ausência da pessoa amada e a sensação de inadequação: “Since you been gone, I been havin' withdrawals... I ain't myself at all” (Desde que você se foi, tenho tido abstinências... Não sou eu mesmo). O trecho “If models are made for modelin', thick girls are made for cuddlin'” (Se modelos servem para desfilar, garotas com curvas servem para abraçar) desafia padrões de beleza e valoriza a intimidade real. Ao longo da música, o jogo entre prazer e razão, desejo e consequência, é reforçado por frases ambíguas, como “You're good at being bad, you're bad at being good” (Você é boa em ser má, é má em ser boa), mostrando a complexidade dos sentimentos envolvidos. Assim, a faixa se destaca por misturar referências culturais, filosofia e experiências pessoais em uma narrativa rica e multifacetada.
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bad Religion - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Bad Religion"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">2:55</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/badReligion.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Bad Religion</span> 
+  <span class="title-pt">Religião Ruim</span>
+</div>
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Taxi driver</p>
+      <p>Be my shrink for the hour</p>
+      <p>Leave the meter running</p>
+      <p>It's rush hour</p>
+      <p>So take the streets if you wanna</p>
+      <p>Just outrun the demons, could you?</p>
+    </div>
+
+    <div class="stanza">
+      <p>He said: Allahu Akbar</p>
+      <p>I told him: Don't curse me</p>
+      <p>Bobo, you need prayer</p>
+      <p>I guess it couldn't hurt me</p>
+    </div>
+
+    <div class="stanza">
+      <p>If it brings me to my knees</p>
+      <p>It's a bad religion</p>
+      <p>Ooh, this unrequited love</p>
+      <p>To me, it's nothin' but a one-man cult</p>
+      <p>And cyanide in my styrofoam cup</p>
+      <p>I can never make him love me</p>
+      <p>Never make him love me</p>
+    </div>
+
+    <div class="stanza">
+      <p>Love me, love me</p>
+      <p>Love me, love me</p>
+      <p>Love me, love me</p>
+      <p>Love me, love me</p>
+      <p>Love me, love</p>
+    </div>
+
+    <div class="stanza">
+      <p>Taxi driver</p>
+      <p>I swear I've got three lives</p>
+      <p>Balanced on my head like steak knives</p>
+      <p>I can't tell you the truth about my disguise</p>
+      <p>I can't trust no one</p>
+    </div>
+
+    <div class="stanza">
+      <p>And you say: Allahu Akbar</p>
+      <p>I told him: Don't curse me</p>
+      <p>Bobo, you need prayer</p>
+      <p>I guess it couldn't hurt me</p>
+    </div>
+
+    <div class="stanza">
+      <p>If it brings me to my knees</p>
+      <p>It's a bad religion</p>
+      <p>Oh, unrequited love</p>
+      <p>To me, it's nothin' but a one-man cult</p>
+      <p>And cyanide in my styrofoam cup</p>
+      <p>I can never make him love me</p>
+      <p>Never make him love me</p>
+      <p>No, no, ow</p>
+    </div>
+
+    <div class="stanza">
+      <p>It's a, it's a bad religion</p>
+      <p>To be in love with someone who</p>
+      <p>Could never love you</p>
+      <p>Oh, oh, oh, only bad, only bad religion</p>
+      <p>Could have me feeling the way I do</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Motorista de táxi</p>
+      <p>Seja meu psiquiatra por hora</p>
+      <p>Deixe o taxímetro rodando</p>
+      <p>É horário de pico</p>
+      <p>Então, se você quiser, vá pelas ruas movimentadas</p>
+      <p>Só ultrapasse os demônios, pode ser?</p>
+    </div>
+
+    <div class="stanza">
+      <p>Ele disse: Alá é maior</p>
+      <p>Eu disse para ele: Não me xingue</p>
+      <p>Bobo, você precisa de uma oração</p>
+      <p>Eu acho que isso não poderia me fazer mal</p>
+    </div>
+
+    <div class="stanza">
+      <p>Se ela me faz ficar de joelhos</p>
+      <p>Ela é uma religião ruim</p>
+      <p>Ooh, este amor não correspondido</p>
+      <p>Para mim, não passa de um culto de um homem só</p>
+      <p>E cianeto em meu copo de plástico</p>
+      <p>Eu nunca conseguirei fazer ele me amar</p>
+      <p>Nunca conseguirei fazer ele me amar</p>
+    </div>
+
+    <div class="stanza">
+      <p>Me amar, me amar</p>
+      <p>Me amar, me amar</p>
+      <p>Me amar, me amar</p>
+      <p>Me amar, me amar</p>
+      <p>Me amar, amar</p>
+    </div>
+
+    <div class="stanza">
+      <p>Motorista de táxi</p>
+      <p>Eu juro que tenho três vidas</p>
+      <p>Equilibradas em minha cabeça como facas de churrasco</p>
+      <p>Eu não posso lhe falar a verdade sobre meu disfarce</p>
+      <p>Eu não posso confiar em ninguém</p>
+    </div>
+
+    <div class="stanza">
+      <p>E você diz: Alá é maior</p>
+      <p>Eu disse para ele: Não me xingue</p>
+      <p>Bobo, você precisa de uma oração</p>
+      <p>Eu acho que isso não poderia me fazer mal</p>
+    </div>
+
+    <div class="stanza">
+      <p>Se ela me faz ficar de joelhos</p>
+      <p>Ela é uma religião ruim</p>
+      <p>Oh, amor não correspondido</p>
+      <p>Para mim, não passa de um culto de um homem só</p>
+      <p>E cianeto em meu copo de plástico</p>
+      <p>Eu nunca conseguirei fazer ele me amar</p>
+      <p>Nunca conseguirei fazer ele me amar</p>
+      <p>Não, não, uou</p>
+    </div>
+
+    <div class="stanza">
+      <p>É uma, é uma religião ruim</p>
+      <p>Estar apaixonado por alguém que</p>
+      <p>Nunca poderia amar você</p>
+      <p>Oh, oh, oh, só ruim, só uma religião ruim</p>
+      <p>Poderia me fazer sentir do jeito que estou me sentindo</p>
+    </div>
+
+  </div> </div> 
+
+
+
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em "Bad Religion", Frank Ocean transforma o sofrimento do amor não correspondido em uma metáfora poderosa, comparando-o a uma religião destrutiva. Ao dizer que esse sentimento é uma "bad religion" (má religião), ele mostra como a devoção a alguém que não retribui pode ser tão prejudicial quanto uma fé cega que só traz dor. O cenário do táxi, onde Ocean pede ao motorista para ser seu "shrink for the hour" (terapeuta por uma hora), destaca o isolamento do artista: ele recorre a um estranho para desabafar, já que não pode compartilhar sua dor abertamente, especialmente por causa das pressões sociais e do contexto de sua sexualidade, tema que ganhou destaque após sua carta no Tumblr.
+<br><br>
+A letra traz imagens marcantes, como "one-man cult" (seita de um homem só) e "cyanide in my styrofoam cup" (cianeto no meu copo de isopor), reforçando a ideia de que esse amor unilateral é tóxico e autodestrutivo. Quando o motorista diz "Allahu Akbar" (Deus é grande) e Ocean responde "Don't curse me" (Não me amaldiçoe), surge um desconforto com a religião tradicional, sugerindo tanto uma crítica à intolerância quanto um conflito interno diante das normas religiosas e sociais. O refrão "If it brings me to my knees, it's a bad religion" (Se isso me faz ajoelhar, é uma má religião) conecta a experiência de se ajoelhar em oração à submissão dolorosa ao amor não correspondido, mostrando como ambos podem levar à vulnerabilidade extrema. Assim, "Bad Religion" se destaca como um retrato sincero da solidão, do desejo e da busca por aceitação diante de barreiras pessoais e culturais.
+
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Not Just Money - Channel Orange | Frank Ocean</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-co">
+
+<span class="back" role="button" tabindex="0" onclick="window.parent.navigate('channelOrange.html')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.parent.navigate('channelOrange.html');}">VOLTAR</span>
+
+<div class="player">
+  <div class="thumb"><img src="../imagens/channelOrange.jpg" alt="Capa do álbum Channel Orange - faixa Not Just Money"></div>
+  <button class="play-btn" id="pb" onclick="togglePlay()">
+    <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="bar">
+    <span class="time" id="ct">0:00</span>
+    <div class="prog" onclick="seek(event)"><div class="fill" id="fill"></div></div>
+    <span class="time">1:00</span>
+  </div>
+</div>
+
+<audio id="au" src="audio/notJustMoney.m4a"></audio>
+
+<p class="letra-lbl">A LETRA</p>
+
+<div class="song-title-wrapper">
+  <span class="title-en">Not Just Money</span> 
+  <span class="title-pt">Não Apenas Dinheiro</span>
+</div>
+
+<div class="lyrics">
+  
+  <div class="col" id="en" lang="en">
+    
+    <div class="stanza">
+      <p>Stop thinking of this as being money</p>
+      <p>It's just money, I'mma make more</p>
+      <p>No, no no no no no</p>
+    </div>
+
+    <div class="stanza">
+      <p>Please decondition yourself</p>
+      <p>It's happiness</p>
+      <p>It's the difference between happy, being happy and sad</p>
+      <p>It's the difference between having a home and living on the streets</p>
+      <p>That's what it is, it's not just money</p>
+      <p>It's so much more than that</p>
+    </div>
+
+    <div class="stanza">
+      <p>Right now it's the difference between you being able to go to a prom</p>
+      <p>And disappointing a girl</p>
+      <p>As I told you from the beginning, I don't have money</p>
+      <p>I have bills to pay, but that meant nothing to you</p>
+      <p>Absolutely nothing</p>
+    </div>
+
+    <div class="stanza">
+      <p>Let's see, I have</p>
+      <p>Ooh yeah, I'mma make myself a hot link when I get home</p>
+      <p>It meant nothing to you</p>
+      <p>Savin' my seven dollars</p>
+    </div>
+
+  </div> <div class="col" id="pt" lang="pt-BR">
+    
+    <div class="stanza">
+      <p>Pare de pensar nisso como sendo dinheiro</p>
+      <p>É só dinheiro, eu vou fazer mais</p>
+      <p>Não, não não não não não</p>
+    </div>
+
+    <div class="stanza">
+      <p>Por favor, descanse</p>
+      <p>É felicidade</p>
+      <p>É a diferença entre feliz, ser feliz e triste</p>
+      <p>É a diferença entre ter uma casa e viver nas ruas</p>
+      <p>Isso é o que é, não é só dinheiro</p>
+      <p>É muito mais do que isso</p>
+    </div>
+
+    <div class="stanza">
+      <p>Agora é a diferença entre você ser capaz de ir a um baile de formatura</p>
+      <p>E decepcionar uma garota</p>
+      <p>Como eu lhe disse desde o começo, eu não tenho dinheiro</p>
+      <p>Eu tenho contas para pagar, mas isso não significou nada para você</p>
+      <p>Absolutamente nada</p>
+    </div>
+
+    <div class="stanza">
+      <p>Vamos ver, eu tenho</p>
+      <p>Ah é, eu vou fazer pra mim um grande link quando eu chegar em casa</p>
+      <p>Não significou nada pra você</p>
+      <p>Guardando meus sete dólares</p>
+    </div>
+
+  </div> </div> 
+  
+<section class="sig">
+  <p class="sig-title">O SIGNIFICADO</p>
+  <div class="sig-text">
+    <p>
+Em "Not Just Money", Frank Ocean utiliza o monólogo de Rosie Watson para questionar a ideia de que o dinheiro é algo superficial ou facilmente substituível. O trecho “Stop thinking of this as being money / It's just money, I'mma make more” (Pare de pensar nisso como dinheiro / É só dinheiro, vou ganhar mais) é imediatamente rebatido por Rosie, que pede para "decondicionar" essa visão. Ela destaca que, para muitas pessoas, o dinheiro representa muito mais do que simples cifras: é a diferença entre ter um lar ou viver nas ruas, entre felicidade e tristeza. Assim, a faixa evidencia a desigualdade social e a importância do dinheiro para garantir necessidades básicas, indo além do clichê de que dinheiro não traz felicidade.
+<br><br>
+Rosie Watson, que também aparece em "Be Yourself", assume o papel de uma voz de autoridade e cuidado, transmitindo valores sobre sobrevivência e responsabilidade. Ao afirmar “I have bills to pay, but that meant nothing to you” (Eu tenho contas para pagar, mas isso não significou nada para você), ela expõe o contraste entre quem pode tratar o dinheiro como algo trivial e quem depende dele para sobreviver. As referências ao "prom" e ao "hot link" (um tipo de salsicha popular nos EUA) mostram como pequenas quantias podem ter grande impacto emocional e prático no cotidiano. Ao anteceder "Super Rich Kids", a faixa serve como contraponto ao hedonismo, reforçando que, para muitos, dinheiro é sinônimo de dignidade e segurança, não apenas luxo ou prazer.    
+
+</p>
+  </div>
+</section>
+
+<script>
+/* Script do Player */
+var au   = document.getElementById('au');
+var fill = document.getElementById('fill');
+var ct   = document.getElementById('ct');
+var pb   = document.getElementById('pb');
+var PLAY_ICON  = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+var PAUSE_ICON = '<svg width="24" height="24" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+function togglePlay() {
+  if (au.paused) { au.play(); pb.innerHTML = PAUSE_ICON; }
+  else           { au.pause(); pb.innerHTML = PLAY_ICON; }
+}
+function seek(e) {
+  var r = e.currentTarget.getBoundingClientRect();
+  au.currentTime = ((e.clientX - r.left) / r.width) * au.duration;
+}
+au.addEventListener('timeupdate', function() {
+  if (!au.duration) return;
+  fill.style.width = (au.currentTime / au.duration * 100) + '%';
+  var m = Math.floor(au.currentTime / 60);
+  var s = Math.floor(au.currentTime % 60);
+  ct.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+});
+au.addEventListener('ended', function() { pb.innerHTML = PLAY_ICON; });
+</script>
+</body>
+</html>
